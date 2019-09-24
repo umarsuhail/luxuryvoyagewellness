@@ -340,11 +340,13 @@
  .card-body{
      overflow: auto;
  }
- .card-bt{
-    margin: 0 auto;
+ .button-container{
+     display: flex;
+     justify-content: center;
+    /* margin: 0 auto;
     position: absolute;
     bottom: 15px;
-    margin-left: 155px;
+    margin-left: 155px; */
  }
  .slick-slide{
     float: left;
