@@ -3639,11 +3639,11 @@
 }
 @media only screen and (max-width: 600px){
   .big-header{
-    font-size: 20pt;
+    font-size: 15pt;
     font-weight: 800;
   }
   .header-text{
-    font-size: 15pt;
+    font-size: 10pt;
     font-weight: 500;
   }
 }
