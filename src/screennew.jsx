@@ -33,7 +33,7 @@ import "../src/style.css";
 
 
 
-class screennew extends Component {
+class ScreenOne extends Component {
     render() {
         var settings = {
             dots: false,
@@ -118,11 +118,11 @@ class screennew extends Component {
                             </img>
                             <div className="text-wrap col-8 " style={{ flexDirection: 'column' }}>
                                 <div className="text-animation-head">
-                                    <div className="Head-text" >Discover the best European destinations </div>
+                                    <div className="Head-text" >Discover the best destinations </div>
                                 </div>
                                 <div className="rowstyle">
-                                    <div className="text-amt "> FAMILY </div>   
-                                        <span className="text-amt">HOLIDAY</span>                                  
+                                    <div className="text-amt ">FAMILY </div>   
+                                        <span className="text-amt">HOLIDAYS</span>                                  
                                 </div>
                             </div>
                         </div>
@@ -144,11 +144,11 @@ class screennew extends Component {
                             <img src={slide3} alt="New York" width="1100" height="500" />
                             <div className="text-wrap col-8 " style={{ flexDirection: 'column' }}>
                                 <div className="text-animation-head">
-                                    <div className="Head-text" >LIFE'S A JOURNEY, TAKE YOUR DREAM </div>
+                                    <div className="Head-text" >WHO LIVES, SEES MUCH</div>
                                 </div>
                                 <div className="rowstyle">
-                                    <div className="text-amt ">WE ARE</div>   
-                                        <span className="text-amt">AVENTURA</span>                                  
+                                    <div className="text-amt ">WHO TRAVELS</div>   
+                                        <span className="text-amt">SEES MORE</span>                                  
                                 </div>
                             </div>
                         </div>
@@ -473,4 +473,4 @@ class screennew extends Component {
     }
 }
 
-export default screennew;
+export default ScreenOne;

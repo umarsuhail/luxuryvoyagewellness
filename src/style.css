@@ -258,7 +258,7 @@
     }
 
     30% {
-        width: 50px;
+        width: 10px;
     }
 
     80% {
@@ -267,7 +267,7 @@
 
     100% {
         opacity: 0;
-        width: 50px;
+        width: 10px;
     }
 }
 @keyframes reveal {
