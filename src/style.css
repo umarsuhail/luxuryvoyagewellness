@@ -100,7 +100,6 @@
         overflow: hidden;
         white-space: nowrap;
         font-size: 7px !important;
-        font-family: "sans-serif";
     }
     .gallery-container h1 {
         font-size: 30px;
@@ -501,7 +500,19 @@
           justify-content: center;
           flex-direction: column;
       }
+      .dropdown-item{
+          color: #ffff;
+      }
       .navber-nav{
       }
 
+  }
+  .dropdown-menu{
+    margin-top: 15px;
+  }
+  .nav-link{
+      color: white !important;
+  }
+  .dropdown-item{
+      font-size: 13px;
   }
