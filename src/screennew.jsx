@@ -9,12 +9,13 @@ import icon from "./images/icon.png";
 import icon1 from "./images/icon1.png";
 import icon2 from "./images/icon2.png";
 import icon3 from "./images/icon3.png";
-import Specialities from './components/Specialities'
+import Specialities from "./components/Specialities";
 import Navbar from "./components/Navbar";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
 import "../src/style.css";
 import Cards from "./components/Cards";
+import AnmimatedText from "./components/AnimatedText";
 class ScreenOne extends Component {
   render() {
     return (
@@ -34,15 +35,10 @@ class ScreenOne extends Component {
                 className="text-wrap col-8 "
                 style={{ flexDirection: "column" }}
               >
-                <div className="text-animation-head">
-                  <div className="Head-text">
-                    Discover the best destinations{" "}
-                  </div>
-                </div>
-                <div className="rowstyle">
-                  <div className="text-amt ">FAMILY </div>
-                  <span className="text-amt">HOLIDAYS</span>
-                </div>
+                <AnmimatedText
+                  HeaderText="Discover the best destinations in india"
+                  BigHeader="Family Holiday"
+                />
               </div>
             </div>
             <div class="carousel-item">
@@ -52,15 +48,10 @@ class ScreenOne extends Component {
                 className="text-wrap col-8 "
                 style={{ flexDirection: "column" }}
               >
-                <div className="text-animation-head">
-                  <div className="Head-text">
-                    LIFE'S A JOURNEY, TAKE YOUR DREAM{" "}
-                  </div>
-                </div>
-                <div className="rowstyle">
-                  <div className="text-amt ">WE ARE</div>
-                  <span className="text-amt">AVENTURA</span>
-                </div>
+                <AnmimatedText
+                  HeaderText="Inhale the future, exhale the past"
+                  BigHeader="Learn Yoga"
+                />
               </div>
             </div>
             <div class="carousel-item">
@@ -70,13 +61,10 @@ class ScreenOne extends Component {
                 className="text-wrap col-8 "
                 style={{ flexDirection: "column" }}
               >
-                <div className="text-animation-head">
-                  <div className="Head-text">WHO LIVES, SEES MUCH</div>
-                </div>
-                <div className="rowstyle">
-                  <div className="text-amt ">WE ARE</div>
-                  <span className="text-amt">AVENTURA</span>
-                </div>
+                <AnmimatedText
+                  HeaderText="Life is not merely to be alive, but to be well"
+                  BigHeader="An Ayurvedic Life"
+                />
               </div>
             </div>
             <div class="carousel-item">
@@ -86,15 +74,10 @@ class ScreenOne extends Component {
                 className="text-wrap col-8 "
                 style={{ flexDirection: "column" }}
               >
-                <div className="text-animation-head">
-                  <div className="Head-text">
-                    LIFE'S A JOURNEY, TAKE YOUR DREAM{" "}
-                  </div>
-                </div>
-                <div className="rowstyle">
-                  <div className="text-amt ">WE ARE</div>
-                  <span className="text-amt">AVENTURA</span>
-                </div>
+                <AnmimatedText
+                  HeaderText="Spend in The best resorts and hotels in india"
+                  BigHeader="Comfort and Luxury"
+                />
               </div>
             </div>
             <div class="carousel-item">
@@ -104,15 +87,10 @@ class ScreenOne extends Component {
                 className="text-wrap col-8 "
                 style={{ flexDirection: "column" }}
               >
-                <div className="text-animation-head">
-                  <div className="Head-text">
-                    LIFE'S A JOURNEY, TAKE YOUR DREAM{" "}
-                  </div>
-                </div>
-                <div className="rowstyle">
-                  <div className="text-amt ">WE ARE</div>
-                  <span className="text-amt">AVENTURA</span>
-                </div>
+                <AnmimatedText
+                  HeaderText="Travel along with tradition"
+                  BigHeader="Explore India"
+                />
               </div>
             </div>
           </div>
@@ -170,7 +148,7 @@ class ScreenOne extends Component {
         </div>
         <Cards />
 
-       <Specialities/>
+        <Specialities />
 
         <div class="container-fluid " style={{ backgroundColor: "#2a2a2a" }}>
           <div class="container">

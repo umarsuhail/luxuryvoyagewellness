@@ -142,8 +142,7 @@
     justify-content: center;
     text-align: center;
     color: rgb(255, 249, 249);
-    font-family: 'Roboto';
-    font-weight:bold ;
+    font-weight:800!important ;
     /* font-size: 32px; */
     /* padding-top: 40vh; */
     height: 100vh;
