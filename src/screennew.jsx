@@ -120,8 +120,8 @@ class ScreenOne extends Component {
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <input
-                class="form-control mr-sm-2  "
-                style={{ backgroundColor: "transparent" }}
+                class="form-control mr-sm-2  col-8"
+                style={{ backgroundColor: "transparent",justifyContent:'center' }}
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -190,8 +190,8 @@ class ScreenOne extends Component {
                   <div className="Head-text">WHO LIVES, SEES MUCH</div>
                 </div>
                 <div className="rowstyle">
-                  <div className="text-amt ">WHO TRAVELS</div>
-                  <span className="text-amt">SEES MORE</span>
+                <div className="text-amt ">WE ARE</div>
+                  <span className="text-amt">AVENTURA</span>
                 </div>
               </div>
             </div>
