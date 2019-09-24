@@ -515,3 +515,7 @@
   .dropdown-item{
       font-size: 13px;
   }
+  .navbar-hidden{
+      top:-120px;
+      transition: 1s;
+  }

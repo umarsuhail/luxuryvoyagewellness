@@ -17,6 +17,10 @@ import "../src/style.css";
 import Cards from "./components/Cards";
 import AnmimatedText from "./components/AnimatedText";
 class ScreenOne extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>

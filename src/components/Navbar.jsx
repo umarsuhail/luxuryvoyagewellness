@@ -2,14 +2,39 @@ import React, { Component } from "react";
 import logo from "../images/voyage.logo-2.png";
 
 export default class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      visible: true
+    };
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll = () => {
+    const { prevScrollpos } = this.state;
+
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos > currentScrollPos;
+
+    this.setState({
+      prevScrollpos: currentScrollPos,
+      visible
+    });
+  };
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light headtop">
+        {/* <nav className="navbar navbar-expand-lg navbar-light bg-light"> */}
+        <nav className={`navbar navbar-expand-lg navbar-light bg-light headtop ${!this.state.visible&&'navbar-hidden'}`}>
           <img className="navbar-brand logo" src={logo} alt="Logo" />
 
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -17,19 +42,19 @@ export default class Navbar extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item active">
-                <a class="nav-link text-white" href="#">
-                  HOME <span class="sr-only">(current)</span>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav m-auto">
+              <li className="nav-item active">
+                <a className="nav-link text-white" href="#">
+                  HOME <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -40,26 +65,26 @@ export default class Navbar extends Component {
                   MEDICAL SPA
                 </a>
                 <div
-                  class="dropdown-menu"
+                  className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     SHA WELLNESS
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     ANANDA HIMALAYA
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     BRENNERS PARK-HOTEL AND SPA
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     LEELA RAVIZ
                   </a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -70,35 +95,35 @@ export default class Navbar extends Component {
                   RESORTS
                 </a>
                 <div
-                  class="dropdown-menu"
+                  className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     PALACE RESORTS
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     LUXURY JUNGLE RESORTS
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     HILL RESORTS
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     ECO-NATURAL RESORTS
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     RAIN FOREST RESORTS
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     SKI RESORTS
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     ISLAND RESORTS
                   </a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -109,20 +134,20 @@ export default class Navbar extends Component {
                   AYURVEDHA
                 </a>
                 <div
-                  class="dropdown-menu"
+                  className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     RAJAH HOSPITAL
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     AYURVEDHA YOGA VILLAGE
                   </a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -133,29 +158,29 @@ export default class Navbar extends Component {
                   LEARNING PROGRAM
                 </a>
                 <div
-                  class="dropdown-menu"
+                  className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     AYURVEDHA LEARNING PROGRAM
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     YOGA
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     KALARIPPAYATTU
                   </a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="#">
                   AQUA THERAPY
                 </a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <form className="form-inline my-2 my-lg-0">
               <input
-                class="form-control mr-sm-2  col-8"
+                className="form-control mr-sm-2  col-8"
                 style={{
                   backgroundColor: "transparent",
                   justifyContent: "center"
@@ -165,7 +190,7 @@ export default class Navbar extends Component {
                 aria-label="Search"
               />
               <button
-                class="btn btn-outline-success my-2 my-sm-0 text-white"
+                className="btn btn-outline-success my-2 my-sm-0 text-white"
                 type="submit"
               >
                 Search
