@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import logo from "./images/voyage.logo-2.png";
-import slide1 from "./images/slider1.jpg";
-import slide2 from "./images/slider2.jpg";
-import slide3 from "./images/slider3.jpg";
-import slide4 from "./images/slider4.jpg";
-import slide5 from "./images/slider5.jpg";
-import icon from "./images/icon.png";
-import icon1 from "./images/icon1.png";
-import icon2 from "./images/icon2.png";
-import icon3 from "./images/icon3.png";
-import Specialities from "./components/Specialities";
-import Navbar from "./components/Navbar";
+import logo from "../images/voyage.logo-2.png";
+import slide1 from "../images/slider1.jpg";
+import slide2 from "../images/slider2.jpg";
+import slide3 from "../images/slider3.jpg";
+import slide4 from "../images/slider4.jpg";
+import slide5 from "../images/slider5.jpg";
+import icon from "../images/icon.png";
+import icon1 from "../images/icon1.png";
+import icon2 from "../images/icon2.png";
+import icon3 from "../images/icon3.png";
+import Specialities from "../components/Specialities";
+import Navbar from "../components/Navbar";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
-import "../src/style.css";
-import Cards from "./components/Cards";
-import AnmimatedText from "./components/AnimatedText";
+import "../style.css";
+import Cards from "../components/Cards";
+import AnmimatedText from "../components/AnimatedText";
 class ScreenOne extends Component {
   constructor(props) {
     super(props);
