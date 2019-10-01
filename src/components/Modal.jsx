@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 export default class Modal extends Component {
+    sendMail=()=>{
+        alert('Thanks for contacting us, you will get a confirmation notification soon')
+        this.props.modalHandle();
+    }
   render() {
     return (
       <div className="modal">
@@ -61,7 +65,7 @@ export default class Modal extends Component {
                 />
               </div>
             </div>
-            <button className="submit-button" type="submit">
+            <button className="submit-button" type="submit" onClick={this.sendMail}>
               Submit
             </button>
           </form>

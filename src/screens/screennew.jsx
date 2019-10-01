@@ -16,11 +16,20 @@ import Slider from "react-slick";
 import "../style.css";
 import Cards from "../components/Cards";
 import AnmimatedText from "../components/AnimatedText";
+import Modal from "../components/Modal";
 class ScreenOne extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      visible: false
+    };
   }
-
+  
+  ModalOpen = () => {
+    this.setState({
+      visible: !this.state.visible
+    });
+  };
   render() {
     return (
       <div>
@@ -40,6 +49,7 @@ class ScreenOne extends Component {
                 style={{ flexDirection: "column" }}
               >
                 <AnmimatedText
+                  openModal={this.ModalOpen}
                   HeaderText="Discover the best destinations in india"
                   BigHeader="Family Holiday"
                 />
@@ -53,6 +63,7 @@ class ScreenOne extends Component {
                 style={{ flexDirection: "column" }}
               >
                 <AnmimatedText
+                  openModal={this.ModalOpen}
                   HeaderText="Inhale the future, exhale the past"
                   BigHeader="Learn Yoga"
                 />
@@ -66,6 +77,7 @@ class ScreenOne extends Component {
                 style={{ flexDirection: "column" }}
               >
                 <AnmimatedText
+                  openModal={this.ModalOpen}
                   HeaderText="Life is not merely to be alive, but to be well"
                   BigHeader="An Ayurvedic Life"
                 />
@@ -79,6 +91,7 @@ class ScreenOne extends Component {
                 style={{ flexDirection: "column" }}
               >
                 <AnmimatedText
+                  openModal={this.ModalOpen}
                   HeaderText="Spend in The best resorts and hotels in india"
                   BigHeader="Comfort and Luxury"
                 />
@@ -92,6 +105,7 @@ class ScreenOne extends Component {
                 style={{ flexDirection: "column" }}
               >
                 <AnmimatedText
+                  openModal={this.ModalOpen}
                   HeaderText="Travel along with tradition"
                   BigHeader="Explore India"
                 />
@@ -105,7 +119,7 @@ class ScreenOne extends Component {
             <span class="carousel-control-next-icon"></span>
           </a>
         </div>
-
+        {this.state.visible && <Modal modalHandle={this.ModalOpen}/>}
         <div class="container-fluid " style={{ backgroundColor: "white" }}>
           <div className="col-md-12 col-sm-12 col-lg-12 clear-fix row">
             <div class="tzElement_Services col-sm-12 col-md-3 col-lg-3 ">
