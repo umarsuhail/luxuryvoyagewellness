@@ -138,7 +138,7 @@ class ScreenOne extends Component {
               </div>
               <span class="title">Discover </span>
               <p class="descriptions">
-                Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy
+                Discover ipsum dolor sit amet, adipiscing elit, sed diam nonummy
                 nibh euismod tincidunt ut laoreet.{" "}
               </p>
             </div>
