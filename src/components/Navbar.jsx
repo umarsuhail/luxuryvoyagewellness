@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import logo from "../images/voyage.logo-2.png";
+import Modal from "./Modal";
 
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: true
+      visible: true,
+      modalVisible:false,
     };
   }
   componentDidMount() {
@@ -26,6 +28,11 @@ export default class Navbar extends Component {
       visible
     });
   };
+  openModal=()=>{
+    this.setState({
+      modalVisible:!this.state.modalVisible
+    })
+  }
   render() {
     return (
       <div>
@@ -178,6 +185,7 @@ export default class Navbar extends Component {
                 </a>
               </li>
             </ul>
+            <button className="btn contact-button" onClick={this.openModal}>Contact Us</button>
             <form className="form-inline my-2 my-lg-0">
               <input
                 className="form-control mr-sm-2  col-8"
@@ -198,6 +206,7 @@ export default class Navbar extends Component {
             </form>
           </div>
         </nav>
+        {this.state.modalVisible&&<Modal modalHandle={this.openModal}></Modal>}
       </div>
     );
   }

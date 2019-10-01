@@ -201,7 +201,7 @@ class ScreenOne extends Component {
                     India.
                   </p>
                   <p className="footertext">Phone : 0033660089702 </p>
-                  <p className="footertext">info@vayagewellnesstourism.com</p>
+                  <p className="footertext">info@luxuryvoyagewellness.com</p>
                 </div>
               </div>
             </div>
