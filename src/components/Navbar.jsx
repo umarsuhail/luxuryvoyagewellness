@@ -59,9 +59,12 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto">
               <li className="nav-item active">
-                <a className="nav-link text-white" href="#">
-                  HOME <span className="sr-only">(current)</span>
-                </a>
+                <Link className="nav-link text-white" to="/">
+                  {" "}
+                  HOME
+                </Link>
+
+                <span className="sr-only">(current)</span>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -79,18 +82,10 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="#">
-                    <Link to="sha-wellness"> SHA WELLNESS</Link>
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    ANANDA HIMALAYA
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    BRENNERS PARK-HOTEL AND SPA
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    LEELA RAVIZ
-                  </a>
+                  <Link to="sha-wellness" className="dropdown-item"> SHA WELLNESS</Link>
+                  <Link to="ananda-himalaya" className="dropdown-item"> ANANDA HIMALAYA</Link>
+                  <Link to="brenners-park-hotel" className="dropdown-item"> BRENNERS PARK-HOTEL AND SPA</Link>
+                  <Link to="leela-raviz" className="dropdown-item"> LEELA RAVIZ</Link>
                 </div>
               </li>
               <li className="nav-item dropdown">

@@ -6,14 +6,37 @@ const IndexRoutes = [
     path: "/",
     name: "Home",
     component: Home,
-    exact:true
+    exact: true
   },
   {
     path: "/sha-wellness",
     name: "sha-wellness",
     component: Shawellness,
-    exact:true
-
+    exact: true
+  },
+  {
+    path: "/ananda-himalaya",
+    name: "ananda-himalaya",
+    component: Shawellness,
+    exact: true
+  },
+  {
+    path: "/sha-wellness",
+    name: "sha-wellness",
+    component: Shawellness,
+    exact: true
+  },
+  {
+    path: "/sha-wellness",
+    name: "sha-wellness",
+    component: Shawellness,
+    exact: true
+  },
+  {
+    path: "/sha-wellness",
+    name: "sha-wellness",
+    component: Shawellness,
+    exact: true
   }
 ];
 
