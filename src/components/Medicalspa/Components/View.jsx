@@ -33,7 +33,7 @@ export default class View extends Component {
           <div className="container">
             <div className="left-container col-lg-6 col-md-6 col-sm-12 float-left">
               {" "}
-              <Carousal
+              <Carousal className="new-carousel"
                 image1={this.props.image1}
                 image2={this.props.image2}
                 image3={this.props.image3}
