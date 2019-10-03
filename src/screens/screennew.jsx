@@ -166,7 +166,7 @@ class ScreenOne extends Component {
 
         <Specialities />
 
-        <div className="container-fluid " style={{ backgroundColor: "#2a2a2a" }}>
+        {/* <div className="container-fluid " style={{ backgroundColor: "#2a2a2a" }}>
           <div className="container">
             <div
               className="row"
@@ -192,9 +192,9 @@ class ScreenOne extends Component {
                   <p className="footertext">Pet Lover</p>
                   <p className="footertext">Hnadbags & Jewelry</p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="col-xs-12 col-sm-6 col-md-3">
+              {/* <div className="col-xs-12 col-sm-6 col-md-3">
                 <div>
                   <h5 className="box">PLEASE HELP ME</h5>
                   <p className="footertext">Contact</p>
@@ -203,8 +203,8 @@ class ScreenOne extends Component {
                   <p className="footertext">New Users</p>
                   <p className="footertext">Order Status</p>
                 </div>
-              </div>
-
+              </div> */}
+{/* 
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div>
                   <h5 className="box">ABOUT VOYAGE WELLNESS</h5>
@@ -215,10 +215,10 @@ class ScreenOne extends Component {
                   <p className="footertext">Phone : 0033660089702 </p>
                   <p className="footertext">info@luxuryvoyagewellness.com</p>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="">
           <div
