@@ -51,14 +51,14 @@ export default class Cards extends Component {
       <div>
         <div className="container-carosel">
           <Slider {...settings}>
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top img-fluid"
+                className="card-img-top img-fluid"
                 src={card1}
                 alt="Card image cap"
               />
-              <div class="card-body">
-                <h4 class="card-title">VYTHIRI VILLAGE </h4>
+              <div className="card-body">
+                <h4 className="card-title">VYTHIRI VILLAGE </h4>
                 <ReadMoreReact
                   text={
                     "A five star luxury resort harmoniously set on the heart of Wayanad, thirty acres of refreshing greenery, the tantalizing aroma of fresh spices, coffee and tea"
@@ -69,20 +69,20 @@ export default class Cards extends Component {
                   readMoreText=" read more"
                 />
                 <div className="col-12 button-container">
-                  <a href="#" class="btn btn-primary card-bt btn-sm">
+                  <a href="#" className="btn btn-primary card-bt btn-sm">
                     VIEW MORE
                   </a>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top img-fluid"
+                className="card-img-top img-fluid"
                 src={card2}
                 alt="Card image cap"
               />
-              <div class="card-body">
-                <h4 class="card-title"> VYTHIRI</h4>
+              <div className="card-body">
+                <h4 className="card-title"> VYTHIRI</h4>
                 <ReadMoreReact
                   text={
                     "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
@@ -93,20 +93,20 @@ export default class Cards extends Component {
                   readMoreText=" read more"
                 />
                 <div className="col-12 button-container">
-                  <a href="#" class="btn btn-primary card-bt btn-sm">
+                  <a href="#" className="btn btn-primary card-bt btn-sm">
                     VIEW MORE
                   </a>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top img-fluid"
+                className="card-img-top img-fluid"
                 src={card3}
                 alt="Card image cap"
               />
-              <div class="card-body">
-                <h4 class="card-title">ECO-NATURAL RESORTS</h4>
+              <div className="card-body">
+                <h4 className="card-title">ECO-NATURAL RESORTS</h4>
                 <ReadMoreReact
                   text={
                     "An eco hotel, or a green hotel, is an environmentally sustainable hotel or accommodation that has made important environmental improvements"
@@ -118,20 +118,20 @@ export default class Cards extends Component {
                 />
 
                 <div className="col-12 button-container">
-                  <a href="#" class="btn btn-primary card-bt btn-sm">
+                  <a href="#" className="btn btn-primary card-bt btn-sm">
                     VIEW MORE
                   </a>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top img-fluid"
+                className="card-img-top img-fluid"
                 src={card4}
                 alt="Card image cap"
               />
-              <div class="card-body">
-                <h4 class="card-title">RESORT</h4>
+              <div className="card-body">
+                <h4 className="card-title">RESORT</h4>
                 <ReadMoreReact
                   text={
                     "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
@@ -143,20 +143,20 @@ export default class Cards extends Component {
                 />
 
                 <div className="col-12 button-container">
-                  <a href="#" class="btn btn-primary card-bt btn-sm">
+                  <a href="#" className="btn btn-primary card-bt btn-sm">
                     VIEW MORE
                   </a>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top img-fluid"
+                className="card-img-top img-fluid"
                 src={card5}
                 alt="Card image cap"
               />
-              <div class="card-body">
-                <h4 class="card-title">WELLNESS SPA</h4>
+              <div className="card-body">
+                <h4 className="card-title">WELLNESS SPA</h4>
                 <ReadMoreReact
                   text={
                     "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
@@ -167,20 +167,20 @@ export default class Cards extends Component {
                   readMoreText=" read more"
                 />
                 <div className="col-12 button-container">
-                  <a href="#" class="btn btn-primary card-bt btn-sm">
+                  <a href="#" className="btn btn-primary card-bt btn-sm">
                     VIEW MORE
                   </a>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top img-fluid"
+                className="card-img-top img-fluid"
                 src={card6}
                 alt="Card image cap"
               />
-              <div class="card-body">
-                <h4 class="card-title"> YOGA</h4>
+              <div className="card-body">
+                <h4 className="card-title"> YOGA</h4>
                 <ReadMoreReact
                   text={
                     "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
@@ -191,20 +191,20 @@ export default class Cards extends Component {
                   readMoreText=" read more"
                 />
                 <div className="col-12 button-container">
-                  <a href="#" class="btn btn-primary card-bt btn-sm">
+                  <a href="#" className="btn btn-primary card-bt btn-sm">
                     VIEW MORE
                   </a>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top img-fluid"
+                className="card-img-top img-fluid"
                 src={card7}
                 alt="Card image cap"
               />
-              <div class="card-body">
-                <h4 class="card-title">EXPLORE INDIA</h4>
+              <div className="card-body">
+                <h4 className="card-title">EXPLORE INDIA</h4>
                 <ReadMoreReact
                   text={
                     "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
@@ -215,20 +215,20 @@ export default class Cards extends Component {
                   readMoreText=" read more"
                 />
                 <div className="col-12 button-container">
-                  <a href="#" class="btn btn-primary card-bt btn-sm">
+                  <a href="#" className="btn btn-primary card-bt btn-sm">
                     VIEW MORE
                   </a>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top img-fluid"
+                className="card-img-top img-fluid"
                 src={card8}
                 alt="Card image cap"
               />
-              <div class="card-body">
-                <h4 class="card-title">MEDICAL SPA</h4>
+              <div className="card-body">
+                <h4 className="card-title">MEDICAL SPA</h4>
                 <ReadMoreReact
                   text={
                     "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
@@ -239,7 +239,7 @@ export default class Cards extends Component {
                   readMoreText=" read more"
                 />
                 <div className="col-12 button-container">
-                  <a href="#" class="btn btn-primary card-bt btn-sm">
+                  <a href="#" className="btn btn-primary card-bt btn-sm">
                     VIEW MORE
                   </a>
                 </div>

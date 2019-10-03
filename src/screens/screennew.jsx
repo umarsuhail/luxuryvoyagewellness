@@ -10,7 +10,6 @@ import icon1 from "../images/icon1.png";
 import icon2 from "../images/icon2.png";
 import icon3 from "../images/icon3.png";
 import Specialities from "../components/Specialities";
-import Navbar from "../components/Navbar";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
 import "../style.css";
@@ -33,10 +32,9 @@ class ScreenOne extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+        <div id="demo" className="carousel slide" data-ride="carousel">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <div className="overlay"></div>
               <img
                 src={slide1}
@@ -55,7 +53,7 @@ class ScreenOne extends Component {
                 />
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <div className="overlay"></div>
               <img src={slide2} alt="Chicago" width="1100" height="500" />
               <div
@@ -69,7 +67,7 @@ class ScreenOne extends Component {
                 />
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <div className="overlay"></div>
               <img src={slide3} alt="New York" width="1100" height="500" />
               <div
@@ -83,7 +81,7 @@ class ScreenOne extends Component {
                 />
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <div className="overlay"></div>
               <img src={slide4} alt="New York" width="1100" height="500" />
               <div
@@ -97,7 +95,7 @@ class ScreenOne extends Component {
                 />
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <div className="overlay"></div>
               <img src={slide5} alt="New York" width="1100" height="500" />
               <div
@@ -112,52 +110,52 @@ class ScreenOne extends Component {
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
+          <a className="carousel-control-prev" href="#demo" data-slide="prev">
+            <span className="carousel-control-prev-icon"></span>
           </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
+          <a className="carousel-control-next" href="#demo" data-slide="next">
+            <span className="carousel-control-next-icon"></span>
           </a>
         </div>
         {this.state.visible && <Modal modalHandle={this.ModalOpen}/>}
-        <div class="container-fluid " style={{ backgroundColor: "white" }}>
+        <div className="container-fluid " style={{ backgroundColor: "white" }}>
           <div className="col-md-12 col-sm-12 col-lg-12 clear-fix row">
-            <div class="tzElement_Services col-sm-12 col-md-3 col-lg-3 ">
-              <div class="icon">
+            <div className="tzElement_Services col-sm-12 col-md-3 col-lg-3 ">
+              <div className="icon">
                 <img src={icon} alt=""></img>
               </div>
-              <span class="title"> 500+ Destinations </span>
-              <p class="descriptions">
+              <span className="title"> 500+ Destinations </span>
+              <p className="descriptions">
                 Nam liber tempor cum soluta nobis eleifend option congue nihil
                 imperdiet doming id quod mazim.{" "}
               </p>
             </div>
-            <div class="tzElement_Services col-sm-12 col-md-3 col-lg-3  ">
-              <div class="icon">
+            <div className="tzElement_Services col-sm-12 col-md-3 col-lg-3  ">
+              <div className="icon">
                 <img src={icon1} alt=""></img>
               </div>
-              <span class="title">Discover </span>
-              <p class="descriptions">
+              <span className="title">Discover </span>
+              <p className="descriptions">
                 Discover ipsum dolor sit amet, adipiscing elit, sed diam nonummy
                 nibh euismod tincidunt ut laoreet.{" "}
               </p>
             </div>
-            <div class="tzElement_Services col-sm-12 col-md-3 col-lg-3  ">
-              <div class="icon">
+            <div className="tzElement_Services col-sm-12 col-md-3 col-lg-3  ">
+              <div className="icon">
                 <img src={icon2} alt=""></img>
               </div>
-              <span class="title"> Book Your Trip </span>
-              <p class="descriptions">
+              <span className="title"> Book Your Trip </span>
+              <p className="descriptions">
                 Nam liber tempor cum soluta nobis eleifend option congue nihil
                 imperdiet doming id quod mazim.{" "}
               </p>
             </div>
-            <div class="tzElement_Services col-sm-12 col-md-3 col-lg-3  ">
-              <div class="icon">
+            <div className="tzElement_Services col-sm-12 col-md-3 col-lg-3  ">
+              <div className="icon">
                 <img src={icon3} alt=""></img>
               </div>
-              <span class="title"> Global Support </span>
-              <p class="descriptions">
+              <span className="title"> Global Support </span>
+              <p className="descriptions">
                 Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy
                 nibh euismod tincidunt ut laoreet.{" "}
               </p>
@@ -168,13 +166,13 @@ class ScreenOne extends Component {
 
         <Specialities />
 
-        <div class="container-fluid " style={{ backgroundColor: "#2a2a2a" }}>
-          <div class="container">
+        <div className="container-fluid " style={{ backgroundColor: "#2a2a2a" }}>
+          <div className="container">
             <div
-              class="row"
+              className="row"
               style={{ color: "white", width: "996px", padding: "15px" }}
             >
-              <div class="col-xs-12 col-sm-6 col-md-3">
+              <div className="col-xs-12 col-sm-6 col-md-3">
                 <div>
                   <h5 className="box">VOYAGE WELLNESS TOURISM</h5>
                   <p className="footertext">Get to know us</p>
@@ -185,7 +183,7 @@ class ScreenOne extends Component {
                 </div>
               </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-3">
+              <div className="col-xs-12 col-sm-6 col-md-3">
                 <div>
                   <h5 className="box">OTHER LINKS</h5>
                   <p className="footertext">Angel Figurines</p>
@@ -196,7 +194,7 @@ class ScreenOne extends Component {
                 </div>
               </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-3">
+              <div className="col-xs-12 col-sm-6 col-md-3">
                 <div>
                   <h5 className="box">PLEASE HELP ME</h5>
                   <p className="footertext">Contact</p>
@@ -207,7 +205,7 @@ class ScreenOne extends Component {
                 </div>
               </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-3">
+              <div className="col-xs-12 col-sm-6 col-md-3">
                 <div>
                   <h5 className="box">ABOUT VOYAGE WELLNESS</h5>
                   <p className="footertext">
@@ -222,9 +220,9 @@ class ScreenOne extends Component {
           </div>
         </div>
 
-        <div class="">
+        <div className="">
           <div
-            class="row footer-text"
+            className="row footer-text"
             style={{
               width: "996px",
               padding: "15px",
@@ -232,19 +230,19 @@ class ScreenOne extends Component {
               backgroundColor: "#212121"
             }}
           >
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center ">
+            <div className="col-xs-12 col-sm-6 col-md-4 text-center ">
               <h1 className="box ">
                 Copyright 2019 Voyage Wellness, All Right Reserved{" "}
               </h1>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+            <div className="col-xs-12 col-sm-6 col-md-4 text-center">
               <img
                 className="navbar-brand footer-logo "
                 src={logo}
                 alt="Logo"
               />
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 box text-center">
+            <div className="col-xs-12 col-sm-6 col-md-4 box text-center">
               <p style={{ marginRight: "11px" }}>Home</p>
               <p style={{ marginRight: "11px" }}>Privacy Policy</p>
               <p style={{ marginRight: "11px" }}>Terms of Use</p>

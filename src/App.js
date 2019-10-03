@@ -2,12 +2,27 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Helmet } from "react-helmet";
-import ScreenOne from './screens/screennew';
-
+import ScreenOne from "./screens/screennew";
+import { Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import { IndexRoutes } from "./Routes.jsx/indexRoutes";
 function App() {
   return (
     <div className="App">
-        <ScreenOne/>
+      <Navbar />
+
+      <Switch>
+        {IndexRoutes.map((prop, key) => {
+          return (
+            <Route
+              exact={prop.path}
+              component={prop.component}
+              path={prop.path}
+              key={key}
+            ></Route>
+          );
+        })}
+      </Switch>
 
       <Helmet title="luxury voyage wellness">
         <meta charSet="utf-8" />
@@ -15,10 +30,7 @@ function App() {
           name="keywords"
           content="Travel, Kerala Travel, Yoga in Kerala, Kerala Tourism, Yoga, Travel, Wellness, explore kerala, luxury hotels kerala"
         />
-        <meta
-          property="og:title"
-          content="Luxury Voyage Wellness"
-        />
+        <meta property="og:title" content="Luxury Voyage Wellness" />
         <meta
           property="og:description"
           content="The best Travel parter for premium hotels and to explore kerala"

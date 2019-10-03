@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import logo from "../images/voyage.logo-2.png";
 import Modal from "./Modal";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       visible: true,
-      modalVisible:false,
+      modalVisible: false
     };
   }
   componentDidMount() {
@@ -28,16 +29,19 @@ export default class Navbar extends Component {
       visible
     });
   };
-  openModal=()=>{
+  openModal = () => {
     this.setState({
-      modalVisible:!this.state.modalVisible
-    })
-  }
+      modalVisible: !this.state.modalVisible
+    });
+  };
   render() {
     return (
       <div>
         {/* <nav className="navbar navbar-expand-lg navbar-light bg-light"> */}
-        <nav className={`navbar navbar-expand-lg navbar-light bg-light headtop ${!this.state.visible&&'navbar-hidden'}`}>
+        <nav
+          className={`navbar navbar-expand-lg navbar-light bg-light headtop ${!this
+            .state.visible && "navbar-hidden"}`}
+        >
           <img className="navbar-brand logo" src={logo} alt="Logo" />
 
           <button
@@ -76,7 +80,7 @@ export default class Navbar extends Component {
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <a className="dropdown-item" href="#">
-                    SHA WELLNESS
+                    <Link to="sha-wellness"> SHA WELLNESS</Link>
                   </a>
                   <a className="dropdown-item" href="#">
                     ANANDA HIMALAYA
@@ -185,7 +189,9 @@ export default class Navbar extends Component {
                 </a>
               </li>
             </ul>
-            <button className="btn contact-button" onClick={this.openModal}>Contact Us</button>
+            <button className="btn contact-button" onClick={this.openModal}>
+              Contact Us
+            </button>
             <form className="form-inline my-2 my-lg-0">
               <input
                 className="form-control mr-sm-2  col-8"
@@ -206,7 +212,9 @@ export default class Navbar extends Component {
             </form>
           </div>
         </nav>
-        {this.state.modalVisible&&<Modal modalHandle={this.openModal}></Modal>}
+        {this.state.modalVisible && (
+          <Modal modalHandle={this.openModal}></Modal>
+        )}
       </div>
     );
   }

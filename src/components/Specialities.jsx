@@ -11,48 +11,48 @@ export default class Specialities extends Component {
     render() {
         return (
             <div>
-                 <div class=" gallery-container">
+                 <div className=" gallery-container">
           <h1> OUR SPECIALITIES</h1>
         </div>
-        <div class="tz-gallery container gallery-container">
-          <div class="row">
-            <div class="col-sm-12 col-md-4">
-              <a class="lightbox">
+        <div className="tz-gallery container gallery-container">
+          <div className="row">
+            <div className="col-sm-12 col-md-4">
+              <a className="lightbox">
                 <img src={imggal1} alt="Bridge" />
               </a>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <a class="lightbox">
+            <div className="col-sm-6 col-md-4">
+              <a className="lightbox">
                 <img src={imggal2} alt="Park" />
               </a>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <a class="lightbox">
+            <div className="col-sm-6 col-md-4">
+              <a className="lightbox">
                 <img src={imggal3} alt="Tunnel" />
               </a>
             </div>
-            <div class="col-sm-12 col-md-4">
-              <a class="lightbox">
+            <div className="col-sm-12 col-md-4">
+              <a className="lightbox">
                 <img src={imggal4} alt="Bridge" />
               </a>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <a class="lightbox">
+            <div className="col-sm-6 col-md-4">
+              <a className="lightbox">
                 <img src={imggal5} alt="Park" />
               </a>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <a class="lightbox">
+            <div className="col-sm-6 col-md-4">
+              <a className="lightbox">
                 <img src={imggal6} alt="Tunnel" />
               </a>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <a class="lightbox">
+            <div className="col-sm-6 col-md-4">
+              <a className="lightbox">
                 <img src={imggal7} alt="Tunnel" />
               </a>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <a class="lightbox">
+            <div className="col-sm-6 col-md-4">
+              <a className="lightbox">
                 <img src={imggal8} alt="Tunnel" />
               </a>
             </div>
