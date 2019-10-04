@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import BacgroundImage from "../../../images/sha-wellness.jpg";
-import "../../../css/View.css";
+import "../../../css/View.scss";
 import Carousal from "./Carousal";
 import YouTube from "react-youtube";
 import Programs from "../Components/Programs";

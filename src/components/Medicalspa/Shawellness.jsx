@@ -7,8 +7,8 @@ import image4 from "../../images/sha-wellness/sha4.jpg";
 import Programs from "./Components/Programs";
 export default class Shawellness extends Component {
   render() {
-      console.log(this.props);
-      
+    console.log(this.props);
+
     return (
       <div>
         <View
@@ -79,6 +79,9 @@ export default class Shawellness extends Component {
                       Icoone, Indiba, or DLE
                     </li>
                   </ul>
+                  <button className="btn btn-success download-btn">
+                    <a href='../../../pdfs/programs.pdf' target="_blank">Download</a>
+                  </button>
                 </div>
               }
               tab2Content={
@@ -140,6 +143,9 @@ export default class Shawellness extends Component {
                   <p>
                     <strong>Blue Gold Taninoplasty Services</strong>
                   </p>
+                  <button className="btn btn-success download-btn">
+                    <a href='../../../pdfs/treatment.pdf' target="_blank">Download</a>
+                  </button>
                 </div>
               }
               tab3Content={
@@ -154,6 +160,9 @@ export default class Shawellness extends Component {
                     exclusive healthy travel lifestyle experience.
                   </p>
                   <p>You Can Download the accommodation rates here :</p>
+                  <button className="btn btn-success download-btn">
+                    <a href='../../../pdfs/sha-wellness-accommodation.pdf' target="_blank">Download</a>
+                  </button>
                 </div>
               }
             />
