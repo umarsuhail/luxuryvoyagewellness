@@ -185,49 +185,8 @@ export default class AnandaHimalaya extends Component {
                     src={tabimage1}
                   ></img>
                 </div>
-                            <div className="col-lg-12 col-md-12 col-sm-12 text-left">
-                            <div className="col-lg-6 col-md-6 col-sm-12 float-left">
-                              <h3 className="text-center">ACTIV-FITNESS</h3>
-                              <p>
-                                The Active Programme integrates the best of indoor fitness
-                                workouts along with outdoor activities such as personal
-                                fitness training, guided outdoor treks, yoga, aqua fitness
-                                and therapeutic spa experiences to enhance muscle tone and
-                                cardiovascular fitness. The&nbsp;comprehensive programme
-                                of 7 and 14 nights work on intensive core fitness in
-                                addition to treks and full body therapeutic massages. In
-                                partnership with Sumaya, a pioneer in the fitness
-                                industry, the programmes are individualized, consultative
-                                and follow a goal orientated fitness approach.
-                              </p>
-                            </div>
-                            <img
-                              className="col-lg-6 col-md-6 col-sm-12 float-right"
-                              src={tabimage1}
-                            ></img>
-                          </div>
-                                      <div className="col-lg-12 col-md-12 col-sm-12 text-left">
-                                     
-                                      <img
-                                        className="col-lg-6 col-md-6 col-sm-12 float-right"
-                                        src={tabimage1}
-                                      ></img>
-                                       <div className="col-lg-6 col-md-6 col-sm-12 float-left">
-                                        <h3 className="text-center">ACTIV-FITNESS</h3>
-                                        <p>
-                                          The Active Programme integrates the best of indoor fitness
-                                          workouts along with outdoor activities such as personal
-                                          fitness training, guided outdoor treks, yoga, aqua fitness
-                                          and therapeutic spa experiences to enhance muscle tone and
-                                          cardiovascular fitness. The&nbsp;comprehensive programme
-                                          of 7 and 14 nights work on intensive core fitness in
-                                          addition to treks and full body therapeutic massages. In
-                                          partnership with Sumaya, a pioneer in the fitness
-                                          industry, the programmes are individualized, consultative
-                                          and follow a goal orientated fitness approach.
-                                        </p>
-                                      </div>
-                                    </div>
+                
+                
               }
             ></Programs>
           }
