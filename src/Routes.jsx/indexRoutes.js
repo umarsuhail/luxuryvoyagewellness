@@ -13,13 +13,11 @@ const IndexRoutes = [
     path: "/sha-wellness",
     name: "sha-wellness",
     component: Shawellness,
-    exact: true
   },
   {
     path: "/ananda-himalaya",
     name: "ananda-himalaya",
     component: AnandaHimalaya,
-    exact: true
   },
   {
     path: "/sha-wellness",
