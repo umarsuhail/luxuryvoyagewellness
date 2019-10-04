@@ -14,6 +14,7 @@ export default class AnandaHimalaya extends Component {
     return (
       <div>
         <View
+          heading="ANANDA HIMALAYA"
           videoID="Pb9CxO9niP0"
           image1={image1}
           image2={image2}

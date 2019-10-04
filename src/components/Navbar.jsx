@@ -84,8 +84,8 @@ export default class Navbar extends Component {
                 >
                   <Link to="sha-wellness" className="dropdown-item"> SHA WELLNESS</Link>
                   <Link to="ananda-himalaya" className="dropdown-item"> ANANDA HIMALAYA</Link>
-                  <Link to="brenners-park-hotel" className="dropdown-item"> BRENNERS PARK-HOTEL AND SPA</Link>
-                  <Link to="leela-raviz" className="dropdown-item"> LEELA RAVIZ</Link>
+                  <Link to="BRENNERS-PARK-HOTEL-AND-SPA" className="dropdown-item"> BRENNERS PARK-HOTEL AND SPA</Link>
+                  <Link to="LEELA-RAVIZ" className="dropdown-item"> LEELA RAVIZ</Link>
                 </div>
               </li>
               <li className="nav-item dropdown">

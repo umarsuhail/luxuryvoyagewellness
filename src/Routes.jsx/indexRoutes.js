@@ -2,6 +2,10 @@
 import Home from "../screens/screennew";
 import Shawellness from "../components/Medicalspa/Shawellness";
 import AnandaHimalaya from "../components/Medicalspa/AnandaHimalaya";
+import Brenners from "../components/Medicalspa/Brenners";
+import LeelaRaviz from "../components/Medicalspa/LeelaRaviz";
+
+
 const IndexRoutes = [
   {
     path: "/",
@@ -20,15 +24,14 @@ const IndexRoutes = [
     component: AnandaHimalaya,
   },
   {
-    path: "/sha-wellness",
-    name: "sha-wellness",
-    component: Shawellness,
-    exact: true
+    path: "/BRENNERS-PARK-HOTEL-AND-SPA",
+    name: "BRENNERS-PARK-HOTEL-AND-SPA",
+    component: Brenners,
   },
   {
-    path: "/sha-wellness",
-    name: "sha-wellness",
-    component: Shawellness,
+    path: "/LEELA-RAVIZ",
+    name: "LEELA-RAVIZ",
+    component: LeelaRaviz,
     exact: true
   },
   {
