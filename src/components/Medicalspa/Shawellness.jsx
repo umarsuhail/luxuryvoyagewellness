@@ -7,6 +7,8 @@ import image4 from "../../images/sha-wellness/sha4.jpg";
 import Programs from "./Components/Programs";
 export default class Shawellness extends Component {
   render() {
+      console.log(this.props);
+      
     return (
       <div>
         <View
@@ -18,6 +20,9 @@ export default class Shawellness extends Component {
           videoID="E9vCw_Y0bRw"
           programs={
             <Programs
+              tab1=" Sha Wellness Programmes"
+              tab2="Treatments and Services"
+              tab3=" Accommodation Rates"
               tab1Content={
                 <div class="wpb_wrapper text-left">
                   <h4>SHA Essence</h4>

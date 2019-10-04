@@ -23,7 +23,9 @@ export default class Programs extends React.Component {
       activeTab: "1"
     };
   }
-
+  settings = props => {
+    props.NoOfTabs = 3;
+  };
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
@@ -47,7 +49,7 @@ export default class Programs extends React.Component {
                 this.toggle("1");
               }}
             >
-              Sha Wellness Programmes
+              {this.props.tab1}
             </NavLink>
           </NavItem>
 
@@ -58,7 +60,7 @@ export default class Programs extends React.Component {
                 this.toggle("2");
               }}
             >
-              Treatments and Services
+              {this.props.tab2}
             </NavLink>
           </NavItem>
 
@@ -69,7 +71,7 @@ export default class Programs extends React.Component {
                 this.toggle("3");
               }}
             >
-              Accommodation Rates{" "}
+              {this.props.tab3}
             </NavLink>
           </NavItem>
         </Nav>
@@ -81,16 +83,12 @@ export default class Programs extends React.Component {
           </TabPane>
           <TabPane tabId="2">
             <Row>
-              <Col sm="12">
-               {this.props.tab2Content}
-              </Col>
+              <Col sm="12">{this.props.tab2Content}</Col>
             </Row>
           </TabPane>
           <TabPane tabId="3">
             <Row>
-              <Col sm="12">
-               {this.props.tab3Content}
-              </Col>
+              <Col sm="12">{this.props.tab3Content}</Col>
             </Row>
           </TabPane>
         </TabContent>
