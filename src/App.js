@@ -6,6 +6,8 @@ import ScreenOne from "./screens/screennew";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { IndexRoutes } from "./Routes.jsx/indexRoutes";
+import MetaTags from "react-meta-tags";
+
 function App() {
   return (
     <div className="App">
@@ -23,7 +25,15 @@ function App() {
           );
         })}
       </Switch>
-
+      <MetaTags>
+        <title>Page 1</title>
+        <meta
+          name="description"
+          content="Travel, Kerala Travel, Yoga in Kerala, Kerala Tourism, Yoga, Travel, Wellness, explore kerala, luxury hotels kerala"
+        />
+        <meta property="og:title" content="Luxury Voyage Wellness" />
+        {/* <meta property="og:image" content="path/to/image.jpg" /> */}
+      </MetaTags>
       <Helmet title="luxury voyage wellness">
         <meta charSet="utf-8" />
         <meta
