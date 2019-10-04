@@ -24,7 +24,7 @@ export default class Shawellness extends Component {
               tab2="Treatments and Services"
               tab3=" Accommodation Rates"
               tab1Content={
-                <div class="wpb_wrapper text-left">
+                <div className="wpb_wrapper text-left">
                   <h4>SHA Essence</h4>
                   <p>
                     The&nbsp;<strong>wellness program</strong>&nbsp;SHA Essence
@@ -85,7 +85,7 @@ export default class Shawellness extends Component {
                 </div>
               }
               tab2Content={
-                <div class="wpb_wrapper text-left">
+                <div className="wpb_wrapper text-left">
                   <p>
                     <strong>Traditional Massages</strong>
                   </p>
@@ -149,7 +149,7 @@ export default class Shawellness extends Component {
                 </div>
               }
               tab3Content={
-                <div class="wpb_wrapper text-left">
+                <div className="wpb_wrapper text-left">
                   <p>
                     A unique and exclusive residential destination featuring 11
                     residences within SHA Wellness Clinic, whereby guests are

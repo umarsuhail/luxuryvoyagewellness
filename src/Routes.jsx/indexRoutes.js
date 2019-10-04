@@ -1,6 +1,7 @@
 // import Login from '../screens/login'
 import Home from "../screens/screennew";
 import Shawellness from "../components/Medicalspa/Shawellness";
+import AnandaHimalaya from "../components/Medicalspa/AnandaHimalaya";
 const IndexRoutes = [
   {
     path: "/",
@@ -17,7 +18,7 @@ const IndexRoutes = [
   {
     path: "/ananda-himalaya",
     name: "ananda-himalaya",
-    component: Shawellness,
+    component: AnandaHimalaya,
     exact: true
   },
   {
