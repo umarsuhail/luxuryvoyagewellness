@@ -44,6 +44,13 @@ export default class Cards extends Component {
             slidesToShow: 1,
             slidesToScroll: 1
           }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
       ]
     };

@@ -9,6 +9,7 @@ export default class Navbar extends Component {
     this.state = {
       visible: true,
       modalVisible: false
+      // showNavbar: false
     };
   }
   componentDidMount() {
@@ -34,6 +35,11 @@ export default class Navbar extends Component {
       modalVisible: !this.state.modalVisible
     });
   };
+  showAll = () => {
+    this.setState({
+      showNavbar: true
+    });
+  };
   render() {
     return (
       <div>
@@ -42,12 +48,11 @@ export default class Navbar extends Component {
           className={`navbar navbar-expand-lg navbar-light bg-light headtop ${!this
             .state.visible && "navbar-hidden"}`}
         >
-          <img className="navbar-brand logo" src={logo} alt="Logo" />
-
           <button
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
+            onClick={this.showAll}
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
@@ -57,7 +62,7 @@ export default class Navbar extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto">
+            <ul className="navbar-nav">
               <li className="nav-item active">
                 <Link className="nav-link text-white" to="/">
                   {" "}
@@ -82,10 +87,25 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <Link to="sha-wellness" className="dropdown-item"> SHA WELLNESS</Link>
-                  <Link to="ananda-himalaya" className="dropdown-item"> ANANDA HIMALAYA</Link>
-                  <Link to="BRENNERS-PARK-HOTEL-AND-SPA" className="dropdown-item"> BRENNERS PARK-HOTEL AND SPA</Link>
-                  <Link to="LEELA-RAVIZ" className="dropdown-item"> LEELA RAVIZ</Link>
+                  <Link to="sha-wellness" className="dropdown-item">
+                    {" "}
+                    SHA WELLNESS
+                  </Link>
+                  <Link to="ananda-himalaya" className="dropdown-item">
+                    {" "}
+                    ANANDA HIMALAYA
+                  </Link>
+                  <Link
+                    to="BRENNERS-PARK-HOTEL-AND-SPA"
+                    className="dropdown-item"
+                  >
+                    {" "}
+                    BRENNERS PARK-HOTEL AND SPA
+                  </Link>
+                  <Link to="LEELA-RAVIZ" className="dropdown-item">
+                    {" "}
+                    LEELA RAVIZ
+                  </Link>
                 </div>
               </li>
               <li className="nav-item dropdown">
@@ -144,7 +164,7 @@ export default class Navbar extends Component {
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <a className="dropdown-item" href="#">
-                    RAJAH HOSPITAL
+                    AYURVEDHA RAJAH HOSPITAL
                   </a>
                   <a className="dropdown-item" href="#">
                     AYURVEDHA YOGA VILLAGE
@@ -184,10 +204,12 @@ export default class Navbar extends Component {
                 </a>
               </li>
             </ul>
+            <img className="navbar-brand logo m-auto" src={logo} alt="Logo" />
+
             <button className="btn contact-button" onClick={this.openModal}>
               Contact Us
             </button>
-            <form className="form-inline my-2 my-lg-0">
+            {/* <form className="form-inline my-2 my-lg-0">
               <input
                 className="form-control mr-sm-2  col-8"
                 style={{
@@ -204,7 +226,7 @@ export default class Navbar extends Component {
               >
                 Search
               </button>
-            </form>
+            </form> */}
           </div>
         </nav>
         {this.state.modalVisible && (

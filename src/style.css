@@ -62,7 +62,7 @@
 }
 
 .bg-light {
-  background-color: #221f1f87 !important;
+  background-color: #f2f2f29e !important
 }
 
 ::placeholder {
@@ -481,7 +481,7 @@
 }
 @media only screen and (max-width: 1000px) {
   .show {
-    background-color: #221f1f !important;
+    background-color: #f6f6f6 !important;
     color: white;
     border-radius: 20px;
     padding: 20px;
@@ -489,8 +489,14 @@
     justify-content: center;
     flex-direction: column;
   }
+  .collapsing{
+    background-color: #f6f6f6 !important;
+    color: white;
+
+
+  }
   .dropdown-item {
-    color: #ffff;
+    color: black;
   }
   .navber-nav {
   }
@@ -499,7 +505,7 @@
   margin-top: 15px;
 }
 .nav-link {
-  color: white !important;
+  color: black !important;
 }
 .dropdown-item {
   font-size: 13px;

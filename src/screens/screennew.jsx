@@ -118,7 +118,7 @@ class ScreenOne extends Component {
           </a>
         </div>
         {this.state.visible && <Modal modalHandle={this.ModalOpen}/>}
-        <div className="container-fluid " style={{ backgroundColor: "white" }}>
+        {/* <div className="container-fluid " style={{ backgroundColor: "white" }}>
           <div className="col-md-12 col-sm-12 col-lg-12 clear-fix row">
             <div className="tzElement_Services col-sm-12 col-md-3 col-lg-3 ">
               <div className="icon">
@@ -161,7 +161,7 @@ class ScreenOne extends Component {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <Cards />
 
         <Specialities />
