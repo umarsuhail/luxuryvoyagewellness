@@ -209,24 +209,6 @@ export default class Navbar extends Component {
             <button className="btn contact-button" onClick={this.openModal}>
               Contact Us
             </button>
-            {/* <form className="form-inline my-2 my-lg-0">
-              <input
-                className="form-control mr-sm-2  col-8"
-                style={{
-                  backgroundColor: "transparent",
-                  justifyContent: "center"
-                }}
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                className="btn btn-outline-success my-2 my-sm-0 text-white"
-                type="submit"
-              >
-                Search
-              </button>
-            </form> */}
           </div>
         </nav>
         {this.state.modalVisible && (

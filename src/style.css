@@ -62,7 +62,8 @@
 }
 
 .bg-light {
-  background-color: #f2f2f29e !important
+
+background-color:#ffffffcc !important
 }
 
 ::placeholder {
@@ -514,15 +515,7 @@
   top: -120px;
   transition: 1s;
 }
-.contact-button {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-  margin: 0 auto;
-}
-.contact-button:hover {
-  background-color: white;
-}
+
 .modal {
   display: flex !important;
   flex-direction: column;

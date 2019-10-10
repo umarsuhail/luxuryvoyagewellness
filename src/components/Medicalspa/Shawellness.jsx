@@ -5,6 +5,8 @@ import image2 from "../../images/sha-wellness/sha2.jpg";
 import image3 from "../../images/sha-wellness/sha3.jpg";
 import image4 from "../../images/sha-wellness/sha4.jpg";
 import Programs from "./Components/Programs";
+import HotelDetails from './Components/HotelDetails'
+
 export default class Shawellness extends Component {
   render() {
     console.log(this.props);
@@ -164,6 +166,9 @@ export default class Shawellness extends Component {
                     <a href='../../../pdfs/sha-wellness-accommodation.pdf' target="_blank">Download</a>
                   </button>
                 </div>
+              }
+              Hotels={
+                <HotelDetails/>
               }
             />
           }
