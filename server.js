@@ -1,5 +1,3 @@
-
-
 // // const translatorRoute = require("./api/routes/translatorRoute");
 
 // // // app.use(express.static(path.join(__dirname, "build")));
@@ -49,21 +47,21 @@
 //             pass: 'semil123'
 //         }
 //     });
-  
+
 //   transporter.sendEMail = function (mailRequest) {
 //     return new Promise(function (resolve, reject) {
 //       transporter.sendMail(mailRequest, (error, info) => {
 //         if (error) {
 //           reject(error);
 //           console.log(error);
-          
+
 //         } else {
 //           resolve("The message was sent!");
 //         }
 //       });
 //     });
 //   }
-  
+
 //   module.exports = transporter;
 //   // send mail with defined transport object
 //   let info = await transporter.sendMail({
@@ -98,19 +96,20 @@ const request = require("request");
 const dotenv = require("dotenv");
 const myenv = dotenv.config();
 const app = express();
-var cors = require('cors')
-app.use(cors())
+var cors = require("cors");
+app.use(cors());
 const translatorRoute = require("./api/routes/translatorRoute");
+// app.use(express.static(path.join(__dirname, "client", "build")));
 
-// app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "build")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Catch all other routes and return the index file
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "build/index.html"));
-// });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build/index.html"));
+});
 
 app.use("/api/translator", translatorRoute);
 
@@ -120,6 +119,9 @@ app.use("/api/translator", translatorRoute);
 const port = process.env.PORT || "3002";
 app.set("port", port);
 
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+// });
 /**
  * Create HTTP server.
  */
@@ -128,5 +130,5 @@ const server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-server.listen(port, () => console.log(`API running on ${port}`));
 
+server.listen(port, () => console.log(`API running on ${port}`));

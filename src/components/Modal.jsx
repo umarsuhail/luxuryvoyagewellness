@@ -26,7 +26,7 @@ export default class Modal extends Component {
         contact: this.state.contact,
         feedback: this.state.feedback
       };
-      axios.post("api/translator/submitForm", {
+      axios.post("/api/translator/submitForm", {
         email: this.state.email,
         contact: this.state.contact,
         feedback: this.state.feedback
@@ -71,7 +71,7 @@ export default class Modal extends Component {
 
 
 
-          {/* <form>
+         <form>
             <div className="form-group row">
               <label htmlFor="staticEmail" className="col-sm-2 col-form-label">
                 Email
@@ -130,11 +130,11 @@ export default class Modal extends Component {
             >
               Submit
             </button>
-          </form> */}
+          </form>
 
 
 
-          <form style={{marginTop:"30px"}}>
+          {/* <form style={{marginTop:"30px"}}>
             <div className="field name-box">
               <input type="text" id="name" placeholder="Who Are You?" />
               <label for="name">Name</label>
@@ -158,9 +158,9 @@ export default class Modal extends Component {
               <label for="msg">Msg</label>
               <span className="ss-icon">check</span>
             </div>
-            <button className="button"   type="submit" onClick={this.sendMail}>Submit</button>
+            <button className="button"   type="submit" onClick={this.sendMail}>Submit</button> */}
             {/* <input className="button" type="submit" value="Send" /> */}
-          </form>
+          {/* </form> */}
 
 
 

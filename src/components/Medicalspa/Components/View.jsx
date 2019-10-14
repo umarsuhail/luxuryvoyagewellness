@@ -3,7 +3,7 @@ import BacgroundImage from "../../../images/sha-wellness.jpg";
 import "../../../css/View.scss";
 import Carousal from "./Carousal";
 import YouTube from "react-youtube";
-import Programs from "../Components/Programs";
+import Programs from "./Programs";
 export default class View extends Component {
   endedVideo = e => {
     console.log();
