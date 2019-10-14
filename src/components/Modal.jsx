@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import axios from "axios";
-import VerticalLinearStepper from './Stepper'
+import VerticalLinearStepper from "./Stepper";
 export default class Modal extends Component {
   constructor(props) {
     super(props);
     this.state = {
       email: "",
       contact: "",
-      feedback: ""
+      feedback: "",
+      name:''
     };
   }
   sendMail = evt => {
     evt.preventDefault();
-    console.log('submit-form');
-    
+    console.log("submit-form");
+
     const { email, contact, feedback } = this.state;
     if (email === "" || contact === NaN || contact === "" || feedback === "") {
       this.setState({
@@ -69,7 +70,7 @@ export default class Modal extends Component {
             <h3>Contact Us</h3>
           </div>
 
-
+          {/* 
 
          <form>
             <div className="form-group row">
@@ -130,40 +131,72 @@ export default class Modal extends Component {
             >
               Submit
             </button>
-          </form>
+          </form> */}
 
-
-
-          {/* <form style={{marginTop:"30px"}}>
+          <form style={{ marginTop: "30px" }}>
             <div className="field name-box">
-              <input type="text" id="name" placeholder="Who Are You?" />
+              <input
+                name="name"
+                type="text"
+                id="name"
+                onChange={this.handleChange}
+                placeholder="Who Are You?"
+                required
+                value={this.state.nameInput}
+
+              />
               <label for="name">Name</label>
               <span className="ss-icon">check</span>
             </div>
 
             <div className="field email-box">
-              <input type="text" id="email" placeholder="name@email.com"  onChange={this.handleChange}  value={this.state.emailInput} required/>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="name@email.com"
+                onChange={this.handleChange}
+                value={this.state.emailInput}
+                required
+              />
               <label for="email">Email</label>
               <span className="ss-icon">check</span>
             </div>
 
             <div className="field email-box">
-              <input type="text" id="inputContact" placeholder="Contact Number"  onChange={this.handleChange}  value={this.state.contactInput} required/>
+              <input
+                type="text"
+                name="contact"
+                id="inputContact"
+                placeholder="Contact Number"
+                onChange={this.handleChange}
+                value={this.state.contactInput}
+                required
+              />
               <label for="email">Contact Number </label>
               <span className="ss-icon">check</span>
             </div>
 
             <div className="field msg-box">
-              <textarea  id="inputwritetous" rows="4" placeholder="Your message goes here..." onChange={this.handleChange} value={this.state.feedbackMessage} required />
-              <label for="msg">Msg</label>
+              <textarea
+                id="inputwritetous"
+                name="feedback"
+                rows="4"
+                placeholder="Your message goes here..."
+                onChange={this.handleChange}
+                value={this.state.feedbackMessage}
+                required
+              />
+              <label for="msg">Message</label>
               <span className="ss-icon">check</span>
             </div>
-            <button className="button"   type="submit" onClick={this.sendMail}>Submit</button> */}
-            {/* <input className="button" type="submit" value="Send" /> */}
-          {/* </form> */}
 
-
-
+            <button
+              className="submit-button"
+              type="submit"
+              onClick={this.sendMail}
+            >Send</button>
+          </form>
 
           <div
             className="footer text-center mx-auto"
@@ -174,7 +207,7 @@ export default class Modal extends Component {
             <span>Contact us on : info@luxuryvoyagewellness.com</span>
           </div>
         </div>
-      </div >
+      </div>
     );
   }
 }
