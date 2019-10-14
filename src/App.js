@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import ScreenOne from "./screens/screennew";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { IndexRoutes } from "./Routes.jsx/indexRoutes";
+import IndexRoutes from "./Routes/indexRoutes";
 import MetaTags from "react-meta-tags";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         {IndexRoutes.map((prop, key) => {
           return (
             <Route
-              // exact={prop.path}
+              exact={prop.path}
               component={prop.component}
               path={prop.path}
               key={key}

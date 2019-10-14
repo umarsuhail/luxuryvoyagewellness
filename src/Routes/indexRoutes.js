@@ -32,14 +32,7 @@ const IndexRoutes = [
     path: "/LEELA-RAVIZ",
     name: "LEELA-RAVIZ",
     component: LeelaRaviz,
-    exact: true
   },
-  {
-    path: "/sha-wellness",
-    name: "sha-wellness",
-    component: Shawellness,
-    exact: true
-  }
 ];
 
-export { IndexRoutes };
+export default  IndexRoutes;

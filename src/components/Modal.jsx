@@ -23,7 +23,7 @@ export default class Modal extends Component {
         contact: this.state.contact,
         feedback: this.state.feedback
       };
-      axios.post("api/translator/submitForm", {
+      axios.post("http://localhost:3002/api/translator/submitForm", {
         email: this.state.email,
         contact: this.state.contact,
         feedback: this.state.feedback
@@ -155,8 +155,8 @@ export default class Modal extends Component {
               <label for="msg">Msg</label>
               <span class="ss-icon">check</span>
             </div>
-            <button type="submit" class="button" onClick={this.sendMail}> </button>
-            {/* <input class="button" type="submit" value="Send" /> */}
+
+            <input class="button" type="submit" value="Send" />
           </form>
 
 
