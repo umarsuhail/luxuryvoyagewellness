@@ -1543,8 +1543,8 @@
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  animation-duration: 6s;
-  animation-delay: 3s;
+  animation-duration: 4s;
+  animation-delay: 2s;
 }
 
 @-webkit-keyframes fadeInRightBig {
@@ -3651,7 +3651,9 @@
   background: transparent;
   color: white;
   border: 1px solid white;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-right: 0;
+  margin-left: auto;
 }
 .contact-button:hover {
   background-color: white;

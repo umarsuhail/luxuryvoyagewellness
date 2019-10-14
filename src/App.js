@@ -17,7 +17,7 @@ function App() {
         {IndexRoutes.map((prop, key) => {
           return (
             <Route
-              exact={prop.path}
+              // exact={prop.path}
               component={prop.component}
               path={prop.path}
               key={key}

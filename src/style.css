@@ -523,14 +523,19 @@ background-color:#ffffffcc !important
 }
 .modal-body {
   background-color: white;
-  max-height: 400px;
-  width: 33%;
+  max-height: 600px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 25px;
   padding: 25px;
+}
+.form-control{
+  width: 300px;
+}
+textarea.form-control {
+  height: 150px;
 }
 .form-group {
   margin-top: 10px !important;

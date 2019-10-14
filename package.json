@@ -3,14 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.5.0",
     "animate.css": "^3.7.2",
+    "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.0",
+    "http-proxy-middleware": "^0.20.0",
+    "netlify-lambda": "^1.6.3",
     "node-sass": "^4.12.0",
+    "nodemailer": "^6.3.1",
+    "nodemailer-smtp-transport": "^2.7.4",
     "path": "^0.12.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -31,7 +37,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node server.js"
+    "server": "node server.js",
+    "start:lambda": "netlify-lambda serve src/api",
+    "build:lambda": "netlify-lambda build src/api"
   },
   "eslintConfig": {
     "extends": "react-app"

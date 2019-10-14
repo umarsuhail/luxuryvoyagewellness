@@ -5,7 +5,11 @@ import image2 from "../../images/sha-wellness/sha2.jpg";
 import image3 from "../../images/sha-wellness/sha3.jpg";
 import image4 from "../../images/sha-wellness/sha4.jpg";
 import Programs from "./Components/Programs";
-import HotelDetails from './Components/HotelDetails'
+import HotelDetails from "./Components/HotelDetails";
+import deluxeRoom from "../../images/sha-wellness/deluxesuit.jpg";
+import Superior from "../../images/sha-wellness/superior.jpg";
+
+import "../../css/View.scss";
 
 export default class Shawellness extends Component {
   render() {
@@ -82,7 +86,9 @@ export default class Shawellness extends Component {
                     </li>
                   </ul>
                   <button className="btn btn-success download-btn">
-                    <a href='../../../pdfs/programs.pdf' target="_blank">Download</a>
+                    <a href="../../../pdfs/programs.pdf" target="_blank">
+                      Download
+                    </a>
                   </button>
                 </div>
               }
@@ -146,7 +152,9 @@ export default class Shawellness extends Component {
                     <strong>Blue Gold Taninoplasty Services</strong>
                   </p>
                   <button className="btn btn-success download-btn">
-                    <a href='../../../pdfs/treatment.pdf' target="_blank">Download</a>
+                    <a href="../../../pdfs/treatment.pdf" target="_blank">
+                      Download
+                    </a>
                   </button>
                 </div>
               }
@@ -163,12 +171,61 @@ export default class Shawellness extends Component {
                   </p>
                   <p>You Can Download the accommodation rates here :</p>
                   <button className="btn btn-success download-btn">
-                    <a href='../../../pdfs/sha-wellness-accommodation.pdf' target="_blank">Download</a>
+                    <a
+                      href="../../../pdfs/sha-wellness-accommodation.pdf"
+                      target="_blank"
+                    >
+                      Download
+                    </a>
                   </button>
                 </div>
               }
-              Hotels={
-                <HotelDetails/>
+            />
+          }
+          Hotels={
+            <HotelDetails
+              Tab1="Deluxe Suit (70 m2)"
+              Tab2="Superior Suit (100 m2)"
+              Tab3="Grand Suit (120 m2)"
+              Tab4="Presidential Suit (175 m2)"
+              Tab5="Royal Suit (320 m2 devided up on two floors)"
+              tab1Content={
+                <div>
+                  <img src={deluxeRoom} className="image-of-hotels"></img>
+                  <div className="wrapper mr-auto">
+                    <h4 className="text-center">
+                      <strong>
+                        A deluxe room in a suite with a superb environment
+                      </strong>
+                    </h4>
+                  </div>
+                  <h6>
+                    The Deluxe Suite is equipped with the latest technology and
+                    the best services. A 70 m2 room carefully designed so that
+                    our guests enjoy a pleasant and ideal stay. Our Deluxe Suite
+                    has numerous services available that adapt to the
+                    requirements of each and every person.
+                  </h6>
+                </div>
+              }
+              tab2Content={
+                <div>
+                  <img src={Superior} className="image-of-hotels"></img>
+                  <div className="wrapper mr-auto">
+                    <h4 className="text-center">
+                      <strong>One of the most exclusive rooms of SHA</strong>
+                    </h4>
+                  </div>
+                  <h6>
+                    The convenience and the comfort are distinctive elements of
+                    the Superior Suite at the SHA Wellness Clinic, one of the
+                    most exclusive rooms of SHA, which has an ensemble of
+                    features that assures guests a fantastic stay in an
+                    impeccable environment and with all the luxurious features.
+                    The room is 100 m2 in size; it has a large terrace and views
+                    of the sea or the mountain.
+                  </h6>
+                </div>
               }
             />
           }

@@ -1,17 +1,58 @@
 import React, { Component } from "react";
-
+import axios from "axios";
+import VerticalLinearStepper from './Stepper'
 export default class Modal extends Component {
-    sendMail=()=>{
-        alert('Thanks for contacting us, you will get a confirmation notification soon')
-        this.props.modalHandle();
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      contact: "",
+      feedback: ""
+    };
+  }
+  sendMail = evt => {
+    const { email, contact, feedback } = this.state;
+    if (email === "" || contact === NaN || contact === "" || feedback === "") {
+      this.setState({
+        error: true
+      });
+    } else {
+      evt.preventDefault();
+      const data = {
+        email: this.state.email,
+        contact: this.state.contact,
+        feedback: this.state.feedback
+      };
+      axios.post("http://localhost:3002/api/translator/submitForm", {
+        email: this.state.email,
+        contact: this.state.contact,
+        feedback: this.state.feedback
+      });
+
+      console.log(data);
+
+      alert(
+        "Thanks for contacting us, you will get a confirmation notification soon"
+      );
+      this.props.modalHandle();
     }
+  };
+  handleChange = event => {
+    const target = event.target;
+    const name = target.name;
+    const value = target.value;
+
+    this.setState({
+      [name]: value
+    });
+  };
   render() {
     return (
       <div className="modal">
         <div className="modal-body">
           <div className="close-button float-right">
             <i
-              class="material-icons"
+              className="material-icons"
               onClick={this.props.modalHandle}
               style={{
                 cursor: "pointer",
@@ -25,51 +66,71 @@ export default class Modal extends Component {
             <h3>Contact Us</h3>
           </div>
           <form>
-            <div class="form-group row">
-              <label htmlFor="staticEmail" class="col-sm-2 col-form-label">
+            <div className="form-group row">
+              <label htmlFor="staticEmail" className="col-sm-2 col-form-label">
                 Email
               </label>
-              <div class="col-sm-10">
+              <div className="col-sm-10">
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="staticEmail"
+                  onChange={this.handleChange}
+                  name="email"
+                  value={this.state.emailInput}
                   placeholder="email"
+                  required
                 />
               </div>
             </div>
-            <div class="form-group row">
-              <label htmlFor="inputContact" class="col-sm-2 col-form-label">
+            <div className="form-group row">
+              <label htmlFor="inputContact" className="col-sm-2 col-form-label">
                 Contact Number
               </label>
-              <div class="col-sm-10">
+              <div className="col-sm-10">
                 <input
                   type="Contact"
-                  class="form-control"
+                  className="form-control"
                   id="inputContact"
+                  onChange={this.handleChange}
+                  name="contact"
+                  value={this.state.contactInput}
                   placeholder="contact"
+                  required
                 />
               </div>
             </div>
-            <div class="form-group row">
-              <label
-                htmlFor="inputwritetous"
-                class="col-sm-2 col-form-label"
-              ></label>
-              <div class="col-sm-10">
+            <div className="form-group row">
+              <label htmlFor="inputwritetous" className=" col-form-label">
+                Why you want to contact us?
+              </label>
+              <div className="col-sm-10">
                 <textarea
                   type="writetous"
-                  class="form-control"
+                  className="form-control"
                   id="inputwritetous"
+                  onChange={this.handleChange}
+                  name="feedback"
+                  value={this.state.feedbackMessage}
                   placeholder="Write to us"
+                  required
                 />
               </div>
             </div>
-            <button className="submit-button" type="submit" onClick={this.sendMail}>
+            <button
+              className="submit-button"
+              type="submit"
+              onClick={this.sendMail}
+            >
               Submit
             </button>
           </form>
-          <div className="footer row text-center mx-auto">
+          <div
+            className="footer text-center mx-auto"
+            style={{
+              marginTop: "auto"
+            }}
+          >
             <span>Contact us on : info@luxuryvoyagewellness.com</span>
           </div>
         </div>
