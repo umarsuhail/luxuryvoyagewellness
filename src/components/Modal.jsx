@@ -156,7 +156,7 @@ export default class Modal extends Component {
               <label for="msg">Msg</label>
               <span class="ss-icon">check</span>
             </div>
-            <button class="button" onClick={this.sendMail}>Submit</button>
+            <button class="button"   type="submit" onClick={this.sendMail}>Submit</button>
             {/* <input class="button" type="submit" value="Send" /> */}
           </form>
 
