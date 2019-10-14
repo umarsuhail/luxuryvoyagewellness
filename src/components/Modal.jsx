@@ -132,13 +132,13 @@ export default class Modal extends Component {
 
 
           <form style={{marginTop:"30px"}}>
-            <div class="field name-box">
+            <div className="field name-box">
               <input type="text" id="name" placeholder="Who Are You?" />
               <label for="name">Name</label>
               <span class="ss-icon">check</span>
             </div>
 
-            <div class="field email-box">
+            <div className="field email-box">
               <input type="text" id="email" placeholder="name@email.com"  onChange={this.handleChange}  value={this.state.emailInput} required/>
               <label for="email">Email</label>
               <span class="ss-icon">check</span>
@@ -147,16 +147,16 @@ export default class Modal extends Component {
             <div class="field email-box">
               <input type="text" id="inputContact" placeholder="Contact Number"  onChange={this.handleChange}  value={this.state.contactInput} required/>
               <label for="email">Contact Number </label>
-              <span class="ss-icon">check</span>
+              <span className="ss-icon">check</span>
             </div>
 
             <div class="field msg-box">
               <textarea  id="inputwritetous" rows="4" placeholder="Your message goes here..." onChange={this.handleChange} value={this.state.feedbackMessage} required />
               <label for="msg">Msg</label>
-              <span class="ss-icon">check</span>
+              <span className="ss-icon">check</span>
             </div>
 
-            <input class="button" type="submit" value="Send" />
+            <input className="button" type="submit" value="Send" />
           </form>
 
 

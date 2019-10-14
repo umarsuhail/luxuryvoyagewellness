@@ -8,6 +8,11 @@ import Programs from "./Components/Programs";
 import HotelDetails from "./Components/HotelDetails";
 import deluxeRoom from "../../images/sha-wellness/deluxesuit.jpg";
 import Superior from "../../images/sha-wellness/superior.jpg";
+import grandsuit from "../../images/sha-wellness/grandsuite.jpg";
+import presidentialsuite from "../../images/sha-wellness/presidentialsuite.jpg";
+import royalsuite from "../../images/sha-wellness/presidentialsuite.jpg";
+
+
 
 import "../../css/View.scss";
 
@@ -224,6 +229,56 @@ export default class Shawellness extends Component {
                     impeccable environment and with all the luxurious features.
                     The room is 100 m2 in size; it has a large terrace and views
                     of the sea or the mountain.
+                  </h6>
+                </div>
+              }
+
+              tab3Content={
+                <div>
+                  <img src={grandsuit} className="image-of-hotels"></img>
+                  <div className="wrapper mr-auto">
+                    <h4 className="text-center">
+                      <strong>Enjoy all the luxurious services and features</strong>
+                    </h4>
+                  </div>
+                  <h6>
+                  Guests can enjoy all the luxury services and features, 
+                  elegant decor and the best technology on The Grand Suite, 
+                  120 m2 in size. You will definitely have a very special stay in our Grand Suite.
+                  </h6>
+                </div>
+              }
+
+              tab4Content={
+                <div>
+                  <img src={presidentialsuite} className="image-of-hotels"></img>
+                  <div className="wrapper mr-auto">
+                    <h4 className="text-center">
+                      <strong>There are many details that make the presidential suite of the medical hotel very special and complete</strong>
+                    </h4>
+                  </div>
+                  <h6>
+                  The Presidential Suite, 175 m2 in size, is undoubtedly one of
+                  the best and most exclusive rooms of the SHA Wellness Clinic medical spa.
+                  There are many details that make the presidential suite of the medical hotel very special and complete.
+                  It has the latest technology and premium services available are intended to assure you a fantastic stay.
+                  </h6>
+                </div>
+              }
+              
+              tab5Content={
+                <div>
+                  <img src={royalsuite} className="image-of-hotels"></img>
+                  <div className="wrapper mr-auto">
+                    <h4 className="text-center">
+                      <strong>It has the very latest technology and the services available are intended to guarantee the most satisfactory stay possible</strong>
+                    </h4>
+                  </div>
+                  <h6>
+                  The Royal Suite that is 320 m2 in size, is certainly,
+                  the most exclusive, elegant and luxurious room of the SHA Wellness Clinic.
+                  There are many details that make the Royal suite of the medical hotel very special and complete.
+                   It has the very latest technology and the services available are intended to guarantee the most satisfactory stay possible.
                   </h6>
                 </div>
               }
