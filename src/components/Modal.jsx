@@ -11,6 +11,7 @@ export default class Modal extends Component {
     };
   }
   sendMail = evt => {
+    evt.preventDefault();
     const { email, contact, feedback } = this.state;
     if (email === "" || contact === NaN || contact === "" || feedback === "") {
       this.setState({
