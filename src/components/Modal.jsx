@@ -65,7 +65,10 @@ export default class Modal extends Component {
           <div className="modal-heading">
             <h3>Contact Us</h3>
           </div>
-          <form>
+
+
+
+          {/* <form>
             <div className="form-group row">
               <label htmlFor="staticEmail" className="col-sm-2 col-form-label">
                 Email
@@ -124,7 +127,41 @@ export default class Modal extends Component {
             >
               Submit
             </button>
+          </form> */}
+
+
+
+          <form style={{marginTop:"30px"}}>
+            <div class="field name-box">
+              <input type="text" id="name" placeholder="Who Are You?" />
+              <label for="name">Name</label>
+              <span class="ss-icon">check</span>
+            </div>
+
+            <div class="field email-box">
+              <input type="text" id="email" placeholder="name@email.com"  onChange={this.handleChange}  value={this.state.emailInput} required/>
+              <label for="email">Email</label>
+              <span class="ss-icon">check</span>
+            </div>
+
+            <div class="field email-box">
+              <input type="text" id="inputContact" placeholder="Contact Number"  onChange={this.handleChange}  value={this.state.contactInput} required/>
+              <label for="email">Contact Number </label>
+              <span class="ss-icon">check</span>
+            </div>
+
+            <div class="field msg-box">
+              <textarea  id="inputwritetous" rows="4" placeholder="Your message goes here..." onChange={this.handleChange} value={this.state.feedbackMessage} required />
+              <label for="msg">Msg</label>
+              <span class="ss-icon">check</span>
+            </div>
+
+            <input class="button" type="submit" value="Send" />
           </form>
+
+
+
+
           <div
             className="footer text-center mx-auto"
             style={{
@@ -134,7 +171,7 @@ export default class Modal extends Component {
             <span>Contact us on : info@luxuryvoyagewellness.com</span>
           </div>
         </div>
-      </div>
+      </div >
     );
   }
 }

@@ -12,7 +12,7 @@ import icon3 from "../images/icon3.png";
 import Specialities from "../components/Specialities";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
-import "../style.css";
+import "../style.scss";
 import Cards from "../components/Cards";
 import AnmimatedText from "../components/AnimatedText";
 import Modal from "../components/Modal";
