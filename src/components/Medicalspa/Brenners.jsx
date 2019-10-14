@@ -9,6 +9,14 @@ import brenspa1 from "../../images/BRENNERS/brenspa1.jpg";
 import brenspa2 from "../../images/BRENNERS/brenspa2.jpg";
 import brenspa3 from "../../images/BRENNERS/brenspa3.jpg";
 import brenspa4 from "../../images/BRENNERS/brenspa4.jpg";
+import hotel1 from "../../images/BRENNERS/hotel1.jpg";
+import hotel2 from "../../images/BRENNERS/hotel2.jpg";
+import hotel3 from "../../images/BRENNERS/hotel3.jpg";
+import hotel4 from "../../images/BRENNERS/hotel4.jpg";
+import hotel5 from "../../images/BRENNERS/hotel5.jpg";
+
+
+import HotelDetails from "./Components/HotelDetails";
 
 export default class Brenners extends Component {
     render() {
@@ -138,6 +146,101 @@ export default class Brenners extends Component {
     
                  
                 ></Programs >
+              }
+
+
+              Hotels={
+                <HotelDetails
+                  Tab1="Superior Single Room"
+                  Tab2="Deluxe Single Room"
+                  Tab3="Superior Double Room"
+                  Tab4="Deluxe Double Room"
+                  Tab5="Classic Double Room"
+                  tab1Content={
+                    <div>
+                      <img src={hotel1} className="image-of-hotels"></img>
+                      <div className="wrapper mr-auto">
+                        <h4 className="text-center">
+                          <strong>
+                          The Superior Single rooms are ideal for the single traveller.
+                          </strong>
+                        </h4>
+                      </div>
+                      <h6>
+                      The Superior Single rooms are ideal for the single traveller. 
+                      It offers a view overlooking the residential villas of Baden-Baden.
+                      </h6>
+                    </div>
+                  }
+                  tab2Content={
+                    <div>
+                      <img src={hotel2} className="image-of-hotels"></img>
+                      <div className="wrapper mr-auto">
+                        <h4 className="text-center">
+                          <strong>The Deluxe Single rooms are ideal for the single traveller.</strong>
+                        </h4>
+                      </div>
+                      <h6>
+                      The Deluxe Single rooms are ideal for the single traveller. All offer a view overlooking the park and some offer a small balcony.
+                      </h6>
+                    </div>
+                  }
+    
+                  tab3Content={
+                    <div>
+                      <img src={hotel3} className="image-of-hotels"></img>
+                      <div className="wrapper mr-auto">
+                        <h4 className="text-center">
+                          <strong>Superior rooms with balconies</strong>
+                        </h4>
+                      </div>
+                      <h6>
+                      Our six Superior Rooms have a generous living area. 
+                      All double Superior Rooms have views across the park 
+                      onto the historic Lichtentaler Allee. Enjoy a private 
+                      breakfast on your own balcony in the crisp morning air 
+                      with the delightful sound of the River Oos below.
+                      </h6>
+                    </div>
+                  }
+    
+                  tab4Content={
+                    <div>
+                      <img src={hotel4} className="image-of-hotels"></img>
+                      <div className="wrapper mr-auto">
+                        <h4 className="text-center">
+                          <strong>Our largest room category</strong>
+                        </h4>
+                      </div>
+                      <h6>
+                      Our Deluxe Rooms are exceptionally airy and relaxed spaces, 
+                      especially with the French doors open onto your balcony for 
+                      views around our private park, the grand architecture and 
+                      gently swaying trees. A particularly personal approach was 
+                      taken in designing the interiors to ensure individuality; 
+                      they have deeply comfortable furnishings and all have an inviting lounge corner.
+                      </h6>
+                    </div>
+                  }
+                  
+                  tab5Content={
+                    <div>
+                      <img src={hotel5} className="image-of-hotels"></img>
+                      <div className="wrapper mr-auto">
+                        <h4 className="text-center">
+                          <strong>Classic rooms finished with elegance</strong>
+                        </h4>
+                      </div>
+                      <h6>
+                      Finished to the exceptionally high standards Brenners Park Hotel 
+                      & Spa has been synonymous with for 140 years, Classic Rooms offer 
+                      all the modern comforts that today’s first class traveller expects. 
+                      All rooms have balconies overlooking the park or the elegant 
+                      Biedermeier-style villas of Baden-Baden.
+                      </h6>
+                    </div>
+                  }
+                />
               }
             >
               <div className="wpb_column vc_column_container vc_col-sm-6">
