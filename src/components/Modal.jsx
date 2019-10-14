@@ -23,7 +23,7 @@ export default class Modal extends Component {
         contact: this.state.contact,
         feedback: this.state.feedback
       };
-      axios.post("http://localhost:3002/api/translator/submitForm", {
+      axios.post("api/translator/submitForm", {
         email: this.state.email,
         contact: this.state.contact,
         feedback: this.state.feedback
