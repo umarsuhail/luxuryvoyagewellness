@@ -682,7 +682,11 @@ form {
           color: black;
         }
       }
-
+      &.visited{
+        +label {
+          color: orange;
+        }
+      }
       // JS Toggle Class
       &.focused {
         +label {

@@ -49,7 +49,7 @@ function App() {
           property="og:image"
           content={}
         /> */}
-        <link rel="canonical" href="https://luxuryvoyagewellness.com" />
+        <link rel="canonical" href="https://www.luxuryvoyagewellness.com" />
 
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

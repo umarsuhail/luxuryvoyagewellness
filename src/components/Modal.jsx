@@ -30,7 +30,8 @@ export default class Modal extends Component {
       axios.post("/api/translator/submitForm", {
         email: this.state.email,
         contact: this.state.contact,
-        feedback: this.state.feedback
+        feedback: this.state.feedback,
+        name:this.state.name
       });
 
       console.log(data);

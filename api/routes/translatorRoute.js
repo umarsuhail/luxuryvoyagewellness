@@ -19,7 +19,7 @@ router.post("/submitForm", function(req, res, next) {
   <p>You have a new contact request</p>
   <h3>Contact Details</h3>
   <ul>  
-
+    <li>Name: <strong>${req.body.name}</strong></li>
     <li>Email: ${req.body.email}</li>
     <li>Contact No: ${req.body.contact}</li>
   </ul>
