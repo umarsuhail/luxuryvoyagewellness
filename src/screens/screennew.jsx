@@ -234,7 +234,7 @@ class ScreenOne extends Component {
             <div className="col-xs-12 col-sm-6 col-md-4 text-center ">
               <h1 className="box ">
                 
-                Copyright 2019 Voyage Wellness, All Right Reserved{" "}
+                Copyright 2019 Luxury Voyage Wellness, All Right Reserved{" "}
               </h1>
             </div>
             <div className="col-xs-12 col-sm-6 col-md-4 text-center">

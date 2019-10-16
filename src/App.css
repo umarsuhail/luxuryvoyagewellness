@@ -43,3 +43,9 @@ body{
   position: absolute;
   background: #0303036e;
 }
+.goog-te-combo{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+}
