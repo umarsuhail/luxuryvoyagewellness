@@ -49,3 +49,23 @@ body{
   border-radius: 20px;
 
 }
+.translator-wrapper{
+  position: fixed;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .translator-wrapper{
+    position: fixed;
+      right: 0;
+      bottom: 100px;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin: 10px;
+  }
+}

@@ -26,9 +26,10 @@ function App() {
           );
         })}
       </Switch>
-      <p>Translate this page:</p>
-
+      <div className="translator-wrapper">
 <div id="google_translate_element"></div>
+      </div>
+
       <MetaTags>
         <title>Page 1</title>
         <meta
