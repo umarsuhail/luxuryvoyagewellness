@@ -67,7 +67,7 @@
 }
 
 ::placeholder {
-  color: red;
+  color: #a1a1a1;
   opacity: 1;
 }
 
@@ -595,139 +595,77 @@ textarea.form-control {
   padding: 10px 20px;
   border-radius: 20px;
   margin-top: 10px;
+  width: 100%;
 }
 
-
-
-
-::placeholder {
-  color: #525252;
-}
 
 form {
-  // @include grid(7);
-
-  .field {
-    width: 100%;
-    position: relative;
-    margin-bottom: 15px;
-
-    $hover-label-width: 18%;
-    $placeholder-bumper: 1.5%;
-    $label-padding: 18px;
-
-    // Label
-    label {
-      text-transform: uppercase;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #212529;
-      color: gray;
-      width: 100%;
-      padding: ($label-padding + 0px) 0;
-      font-size: 1em;
-      letter-spacing: 0.075em;
-
-      // @include ease(333ms);
-
-      // Checkmark
-      +span {
-        font-family: 'SSStandard';
-        opacity: 0;
-        color: white;
-        display: block;
-        position: absolute;
-        top: 12px;
-        left: 7%;
-        font-size: 2.5em;
-        text-shadow: 1px 2px 0 orange;
-
-        // @include ease(333ms);
-      }
-    }
-
-    // Fields
-    input[type="text"],
-    textarea {
-      border: none;
-      background: white;
-      width: 100% - $hover-label-width - $placeholder-bumper;
-      margin: 0;
-      padding: $label-padding 0;
-      padding-left: $hover-label-width + $placeholder-bumper;
-      color: black;
-      font-size: 1em;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-
-      &#inputwritetous {
-        height: 18px;
-        resize: none;
-        // @include ease(333ms);
-      }
-
-      // Focus and JS Toggle Class
-      &:focus,
-      &.focused {
-        outline: none;
-
-        &#inputwritetous {
-          padding-bottom: 150px;
-        }
-
-        +label {
-          width: $hover-label-width;
-          background: orange;
-          color: black;
-        }
-      }
-      &.visited{
-        +label {
-          color: orange;
-        }
-      }
-      // JS Toggle Class
-      &.focused {
-        +label {
-          color: orange;
-        }
-      }
-    }
-
-    // Field Hover
-    &:hover {
-      label {
-        width: $hover-label-width;
-        background: #212529;
-        color: white;
-      }
-    }
-  }
-
-  // Submit Button
-  input[type="submit"] {
-    background: orange;
-    color: white;
-    -webkit-appearance: none;
-    border: none;
-    text-transform: uppercase;
-    position: relative;
-    padding: 13px 50px;
-    margin-top: 17px;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    // @include lato-3;
-    // @include ease;
-
-    &:hover {
-      background: #212529;
-      color: orange;
-    }
-
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+    //  @include box-shadow(0 1px 1px rgba(black, 0.1));
+    box-shadow: 0 1px 1px rgba(black, 0.1);
+     resize: none;
+    
     &:focus {
-      outline: none;
-      background: orange;
+      //  @include box-shadow(0 0px 2px rgba(red, 1)!important);
     }
   }
+  
+  #input-submit {
+     color: white; 
+     background: black;
+     border-radius: 20px;
+     cursor: pointer;
+    
+    &:hover {
+      //  @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }

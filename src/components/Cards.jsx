@@ -10,9 +10,10 @@ import card7 from "../images/card7.jpg";
 import card8 from "../images/card8.jpg";
 import ReadMoreReact from "read-more-react";
 
+
 export default class Cards extends Component {
   render() {
-    var settings = {
+    const settings = {
       dots: false,
       infinite: true,
       speed: 500,
@@ -27,7 +28,7 @@ export default class Cards extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: false
+            dots: true
           }
         },
         {
@@ -40,13 +41,6 @@ export default class Cards extends Component {
         },
         {
           breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 320,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

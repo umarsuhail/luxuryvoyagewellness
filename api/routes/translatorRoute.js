@@ -56,6 +56,8 @@ transporter.sendMail(mailOptions, (err, data) => {
 
   res
     .status(200)
-    .json({ statusCode: 200, message: "Send Successfully" + req.body.email });
+    .json({ statusCode: 200, message: "Send Successfully" +''+ req.body.email });
+    console.log(req.body);
+    
 });
 module.exports = router;

@@ -8,7 +8,7 @@ export default class Modal extends Component {
       email: "",
       contact: "",
       feedback: "",
-      name:''
+      name:'',
     };
   }
   sendMail = evt => {
@@ -48,7 +48,8 @@ export default class Modal extends Component {
     const value = target.value;
 
     this.setState({
-      [name]: value
+      [name]: value,
+      filled:true
     });
   };
   render() {
@@ -133,71 +134,19 @@ export default class Modal extends Component {
               Submit
             </button>
           </form> */}
+<h1>Luxury Voyage Wellness</h1>
+<form className="cf">
+  <div className="half left cf">
+  <input onChange={this.handleChange} value={this.state.name} name="name" type="text" id="input-name" required placeholder="Name"/>
 
-          <form style={{ marginTop: "30px" }}>
-            <div className="field name-box">
-              <input
-                name="name"
-                type="text"
-                id="name"
-                onChange={this.handleChange}
-                placeholder="Who Are You?"
-                required
-                value={this.state.nameInput}
-
-              />
-              <label for="name">Name</label>
-              <span className="ss-icon">check</span>
-            </div>
-
-            <div className="field email-box">
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="name@email.com"
-                onChange={this.handleChange}
-                value={this.state.emailInput}
-                required
-              />
-              <label for="email">Email</label>
-              <span className="ss-icon">check</span>
-            </div>
-
-            <div className="field email-box">
-              <input
-                type="text"
-                name="contact"
-                id="inputContact"
-                placeholder="Contact Number"
-                onChange={this.handleChange}
-                value={this.state.contactInput}
-                required
-              />
-              <label for="email">Contact Number </label>
-              <span className="ss-icon">check</span>
-            </div>
-
-            <div className="field msg-box">
-              <textarea
-                id="inputwritetous"
-                name="feedback"
-                rows="4"
-                placeholder="Your message goes here..."
-                onChange={this.handleChange}
-                value={this.state.feedbackMessage}
-                required
-              />
-              <label for="msg">Message</label>
-              <span className="ss-icon">check</span>
-            </div>
-
-            <button
-              className="submit-button"
-              type="submit"
-              onClick={this.sendMail}
-            >Send</button>
-          </form>
+    <input onChange={this.handleChange} value={this.state.email} name="email" type="text" id="input-name" required placeholder="Email"/>
+    <input onChange={this.handleChange} value={this.state.contact} name="contact" id="input-email" required placeholder="Contact Number"/>
+  </div>
+  <div className="half right cf">
+    <textarea name="message" onChange={this.handleChange} value={this.state.feedback} name="feedback" type="text" id="input-message" placeholder="Message"></textarea>
+  </div>  
+  <button type="submit" value="Submit" className="submit-button" onClick={this.sendMail} id="input-submit">Send</button>
+</form>
 
           <div
             className="footer text-center mx-auto"
