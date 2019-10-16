@@ -23,7 +23,7 @@ class ScreenOne extends Component {
       visible: false
     };
   }
-  
+
   ModalOpen = () => {
     this.setState({
       visible: !this.state.visible
@@ -117,7 +117,7 @@ class ScreenOne extends Component {
             <span className="carousel-control-next-icon"></span>
           </a>
         </div>
-        {this.state.visible && <Modal modalHandle={this.ModalOpen}/>}
+        {this.state.visible && <Modal modalHandle={this.ModalOpen} />}
         {/* <div className="container-fluid " style={{ backgroundColor: "white" }}>
           <div className="col-md-12 col-sm-12 col-lg-12 clear-fix row">
             <div className="tzElement_Services col-sm-12 col-md-3 col-lg-3 ">
@@ -194,7 +194,7 @@ class ScreenOne extends Component {
                 </div>
               </div> */}
 
-              {/* <div className="col-xs-12 col-sm-6 col-md-3">
+        {/* <div className="col-xs-12 col-sm-6 col-md-3">
                 <div>
                   <h5 className="box">PLEASE HELP ME</h5>
                   <p className="footertext">Contact</p>
@@ -204,7 +204,7 @@ class ScreenOne extends Component {
                   <p className="footertext">Order Status</p>
                 </div>
               </div> */}
-{/* 
+        {/* 
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div>
                   <h5 className="box">ABOUT VOYAGE WELLNESS</h5>
@@ -216,7 +216,7 @@ class ScreenOne extends Component {
                   <p className="footertext">info@luxuryvoyagewellness.com</p>
                 </div>
               </div> */}
-            {/* </div>
+        {/* </div>
           </div>
         </div> */}
 
@@ -230,8 +230,10 @@ class ScreenOne extends Component {
               backgroundColor: "#212121"
             }}
           >
+
             <div className="col-xs-12 col-sm-6 col-md-4 text-center ">
               <h1 className="box ">
+                
                 Copyright 2019 Voyage Wellness, All Right Reserved{" "}
               </h1>
             </div>

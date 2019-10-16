@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <Navbar />
 
+
       <Switch>
         {IndexRoutes.map((prop, key) => {
           return (
@@ -25,6 +26,9 @@ function App() {
           );
         })}
       </Switch>
+      <p>Translate this page:</p>
+
+<div id="google_translate_element"></div>
       <MetaTags>
         <title>Page 1</title>
         <meta
