@@ -3637,13 +3637,13 @@
   font-size: 24pt;
   font-weight: 500;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 600px){
   .big-header{
-    font-size: 12pt;
+    font-size: 30pt;
     font-weight: 800;
   }
   .header-text{
-    font-size: 6pt;
+    font-size: 15pt;
     font-weight: 500;
   }
 }
