@@ -187,15 +187,27 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="#">
+                 <Link to="AyurvedhaLearning" className="dropdown-item">
+                    {" "}
                     AYURVEDHA LEARNING PROGRAM
-                  </a>
-                  <a className="dropdown-item" href="#">
+                  </Link>
+                  {/* <a className="dropdown-item" href="#">
+                    AYURVEDHA LEARNING PROGRAM
+                  </a> */}
+                  {/* <a className="dropdown-item" href="#">
                     YOGA
-                  </a>
-                  <a className="dropdown-item" href="#">
+                  </a> */}
+                     <Link to="yoga" className="dropdown-item">
+                    {" "}
+                    YOGA
+                  </Link>
+                  {/* <a className="dropdown-item" href="#">
                     KALARIPPAYATTU
-                  </a>
+                  </a> */}
+                    <Link to="Kalarippayattu" className="dropdown-item">
+                    {" "}
+                    KALARIPPAYATTU
+                  </Link>
                 </div>
               </li>
               <li className="nav-item">
