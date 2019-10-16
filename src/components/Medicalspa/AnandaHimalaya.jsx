@@ -11,6 +11,11 @@ import tabimage3 from "../../images/ananda/ananda-tab-img3.jpg";
 import anandspa from "../../images/ananda/anandspa1.png";
 import anandspa2 from "../../images/ananda/anandspa2.jpg";
 import anandspa3 from "../../images/ananda/anandspa3.jpg";
+import hotel1 from "../../images/ananda/hotel1.jpg";
+import hotel2 from "../../images/ananda/hotel2.jpg";
+
+
+import HotelDetails from "./Components/HotelDetails";
 
 
 
@@ -351,6 +356,61 @@ export default class AnandaHimalaya extends Component {
 
               }
             ></Programs >
+          }
+
+          Hotels={
+            <HotelDetails
+              Tab1="Deluxe Palace / Garden View rooms"
+              Tab2="Deluxe Valley View Rooms"
+            
+              tab1Content={
+                <div>
+                  <img src={hotel1} className="image-of-hotels"></img>
+                  <div className="wrapper mr-auto">
+                    <h4 className="text-center">
+                      <strong>
+                      The newly renovated palace or the lush garden views rooms are simply luxurious.
+                      </strong>
+                    </h4>
+                  </div>
+                  <h6>
+                  The newly renovated palace or the lush garden views rooms are simply luxurious 45 
+                  sqm in size, they feature walk-in closets and perfectly appointed bathrooms with 
+                  windows overlooking panoramic views of the Golf course and the Palace, with life 
+                  sizemirrors and a luxurious bathtub with an LCD TV. Each room opens onto large porches 
+                  or balconies with picture-perfect views, ideal for a private meal. All rooms are equipped 
+                  with a comfortable Settee with a footrest facing the balcony, a 42’ LCD TV, elegant writing 
+                  and bedside tables, tea coffee maker, well stocked mini bar, electronic safe and 
+                  complimentary Wi-Fi High speed internet access.
+                  </h6>
+                </div>
+              }
+              tab2Content={
+                <div>
+                  <img src={hotel2} className="image-of-hotels"></img>
+                  <div className="wrapper mr-auto">
+                    <h4 className="text-center">
+                      <strong>One of the most exclusive rooms of SHA</strong>
+                    </h4>
+                  </div>
+                  <h6>
+                  Each room is equipped with a luxurious King size bed, 
+                  a comfortable Settee with a footrest facing the balcony, 
+                  a 42’ LCD TV, elegant writing and bedside tables.  
+                  The large private balcony has a chaise-lounge for complete 
+                  relaxation and a tea table. Each room features spacious 
+                  walk-in closets and perfectly appointed bathrooms with 
+                  life size mirrors and a luxurious bathtub with an LCD TV 
+                  and windows overlooking views of the valley. All rooms are 
+                  equipped with DVD player, tea coffee maker, well stocked 
+                  mini bar with healthy options, electronic safe and complimentary 
+                  high speed Wi-Fi internet access.
+                  </h6>
+                </div>
+              }
+
+             
+            />
           }
         >
           <div className="wpb_column vc_column_container vc_col-sm-6">
