@@ -3,14 +3,24 @@ import Flight from "../images/Flight.jpg";
 import Taxi from "../images/TAXI.jpg";
 import Guide from "../images/travel.jpg";
 import '../css/Specialities.scss'
-import imggal2 from "../images/imggal2.jpg";
-import imggal3 from "../images/imggal3.jpg";
-import imggal4 from "../images/imggal4.jpg";
-import imggal5 from "../images/imggal5.jpg";
-import imggal6 from "../images/imggal6.jpg";
-import imggal7 from "../images/imggal7.jpg";
-import imggal8 from "../images/imggal8.jpg";
+import Modal from '../components/Modal'
 export default class Specialities extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      contactUs:false
+    }
+  }
+  openModal = () =>{
+    this.setState({
+      contactUs:!this.state.cntactUs
+    })
+  }
+  closeModal = () =>{
+    this.setState({
+      contactUs:false
+    })
+  }
   render() {
     return (
       <div>
@@ -20,7 +30,7 @@ export default class Specialities extends Component {
           <div className="col-sm-12 card" >
             <img className="card-img-top" src={Flight} alt="Card image cap" />
             <div className="card-body">
-              <a href="#" className="btn btn-primary">
+              <a href="#" className="btn btn-primary" onClick={this.openModal}>
                Flight Booking
               </a>
             </div>
@@ -28,7 +38,7 @@ export default class Specialities extends Component {
           <div className="col-sm-12 card" >
             <img className="card-img-top" src={Taxi} alt="Card image cap" />
             <div className="card-body">
-              <a href="#" className="btn btn-primary">
+              <a href="#" className="btn btn-primary" onClick={this.openModal}>
               Taxi services
               </a>
             </div>
@@ -36,12 +46,14 @@ export default class Specialities extends Component {
           <div className="col-sm-12 card">
             <img className="card-img-top" src={Guide} alt="Card image cap" />
             <div className="card-body">
-              <a href="#" className="btn btn-primary">
+              <a href="#" className="btn btn-primary" onClick={this.openModal}>
               Travel Guide
               </a>
             </div>
           </div>
         </div>
+        {
+        this.state.contactUs&&<Modal modalHandle={this.closeModal}/>}
         <div className="tz-gallery container gallery-container">
           <h3> BIO</h3>
 
