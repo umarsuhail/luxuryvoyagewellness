@@ -24,6 +24,7 @@ export default class Specialities extends Component {
   render() {
     return (
       <div>
+        <h1 style={{margin:'30px auto'}}>Services</h1>
           <h6 style={{margin:'30px auto'}}>Through Luxury voyage wellness guest we try to give discount</h6>
 
         <div className="container specialities">
