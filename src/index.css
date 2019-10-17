@@ -14,3 +14,8 @@ code {
 .navbar-brand{
   max-width: 100px;
 }
+.specialities{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+}

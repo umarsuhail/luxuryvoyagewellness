@@ -52,7 +52,7 @@ export default class Cards extends Component {
       <div>
         <div className="container-carosel">
           <Slider {...settings}>
-            <div className="card">
+            <div className="card" style={{height:437}}>
               <img
                 className="card-img-top img-fluid"
                 src={card1}
