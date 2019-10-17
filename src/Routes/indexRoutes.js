@@ -7,6 +7,10 @@ import LeelaRaviz from "../components/Medicalspa/LeelaRaviz";
 import AyurvedhaLearning from "../components/Learning Program/AyurvedhaLearning";
 import Yoga from "../components/Learning Program/Yoga";
 import Kalarippayattu from "../components/Learning Program/Kalarippayattu";
+import TherpyAqua from "../components/AquaTherapy/TherpyAqua";
+import Rajah from "../components/Ayurvedha/Rajah";
+import YogaVillage from "../components/Ayurvedha/YogaVillage";
+
 
 
 
@@ -52,6 +56,21 @@ const IndexRoutes = [
     path: "/Kalarippayattu",
     name: "Kalarippayattu",
     component: Kalarippayattu,
+  },
+  {
+    path: "/TherpyAqua",
+    name: "TherpyAqua",
+    component: TherpyAqua,
+  },
+  {
+    path: "/Rajah",
+    name: "Rajah",
+    component: Rajah,
+  },
+  {
+    path: "/YogaVillage",
+    name: "YogaVillage",
+    component: YogaVillage,
   },
 ];
 

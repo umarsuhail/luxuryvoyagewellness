@@ -163,12 +163,20 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="#">
+                 <Link to="Rajah" className="dropdown-item">
+                    {" "}
                     AYURVEDHA RAJAH HOSPITAL
-                  </a>
-                  <a className="dropdown-item" href="#">
+                  </Link>
+                  {/* <a className="dropdown-item" href="#">
+                    AYURVEDHA RAJAH HOSPITAL
+                  </a> */}
+                  {/* <a className="dropdown-item" href="#">
                     AYURVEDHA YOGA VILLAGE
-                  </a>
+                  </a> */}
+                   <Link to="YogaVillage" className="dropdown-item">
+                    {" "}
+                    AYURVEDHA YOGA VILLAGE
+                  </Link>
                 </div>
               </li>
               <li className="nav-item dropdown">
@@ -211,9 +219,13 @@ export default class Navbar extends Component {
                 </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                {/* <a className="nav-link text-white" href="#">
                   AQUA THERAPY
-                </a>
+                </a> */}
+                 <Link to="TherpyAqua" className="nav-link text-white">
+                    {" "}
+                    AQUA THERAPY
+                  </Link>
               </li>
             </ul>
             <img className="navbar-brand logo m-auto" src={logo} alt="Logo" />
