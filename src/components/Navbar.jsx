@@ -163,7 +163,7 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <Link to="Rajah" className="dropdown-item">
+                 <Link to="Rajah" className="dropdown-item">
                     {" "}
                     AYURVEDHA RAJAH HOSPITAL
                   </Link>
