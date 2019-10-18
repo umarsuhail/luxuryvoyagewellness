@@ -20,6 +20,9 @@ export default class View extends Component {
         autoplay: 1
       }
     };
+    console.group("View");
+    console.log(this.props);
+    console.groupEnd();
     return (
       <div>
         <div>
@@ -49,7 +52,8 @@ export default class View extends Component {
                 ></Carousal>
               </div>
               <div className="">
-                <YouTube className="col-lg-12 col-md-12 col-sm-12"
+                <YouTube
+                  className="col-lg-12 col-md-12 col-sm-12"
                   videoId={this.props.videoID}
                   opts={opts}
                   onReady={this._onReady}

@@ -12,14 +12,24 @@ import grandsuit from "../../images/sha-wellness/grandsuite.jpg";
 import presidentialsuite from "../../images/sha-wellness/presidentialsuite.jpg";
 import royalsuite from "../../images/sha-wellness/presidentialsuite.jpg";
 
-
-
 import "../../css/View.scss";
+
+const NavData1 = [
+  "Sha Wellness Programmes",
+  "Treatments and Services",
+  "Accommodation Rates"
+];
+const NavItem = [
+  "Deluxe Suit (70 m2)",
+  "Superior Suit (100 m2)",
+  "Grand Suit (120 m2)",
+  "Presidential Suit (175 m2)",
+  "Royal Suit (320 m2 devided up on two floors)"
+];
 
 export default class Shawellness extends Component {
   render() {
     console.log(this.props);
-
     return (
       <div>
         <View
@@ -31,9 +41,7 @@ export default class Shawellness extends Component {
           videoID="E9vCw_Y0bRw"
           programs={
             <Programs
-              tab1=" Sha Wellness Programmes"
-              tab2="Treatments and Services"
-              tab3=" Accommodation Rates"
+              NavData={NavData1}
               tab1Content={
                 <div className="wpb_wrapper text-left">
                   <h4>SHA Essence</h4>
@@ -189,11 +197,7 @@ export default class Shawellness extends Component {
           }
           Hotels={
             <HotelDetails
-              Tab1="Deluxe Suit (70 m2)"
-              Tab2="Superior Suit (100 m2)"
-              Tab3="Grand Suit (120 m2)"
-              Tab4="Presidential Suit (175 m2)"
-              Tab5="Royal Suit (320 m2 devided up on two floors)"
+              NavItems={NavItem}
               tab1Content={
                 <div>
                   <img src={deluxeRoom} className="image-of-hotels"></img>
@@ -232,53 +236,67 @@ export default class Shawellness extends Component {
                   </h6>
                 </div>
               }
-
               tab3Content={
                 <div>
                   <img src={grandsuit} className="image-of-hotels"></img>
                   <div className="wrapper mr-auto">
                     <h4 className="text-center">
-                      <strong>Enjoy all the luxurious services and features</strong>
+                      <strong>
+                        Enjoy all the luxurious services and features
+                      </strong>
                     </h4>
                   </div>
                   <h6>
-                  Guests can enjoy all the luxury services and features, 
-                  elegant decor and the best technology on The Grand Suite, 
-                  120 m2 in size. You will definitely have a very special stay in our Grand Suite.
+                    Guests can enjoy all the luxury services and features,
+                    elegant decor and the best technology on The Grand Suite,
+                    120 m2 in size. You will definitely have a very special stay
+                    in our Grand Suite.
                   </h6>
                 </div>
               }
-
               tab4Content={
                 <div>
-                  <img src={presidentialsuite} className="image-of-hotels"></img>
+                  <img
+                    src={presidentialsuite}
+                    className="image-of-hotels"
+                  ></img>
                   <div className="wrapper mr-auto">
                     <h4 className="text-center">
-                      <strong>There are many details that make the presidential suite of the medical hotel very special and complete</strong>
+                      <strong>
+                        There are many details that make the presidential suite
+                        of the medical hotel very special and complete
+                      </strong>
                     </h4>
                   </div>
                   <h6>
-                  The Presidential Suite, 175 m2 in size, is undoubtedly one of
-                  the best and most exclusive rooms of the SHA Wellness Clinic medical spa.
-                  There are many details that make the presidential suite of the medical hotel very special and complete.
-                  It has the latest technology and premium services available are intended to assure you a fantastic stay.
+                    The Presidential Suite, 175 m2 in size, is undoubtedly one
+                    of the best and most exclusive rooms of the SHA Wellness
+                    Clinic medical spa. There are many details that make the
+                    presidential suite of the medical hotel very special and
+                    complete. It has the latest technology and premium services
+                    available are intended to assure you a fantastic stay.
                   </h6>
                 </div>
               }
-              
               tab5Content={
                 <div>
                   <img src={royalsuite} className="image-of-hotels"></img>
                   <div className="wrapper mr-auto">
                     <h4 className="text-center">
-                      <strong>It has the very latest technology and the services available are intended to guarantee the most satisfactory stay possible</strong>
+                      <strong>
+                        It has the very latest technology and the services
+                        available are intended to guarantee the most
+                        satisfactory stay possible
+                      </strong>
                     </h4>
                   </div>
                   <h6>
-                  The Royal Suite that is 320 m2 in size, is certainly,
-                  the most exclusive, elegant and luxurious room of the SHA Wellness Clinic.
-                  There are many details that make the Royal suite of the medical hotel very special and complete.
-                   It has the very latest technology and the services available are intended to guarantee the most satisfactory stay possible.
+                    The Royal Suite that is 320 m2 in size, is certainly, the
+                    most exclusive, elegant and luxurious room of the SHA
+                    Wellness Clinic. There are many details that make the Royal
+                    suite of the medical hotel very special and complete. It has
+                    the very latest technology and the services available are
+                    intended to guarantee the most satisfactory stay possible.
                   </h6>
                 </div>
               }
