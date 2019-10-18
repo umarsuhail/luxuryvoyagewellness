@@ -4,6 +4,15 @@ import Shawellness from "../components/Medicalspa/Shawellness";
 import AnandaHimalaya from "../components/Medicalspa/AnandaHimalaya";
 import Brenners from "../components/Medicalspa/Brenners";
 import LeelaRaviz from "../components/Medicalspa/LeelaRaviz";
+import AyurvedhaLearning from "../components/Learning Program/AyurvedhaLearning";
+import Yoga from "../components/Learning Program/Yoga";
+import Kalarippayattu from "../components/Learning Program/Kalarippayattu";
+import TherpyAqua from "../components/AquaTherapy/TherpyAqua";
+import Rajah from "../components/Ayurvedha/Rajah";
+import YogaVillage from "../components/Ayurvedha/YogaVillage";
+
+
+
 
 
 const IndexRoutes = [
@@ -32,6 +41,36 @@ const IndexRoutes = [
     path: "/LEELA-RAVIZ",
     name: "LEELA-RAVIZ",
     component: LeelaRaviz,
+  },
+  {
+    path: "/AyurvedhaLearning",
+    name: "AyurvedhaLearning",
+    component: AyurvedhaLearning,
+  },
+  {
+    path: "/Yoga",
+    name: "Yoga",
+    component: Yoga,
+  },
+  {
+    path: "/Kalarippayattu",
+    name: "Kalarippayattu",
+    component: Kalarippayattu,
+  },
+  {
+    path: "/TherpyAqua",
+    name: "TherpyAqua",
+    component: TherpyAqua,
+  },
+  {
+    path: "/Rajah",
+    name: "Rajah",
+    component: Rajah,
+  },
+  {
+    path: "/YogaVillage",
+    name: "YogaVillage",
+    component: YogaVillage,
   },
 ];
 
