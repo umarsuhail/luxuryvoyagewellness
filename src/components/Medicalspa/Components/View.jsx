@@ -34,7 +34,7 @@ export default class View extends Component {
               alt="backround-image"
             ></img>
             <div className="container">
-              <h1 className="heading">{this.props.heading}</h1>
+              <h1 className="heading container">{this.props.heading}</h1>
             </div>
           </div>
         </div>

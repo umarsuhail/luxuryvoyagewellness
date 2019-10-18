@@ -10,11 +10,7 @@ import Kalarippayattu from "../components/Learning Program/Kalarippayattu";
 import TherpyAqua from "../components/AquaTherapy/TherpyAqua";
 import Rajah from "../components/Ayurvedha/Rajah";
 import YogaVillage from "../components/Ayurvedha/YogaVillage";
-
-
-
-
-
+import PalaceResorts from '../components/Resort/PalaceResorts'
 const IndexRoutes = [
   {
     path: "/",
@@ -71,6 +67,11 @@ const IndexRoutes = [
     path: "/YogaVillage",
     name: "YogaVillage",
     component: YogaVillage,
+  },
+  {
+    path: "/PalaceResorts",
+    name: "PalaceResorts",
+    component: PalaceResorts,
   },
 ];
 

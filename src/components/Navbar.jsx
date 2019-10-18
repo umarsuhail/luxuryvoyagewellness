@@ -124,9 +124,9 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="#">
+                  <Link to="PalaceResorts" className="dropdown-item">
                     PALACE RESORTS
-                  </a>
+                  </Link>
                   <a className="dropdown-item" href="#">
                     LUXURY JUNGLE RESORTS
                   </a>
@@ -163,7 +163,7 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                 <Link to="Rajah" className="dropdown-item">
+                  <Link to="Rajah" className="dropdown-item">
                     {" "}
                     AYURVEDHA RAJAH HOSPITAL
                   </Link>
@@ -173,7 +173,7 @@ export default class Navbar extends Component {
                   {/* <a className="dropdown-item" href="#">
                     AYURVEDHA YOGA VILLAGE
                   </a> */}
-                   <Link to="YogaVillage" className="dropdown-item">
+                  <Link to="YogaVillage" className="dropdown-item">
                     {" "}
                     AYURVEDHA YOGA VILLAGE
                   </Link>
@@ -195,7 +195,7 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                 <Link to="AyurvedhaLearning" className="dropdown-item">
+                  <Link to="AyurvedhaLearning" className="dropdown-item">
                     {" "}
                     AYURVEDHA LEARNING PROGRAM
                   </Link>
@@ -205,14 +205,14 @@ export default class Navbar extends Component {
                   {/* <a className="dropdown-item" href="#">
                     YOGA
                   </a> */}
-                     <Link to="yoga" className="dropdown-item">
+                  <Link to="yoga" className="dropdown-item">
                     {" "}
                     YOGA
                   </Link>
                   {/* <a className="dropdown-item" href="#">
                     KALARIPPAYATTU
                   </a> */}
-                    <Link to="Kalarippayattu" className="dropdown-item">
+                  <Link to="Kalarippayattu" className="dropdown-item">
                     {" "}
                     KALARIPPAYATTU
                   </Link>
@@ -222,10 +222,10 @@ export default class Navbar extends Component {
                 {/* <a className="nav-link text-white" href="#">
                   AQUA THERAPY
                 </a> */}
-                 <Link to="TherpyAqua" className="nav-link text-white">
-                    {" "}
-                    AQUA THERAPY
-                  </Link>
+                <Link to="TherpyAqua" className="nav-link text-white">
+                  {" "}
+                  AQUA THERAPY
+                </Link>
               </li>
             </ul>
             <img className="navbar-brand logo m-auto" src={logo} alt="Logo" />

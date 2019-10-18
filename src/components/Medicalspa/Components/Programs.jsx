@@ -31,7 +31,7 @@ class Programs extends React.Component {
     console.log(this.props);
     
     return (
-      <div className="mt-5">
+      <div className="mt-5 program-wrapper">
         <h1>Programs</h1>
         <Nav tabs className="mt-5">
           {NavData.map((element, index) => {
