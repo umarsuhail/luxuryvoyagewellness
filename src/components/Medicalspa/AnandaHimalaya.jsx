@@ -145,6 +145,7 @@ export default class AnandaHimalaya extends Component {
                     practitioner, which they believe encourages healing"
                   />
                 </div>
+
               }
             ></Programs>
           }
