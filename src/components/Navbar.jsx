@@ -48,6 +48,8 @@ export default class Navbar extends Component {
           className={`navbar navbar-expand-lg navbar-light bg-light headtop ${!this
             .state.visible && "navbar-hidden"}`}
         >
+          <img className="navbar-brand logo" src={logo} alt="Logo" />
+
           <button
             className="navbar-toggler"
             type="button"
@@ -157,7 +159,7 @@ export default class Navbar extends Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  AYURVEDHA
+                  AYURVEDA
                 </a>
                 <div
                   className="dropdown-menu"
@@ -165,17 +167,17 @@ export default class Navbar extends Component {
                 >
                  <Link to="Rajah" className="dropdown-item">
                     {" "}
-                    AYURVEDHA RAJAH HOSPITAL
+                    AYURVEDA RAJAH HOSPITAL
                   </Link>
                   {/* <a className="dropdown-item" href="#">
-                    AYURVEDHA RAJAH HOSPITAL
+                    AYURVEDA RAJAH HOSPITAL
                   </a> */}
                   {/* <a className="dropdown-item" href="#">
-                    AYURVEDHA YOGA VILLAGE
+                    AYURVEDA YOGA VILLAGE
                   </a> */}
                   <Link to="YogaVillage" className="dropdown-item">
                     {" "}
-                    AYURVEDHA YOGA VILLAGE
+                    AYURVEDA YOGA VILLAGE
                   </Link>
                 </div>
               </li>
@@ -195,12 +197,12 @@ export default class Navbar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <Link to="AyurvedhaLearning" className="dropdown-item">
+                  <Link to="AyurvedaLearning" className="dropdown-item">
                     {" "}
-                    AYURVEDHA LEARNING PROGRAM
+                    AYURVEDA LEARNING PROGRAM
                   </Link>
                   {/* <a className="dropdown-item" href="#">
-                    AYURVEDHA LEARNING PROGRAM
+                    AYURVEDA LEARNING PROGRAM
                   </a> */}
                   {/* <a className="dropdown-item" href="#">
                     YOGA
@@ -228,9 +230,8 @@ export default class Navbar extends Component {
                 </Link>
               </li>
             </ul>
-            <img className="navbar-brand logo m-auto" src={logo} alt="Logo" />
 
-            <button className="btn contact-button" onClick={this.openModal}>
+            <button className="btn contact-button-navbar" onClick={this.openModal}>
               Contact Us
             </button>
           </div>

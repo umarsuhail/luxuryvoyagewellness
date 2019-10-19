@@ -42,6 +42,8 @@ class HotelDetails extends React.Component {
         <Col xs="6" sm="4" md="4">
           <Nav tabs vertical pills>
             {NavItems.map((item, index) => {
+              console.log('map items');
+              
               return (
                 <NavItem>
                   <NavLink

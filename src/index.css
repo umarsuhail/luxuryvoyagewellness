@@ -12,7 +12,8 @@ code {
     monospace;
 }
 .navbar-brand{
-  max-width: 100px;
+  padding-top: 0 !important;
+  max-width: 50px;
 }
 .specialities{
   display: flex;
