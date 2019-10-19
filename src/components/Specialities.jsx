@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Flight from "../images/Flight.jpg";
-import Taxi from "../images/TAXI.jpg";
+// import Taxi from "../images/TAXI.jpg";
 import Guide from "../images/travel.jpg";
 import '../css/Specialities.scss'
 import Modal from '../components/Modal'
@@ -28,25 +28,30 @@ export default class Specialities extends Component {
           <h6 style={{margin:'30px auto'}}>Through Luxury voyage wellness guest we try to give discount</h6>
 
         <div className="container specialities">
-          <div className="col-sm-12 card" >
-            <img className="card-img-top" src={Flight} alt="Card image cap" />
-            <div className="card-body">
+          <div className="speciality-icon column" >
+          <i class="material-icons">
+flight
+</i>            <div className="card-body">
               <a href="#" className="btn btn-primary" onClick={this.openModal}>
                Flight Booking
               </a>
             </div>
           </div>
-          <div className="col-sm-12 card" >
-            <img className="card-img-top" src={Taxi} alt="Card image cap" />
+          <div className="speciality-icon column" >
+            {/* <img className="card-img-top" src={Taxi} alt="Card image cap" /> */}
+            <i class="material-icons">
+directions_car
+</i>
             <div className="card-body">
               <a href="#" className="btn btn-primary" onClick={this.openModal}>
               Taxi services
               </a>
             </div>
           </div>
-          <div className="col-sm-12 card">
-            <img className="card-img-top" src={Guide} alt="Card image cap" />
-            <div className="card-body">
+          <div className="speciality-icon column">
+          <i class="material-icons">
+navigation
+</i>            <div className="card-body">
               <a href="#" className="btn btn-primary" onClick={this.openModal}>
               Travel Guide
               </a>

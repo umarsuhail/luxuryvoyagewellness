@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import VerticalLinearStepper from "./Stepper";
+import whatsapp from '../images/whatsapp.png'
+
 export default class Modal extends Component {
   constructor(props) {
     super(props);
@@ -124,7 +126,13 @@ export default class Modal extends Component {
               Send
             </button>
           </form>
+          <div className="">
+          <a href="https://api.whatsapp.com/send?phone=33660089702">
 
+            <img src={whatsapp} alt="Whatsapp" className="whatsapp"></img>
+            </a>
+
+          </div>
           <div
             className="footer text-center mx-auto"
             style={{

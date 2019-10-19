@@ -19,3 +19,9 @@ code {
   flex-direction: row !important;
   justify-content: center;
 }
+.speciality-icon{
+  color:orange
+}
+.whatsapp{
+  width:100px;
+}
