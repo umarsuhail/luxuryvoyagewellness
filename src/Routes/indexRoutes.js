@@ -4,7 +4,7 @@ import Shawellness from "../components/Medicalspa/Shawellness";
 import AnandaHimalaya from "../components/Medicalspa/AnandaHimalaya";
 import Brenners from "../components/Medicalspa/Brenners";
 import LeelaRaviz from "../components/Medicalspa/LeelaRaviz";
-import AyurvedhaLearning from "../components/Learning Program/AyurvedhaLearning";
+import AyurvedaLearning from "../components/Learning Program/AyurvedaLearning";
 import Yoga from "../components/Learning Program/Yoga";
 import Kalarippayattu from "../components/Learning Program/Kalarippayattu";
 import TherpyAqua from "../components/AquaTherapy/TherpyAqua";
@@ -39,9 +39,9 @@ const IndexRoutes = [
     component: LeelaRaviz,
   },
   {
-    path: "/AyurvedhaLearning",
-    name: "AyurvedhaLearning",
-    component: AyurvedhaLearning,
+    path: "/AyurvedaLearning",
+    name: "AyurvedaLearning",
+    component: AyurvedaLearning,
   },
   {
     path: "/Yoga",

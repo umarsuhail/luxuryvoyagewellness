@@ -17,7 +17,7 @@ import gapp from "../../images/LearningProgram/gapp.png";
 import ABHYANGAM from "../../images/LearningProgram/ABHYANGAM.jpg";
 import Steambath from "../../images/LearningProgram/Steambath.jpg";
 import yoga from "../../images/LearningProgram/yoga.jpg";
-export default class AyurvedhaLearning extends Component {
+export default class AyurvedaLearning extends Component {
   render() {
     return (
       <div>
