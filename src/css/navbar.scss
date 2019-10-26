@@ -21,3 +21,27 @@
         right: 0;
     }
 }
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+ .show{
+     display: flex;
+text-align: center;
+}
+.nav-link:hover 
+{
+    .dropdown-menu {
+        display: block !important;
+    }
+}
+.contact-button-nav{
+    background: transparent;
+    color: black;
+    border: 1px solid rgb(173, 169, 169);
+    /* margin: 0 auto; */
+    margin-right: 0;
+    margin-left: auto;
+}
