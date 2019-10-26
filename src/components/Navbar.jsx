@@ -108,6 +108,8 @@ export default class Navbar extends Component {
                   </div></li><li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AYURVEDA</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/Rajah"> AYURVEDA TREATMENTS</a>
+
                       <a class="dropdown-item" href="/Rajah"> AYURVEDA RAJAH HOSPITAL</a>
                       <a class="dropdown-item" href="/YogaVillage"> AYURVEDA YOGA VILLAGE</a>
                       </div></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LEARNING PROGRAM</a>
