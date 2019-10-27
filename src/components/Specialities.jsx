@@ -54,7 +54,7 @@ Relax and other activities to guest
         <div className="card-body">
         <div className="specialities-data" style={{padding:20, margin:20,borderRadius:20,position:'relative', border:'1px solid 1px solid rgb(227, 224, 224)'}}>
 
-        <div style={{position:'absolute', width:'100%',overflow:'hidden'}} >
+        <div style={{position:'absolute', width:'100%',overflow:'hidden',maxHeight:'80vh'}} >
   <Particles params={{
             		particles: {
             
@@ -65,7 +65,7 @@ Relax and other activities to guest
                     value: 80,
                     density: {
                       enable: true,
-                      value_area: 1200
+                      value_area: 800
                     }
                   },
                   color: {
