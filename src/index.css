@@ -26,3 +26,29 @@ code {
 .whatsapp{
   width:100px;
 }
+@media only screen and (max-width: 900px) {
+  .card-border
+{
+  height:100vh;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+  background: #f9eadf;
+  border-top: 2px solid #c9c9c961;
+}
+}
+.specialities-data{
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.specialities-text{
+  display: flex;
+  justify-content:center;
+}
+.services{
+  background: #19792f1f;
+  padding: 25px;
+}

@@ -16,6 +16,7 @@ import "../style.scss";
 import Cards from "../components/Cards";
 import AnmimatedText from "../components/AnimatedText";
 import Modal from "../components/Modal";
+import Services from "../components/Services";
 class ScreenOne extends Component {
   constructor(props) {
     super(props);
@@ -118,7 +119,8 @@ class ScreenOne extends Component {
           </a>
         </div>
         {this.state.visible && <Modal modalHandle={this.ModalOpen} />}
-        <Cards />
+        <Services/>
+        {/* <Cards /> */}
         <Specialities />
         <div className="">
           <div

@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Flight from "../images/Flight.jpg";
 // import Taxi from "../images/TAXI.jpg";
-import Guide from "../images/travel.jpg";
 import '../css/Specialities.scss'
-import Modal from '../components/Modal'
 import sreejith from '../images/sreejith.jpg'
+import Particles from 'react-particles-js';
+
 export default class Specialities extends Component {
   constructor(props){
     super(props)
@@ -25,42 +24,7 @@ export default class Specialities extends Component {
   render() {
     return (
       <div>
-        <h1 style={{margin:'30px auto'}}>Services</h1>
-          <h6 style={{margin:'30px auto'}}>Through Luxury voyage wellness guest we try to give discount</h6>
-
-        <div className="container specialities">
-          <div className="speciality-icon column" >
-          <i class="material-icons">
-flight
-</i>            <div className="card-body">
-              <a href="#" className="btn btn-primary" onClick={this.openModal}>
-               Flight Booking
-              </a>
-            </div>
-          </div>
-          <div className="speciality-icon column" >
-            {/* <img className="card-img-top" src={Taxi} alt="Card image cap" /> */}
-            <i class="material-icons">
-directions_car
-</i>
-            <div className="card-body">
-              <a href="#" className="btn btn-primary" onClick={this.openModal}>
-              Taxi services
-              </a>
-            </div>
-          </div>
-          <div className="speciality-icon column">
-          <i class="material-icons">
-navigation
-</i>            <div className="card-body">
-              <a href="#" className="btn btn-primary" onClick={this.openModal}>
-              Travel Guide
-              </a>
-            </div>
-          </div>
-        </div>
-        {
-        this.state.contactUs&&<Modal modalHandle={this.closeModal}/>}
+     
         {/* <div className=" row gallery-container">
         <h3> BIO</h3>
       <div className=" col-lg-12 col-sm-12 col-md-12">
@@ -86,13 +50,45 @@ Relax and other activities to guest
          
          
         </div> */}
-        <div style={{padding:20, margin:20,borderRadius:20, border:'1px solid 1px solid rgb(227, 224, 224)'}}>
+        <div class="card-border specialities-parent" style={{background:'#f2f2f2'}}>
+        <div className="card-body">
+        <div className="specialities-data" style={{padding:20, margin:20,borderRadius:20,position:'relative', border:'1px solid 1px solid rgb(227, 224, 224)'}}>
 
-        <h1 >BIO</h1>
+        <div style={{position:'absolute', width:'100%',overflow:'hidden'}} >
+  <Particles params={{
+            		particles: {
+            
+                  size:{
+                    value:4
+                  },
+            	    number: {
+                    value: 80,
+                    density: {
+                      enable: true,
+                      value_area: 1200
+                    }
+                  },
+                  color: {
+                    value: '#a1a1a1'
+                  },
+                        line_linked: {
+        
+            				shadow: {
+            					enable: true,
+            					color: "#a1a1a1",
+            					blur: 1
+            				}
+            			},
+                },
+              
+            	}} />  
+  </div>
 
 <div className="row" style={{ padding: '0 50px' }}>
+
+
 <div
-className="float-left  col-sm-12 col-md-4 col-lg-4 float-left"
+className="  col-sm-12 col-md-4 col-lg-12 "
 style={{
  alignSelf: "center",
 }}
@@ -101,19 +97,25 @@ style={{
  src={sreejith}
  alt="hotel-image"
  alt=""
- style={{width: '400px',
+ style={{width: '335px',
    borderRadius: '50%',
-   float: 'right',
-   border:'6px solid #e3e3e3' }}
+   
+   border:'2px solid #e3e3e3' }}
 />
 </div>
+</div>
+<div style={{ padding: '80px 50px 20px 0',  }}>
+  <h1 style={{textAlign:'center'}}>Sreejith GOPI</h1>
+
+  </div>
+<div className="row specialities-text" >
 <div
-className="float-right text-left col-sm-12 col-md-8 col-lg-8 float-right"
+className="text-center col-sm-12 col-md-8 col-lg-12 "
 style={{
  alignSelf: "center"
 }}
 >
-<h1>Sreejith Gopi</h1>
+
 <br />
 <p style={{lineHeight:'2.5'}}>CEO of LUXURY VOYAGE WELLNESS,
 Based in France and Kerala, India. Sreejith start his career as a yoga Instructor 
@@ -124,8 +126,12 @@ share his experiences and informations on Detox , Weight loose , Anti age, Adven
 Relax and other activities to guest</p>
 </div>
 </div>
+
+
         </div>
-         
+     
+
+         </div></div>
       </div>
     );
   }
