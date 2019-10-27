@@ -50,14 +50,15 @@ body{
 
 }
 .translator-wrapper{
-  position:fixed;
-    right: 0;
-    bottom: 0;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin: 10px;
-    z-index: 10;
+  /* position: fixed; */
+  /* right: 0;
+  bottom: 0; */
+  background: white;
+  /* padding: 10px 20px; */
+  border-radius: 20px;
+  margin: 10px;
+  z-index: 10;
+  height: 40px;
 }
 @media only screen and (max-width: 600px) {
   .translator-wrapper{
@@ -70,4 +71,13 @@ body{
       border-radius: 20px;
       margin: 10px;
   }
+}
+.goog-logo-link{
+  display: none !important;
+}
+.goog-te-gadget{
+  color: transparent !important;
+}
+.goog-te-combo{
+  background: #f2f2f2;
 }

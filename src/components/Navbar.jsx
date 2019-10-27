@@ -16,6 +16,7 @@ export default class Navbar extends Component {
   }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    
   }
 
   componentWillUnmount() {
@@ -134,6 +135,9 @@ mouseOver=(e)=>{
                       </ul>
                  
   </div>
+  <div className="translator-wrapper">
+<div id="google_translate_element"></div>
+      </div>
   <div className="float-right">
                         <button className="btn contact-button-nav" onClick={this.openModal}>
                         Contact Us
