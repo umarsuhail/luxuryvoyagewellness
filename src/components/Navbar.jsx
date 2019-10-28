@@ -10,13 +10,13 @@ export default class Navbar extends Component {
     this.state = {
       visible: true,
       modalVisible: false,
-      className:''
+      className: ''
       // showNavbar: false
     };
   }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    
+
   }
 
   componentWillUnmount() {
@@ -33,14 +33,14 @@ export default class Navbar extends Component {
       visible
     });
   };
-  
-mouseOver=(e)=>{
-  console.log('mouse over');
-  const NavLink = document.getElementsByClassName('nav-link');
- this.setState({
-   className:' show'
- })
-}
+
+  mouseOver = (e) => {
+    console.log('mouse over');
+    const NavLink = document.getElementsByClassName('nav-link');
+    this.setState({
+      className: ' show'
+    })
+  }
   openModal = () => {
     this.setState({
       modalVisible: !this.state.modalVisible
@@ -84,67 +84,68 @@ mouseOver=(e)=>{
 
 
 
-                      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  {/* <a className="navbar-brand" href="#">Navbar</a> */}
-  <img className="navbar-brand logo" src={logo1} alt="Logo"></img>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link text-white" onMouseEnter={this.mouseOver} href="/"> HOME</a>
-            <span className="sr-only">(current)</span></li><li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MEDICAL SPA</a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="/sha-wellness" > SHA WELLNESS</a>
-                <a className="dropdown-item" href="/ananda-himalaya"> ANANDA HIMALAYA</a>
-                <a className="dropdown-item" href="/BRENNERS-PARK-HOTEL-AND-SPA"> BRENNERS PARK-HOTEL AND SPA</a>
-                <a className="dropdown-item" href="/LEELA-RAVIZ"> LEELA RAVIZ</a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          {/* <a className="navbar-brand" href="#">Navbar</a> */}
+          <img className="navbar-brand logo" src={logo1} alt="Logo"></img>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item active">
+                <a className="nav-link text-white" onMouseEnter={this.mouseOver} href="/"> HOME</a>
+                <span className="sr-only">(current)</span></li><li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MEDICAL SPA</a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a className="dropdown-item" href="/sha-wellness" > SHA WELLNESS</a>
+                  <a className="dropdown-item" href="/ananda-himalaya"> ANANDA HIMALAYA</a>
+                  <a className="dropdown-item" href="/BRENNERS-PARK-HOTEL-AND-SPA"> BRENNERS PARK-HOTEL AND SPA</a>
+                  <a className="dropdown-item" href="/LEELA-RAVIZ"> LEELA RAVIZ</a>
                 </div></li>
-                <li className="nav-item">
+              <li className="nav-item">
                 <a className="nav-link text-white" href="/PalaceResorts">PALACE RESORTS</a>
-                      </li>
-                
-                <li className="nav-item dropdown"> 
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RESORTS</a>
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                   
+              </li>
+
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RESORTS</a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
                   <a className="dropdown-item" href="#">LUXURY JUNGLE RESORTS</a>
                   <a className="dropdown-item" href="#">HILL RESORTS</a>
                   <a className="dropdown-item" href="#">ECO-NATURAL RESORTS</a>
                   <a className="dropdown-item" href="#">RAIN FOREST RESORTS</a>
                   <a className="dropdown-item" href="#">SKI RESORTS</a>
                   <a className="dropdown-item" href="#">ISLAND RESORTS</a>
-                  </div></li><li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AYURVEDA</a>
-                    <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a className="dropdown-item" href="/Rajah"> AYURVEDA TREATMENTS</a>
+                </div></li><li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AYURVEDA</a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a className="dropdown-item" href="/Rajah"> AYURVEDA TREATMENTS</a>
 
-                      <a className="dropdown-item" href="/Rajah"> AYURVEDA RAJAH HOSPITAL</a>
-                      <a className="dropdown-item" href="/YogaVillage"> AYURVEDA YOGA VILLAGE</a>
-                      </div></li><li className="nav-item dropdown"><a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LEARNING PROGRAM</a>
-                      <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a className="dropdown-item" href="/AyurvedaLearning"> AYURVEDA LEARNING PROGRAM</a>
-                      <a className="dropdown-item" href="/yoga"> YOGA</a>
-                      <a className="dropdown-item" href="/Kalarippayattu"> KALARIPPAYATTU</a>
-                      </div></li>
-                      <li className="nav-item">
-                        <a className="nav-link text-white" href="/TherpyAqua"> AQUA THERAPY</a>
-                      </li>
-                      </ul>
-                 
-  </div>
-  <div className="translator-wrapper">
-<div id="google_translate_element"></div>
-      </div>
-  <div className="float-right">
-                        <button className="btn contact-button-nav" onClick={this.openModal}>
-                        Contact Us
+                  <a className="dropdown-item" href="/Rajah"> AYURVEDA RAJAH HOSPITAL</a>
+                  <a className="dropdown-item" href="/YogaVillage"> AYURVEDA YOGA VILLAGE</a>
+                </div></li><li className="nav-item dropdown"><a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LEARNING PROGRAM</a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a className="dropdown-item" href="/AyurvedaLearning"> AYURVEDA LEARNING PROGRAM</a>
+                  <a className="dropdown-item" href="/yoga"> YOGA</a>
+                  <a className="dropdown-item" href="/Kalarippayattu"> KALARIPPAYATTU</a>
+                </div></li>
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/TherpyAqua"> AQUA THERAPY</a>
+              </li>
+            </ul>
+
+          </div>
+
+      
+          <div className="translator-wrapper">
+            <div id="google_translate_element"></div>
+          </div>
+          <div className="float-right">
+            <button className="btn contact-button-nav" onClick={this.openModal}>
+              Contact Us
                         </button>
-                      </div>
-                    
-</nav>
+          </div>
+        </nav>
 
 
         {this.state.modalVisible && (
