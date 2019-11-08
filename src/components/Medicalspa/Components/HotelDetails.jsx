@@ -45,8 +45,9 @@ class HotelDetails extends React.Component {
               console.log('map items');
               
               return (
-                <NavItem>
+                <NavItem  key={index}>
                   <NavLink
+                 
                     className={classnames({
                       active: this.state.activeTab === index
                     })}

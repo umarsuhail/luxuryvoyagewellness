@@ -5,7 +5,6 @@ import PalaceExterior from "../../images/palace/PalaceExeterior.jpg";
 import palace from "../../images/palace/palace.jpg";
 import KovalamPalace from "../../images/palace/kovalamPalace.jpg";
 import BacgroundImage from "../../images/sha-wellness.jpg";
-
 import Programs from "../Medicalspa/Components/Programs";
 
 const NavData1 = ["Accommodation", "Aminities"];

@@ -25,7 +25,7 @@ export default class View extends Component {
         <div>
           <div className="header">
             <img
-              src={BacgroundImage}
+              src={this.props.BackgroundImage}
               className="background-Medical-spa"
               style={{ width: "100%" }}
               alt="backround-image"

@@ -25,7 +25,7 @@ export default class ProgramContents extends Component {
         >
           <h1>{this.props.heading}</h1>
           <br />
-          <p>{this.props.content}</p>
+          <p style={{fontSize:12}}>{this.props.content}</p>
         </div>
       </div>
     );

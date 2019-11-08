@@ -14,6 +14,9 @@ import PalaceResorts from '../components/Resort/PalaceResorts'
 import FogResorts from "../components/Resort/FogResorts";
 import RainForestResort from "../components/Resort/RainForestResort";
 import VaithryResorts from "../components/Resort/VaithryResorts";
+import Econatural from "../components/Resort/Econatural";
+import HoneyMoonResort from "../components/Resort/HoneyMoonResort";
+import LuxuryJungleResort from "../components/Resort/LuxuryJungleResort";
 
 const IndexRoutes = [
   {
@@ -92,6 +95,23 @@ const IndexRoutes = [
     name: "VaithryResorts",
     component: VaithryResorts,
   },
+  {
+    path: "/Econatural-resorts",
+    name: "/Econatural",
+    component: Econatural,
+  },  {
+    path: "/Honeymoon-resorts",
+    name: "/HoneyMoonResort",
+    component: HoneyMoonResort,
+  },
+  {
+    path: "/jungle-resorts",
+    name: "/LuxuryJungleResort",
+    component: LuxuryJungleResort,
+  },
+
+
+
 ];
 
 export default  IndexRoutes;

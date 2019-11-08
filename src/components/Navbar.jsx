@@ -119,7 +119,8 @@ export default class Navbar extends Component {
                   <a className="dropdown-item" href="/jungle-resorts">LUXURY JUNGLE RESORTS</a>
                   <a className="dropdown-item" href="#">HILL RESORTS</a>
                   <a className="dropdown-item" href="/Rain-Forest-resorts">RAIN FOREST RESORTS</a>
-                  <a className="dropdown-item" href="/fog-resorts">FOG RESORTS</a>
+                  <a className="dropdown-item" href="/Econatural-resorts">ECO-NATURAL RESORTS</a>
+                  <a className="dropdown-item" href="/Honeymoon-resorts">HONEYMOON RESORTS</a>
 
                 </div></li><li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AYURVEDA</a>
