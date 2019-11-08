@@ -110,12 +110,17 @@ export default class Navbar extends Component {
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RESORTS</a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                  <a className="dropdown-item" href="#">LUXURY JUNGLE RESORTS</a>
+                  {/* <a className="dropdown-item" href="#">LUXURY JUNGLE RESORTS</a>
                   <a className="dropdown-item" href="#">HILL RESORTS</a>
                   <a className="dropdown-item" href="#">ECO-NATURAL RESORTS</a>
                   <a className="dropdown-item" href="#">RAIN FOREST RESORTS</a>
                   <a className="dropdown-item" href="#">SKI RESORTS</a>
-                  <a className="dropdown-item" href="#">ISLAND RESORTS</a>
+                  <a className="dropdown-item" href="#">ISLAND RESORTS</a> */}
+                  <a className="dropdown-item" href="/jungle-resorts">LUXURY JUNGLE RESORTS</a>
+                  <a className="dropdown-item" href="#">HILL RESORTS</a>
+                  <a className="dropdown-item" href="/Rain-Forest-resorts">RAIN FOREST RESORTS</a>
+                  <a className="dropdown-item" href="/fog-resorts">FOG RESORTS</a>
+
                 </div></li><li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AYURVEDA</a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -127,10 +132,11 @@ export default class Navbar extends Component {
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a className="dropdown-item" href="/AyurvedaLearning"> AYURVEDA LEARNING PROGRAM</a>
                   <a className="dropdown-item" href="/yoga"> YOGA</a>
+                  <a className="dropdown-item" href="/yoga"> WATSU</a>
                   <a className="dropdown-item" href="/Kalarippayattu"> KALARIPPAYATTU</a>
                 </div></li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/TherpyAqua"> AQUA THERAPY</a>
+                <a className="nav-link text-white" href="/TherpyAqua"> KTDC </a>
               </li>
             </ul>
 

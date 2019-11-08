@@ -322,9 +322,58 @@
 }
 
 .container-carosel {
-  padding: 40px;
-  background: #1c1d1edb;
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888
+}
+  padding: 40px;
+  background: #f1eacbdb;
+  align-items: center;
+  .read-more-button{
+    cursor: pointer;
+    color: #2080c3;
+  }
+  .card-body{
+    padding: 20px;
+    overflow: auto;
+  }
+.card{
+  .btn{
+    color: white;
+    background: #dc9f2e;
+    border:none;
+    margin: 10px;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .btn:hover{
+    color: white;
+    background: #eaae3f;
+  }
+  height: 437px;
+    padding: 20px;
+}
+h4{
+  font-weight: bolder;
+}
+img{
+  border-radius: 20px;
+}
 }
 
 .slick-slide img {
@@ -680,4 +729,11 @@ form {
   background-color: white;
   color: black;
 
+}
+.vythri-heading{
+  padding: 20px;
+  h4{
+    font-weight: lighter;
+
+  }
 }

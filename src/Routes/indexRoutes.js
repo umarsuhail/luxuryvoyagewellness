@@ -11,6 +11,10 @@ import TherpyAqua from "../components/AquaTherapy/TherpyAqua";
 import Rajah from "../components/Ayurvedha/Rajah";
 import YogaVillage from "../components/Ayurvedha/YogaVillage";
 import PalaceResorts from '../components/Resort/PalaceResorts'
+import FogResorts from "../components/Resort/FogResorts";
+import RainForestResort from "../components/Resort/RainForestResort";
+import VaithryResorts from "../components/Resort/VaithryResorts";
+
 const IndexRoutes = [
   {
     path: "/",
@@ -72,6 +76,21 @@ const IndexRoutes = [
     path: "/PalaceResorts",
     name: "PalaceResorts",
     component: PalaceResorts,
+  },
+  {
+    path: "/fog-resorts",
+    name: "fogresorts",
+    component: FogResorts,
+  },
+  {
+    path: "/Rain-Forest-resorts",
+    name: "rainforestresorts",
+    component: RainForestResort,
+  },
+  {
+    path: "/Vaithri-resorts",
+    name: "VaithryResorts",
+    component: VaithryResorts,
   },
 ];
 

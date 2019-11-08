@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import BacgroundImage from "../../../images/sha-wellness.jpg";
 import "../../../css/View.scss";
 
 export default class View extends Component {
@@ -9,7 +8,7 @@ export default class View extends Component {
         <div>
           <div className="header">
             <img
-              src={BacgroundImage}
+              src={this.props.BackgroundImage}
               className="background-Medical-spa"
               style={{ width: "100%" }}
               alt="backround-image"
@@ -19,7 +18,7 @@ export default class View extends Component {
             </div>
           </div>
         </div>
-        <div className=" container">{this.props.content}</div>
+        <div className=" container-fluid" style={{background:'#d6cdc1'}}>{this.props.content}</div>
         <div className="container">{this.props.programs}</div>
         <div className="last-content">{this.props.lastContent}</div>
       </div>

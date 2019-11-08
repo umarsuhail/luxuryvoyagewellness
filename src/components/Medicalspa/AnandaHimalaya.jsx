@@ -11,15 +11,22 @@ import tabimage3 from "../../images/ananda/ananda-tab-img3.jpg";
 import anandspa from "../../images/ananda/anandspa1.png";
 import anandspa2 from "../../images/ananda/anandspa2.jpg";
 import anandspa3 from "../../images/ananda/anandspa3.jpg";
-import hotel1 from "../../images/ananda/hotel1.jpg";
-import hotel2 from "../../images/ananda/hotel2.jpg";
+import GuestRoom from "../../images/ananda/guest-room.jpg";
 import ProgramContentsLeft from "./Components/ProgramContentsLeft";
 import ProgramContentsRight from "./Components/ProgramContentsRight";
-
+import GardenSuite from "../../images/ananda/garden-suite.jpg";
 import HotelDetails from "./Components/HotelDetails";
-
+import GuestRooms from "./Components/GuestRoom";
+import ProgramContents from "./Components/ProgramContentsLeft";
+import AnandaSuit from "../../images/ananda/ananda-suite.jpg";
 const NavData1 = ["Wellness Programmes", "Spa at Ananda"];
-const NavItem = ["Deluxe Palace/Garden View Room", "Deluxe Valley View Rooms"];
+const NavItem = [
+  "Guest Room",
+  "Garden Suite",
+  "Ananda Suite",
+  "Viceregel Suite",
+  "Ananda Villas"
+];
 
 export default class AnandaHimalaya extends Component {
   render() {
@@ -145,7 +152,6 @@ export default class AnandaHimalaya extends Component {
                     practitioner, which they believe encourages healing"
                   />
                 </div>
-
               }
             ></Programs>
           }
@@ -154,97 +160,71 @@ export default class AnandaHimalaya extends Component {
               NavItems={NavItem}
               tab1Content={
                 <div>
-                  <img src={hotel1} className="image-of-hotels"></img>
+                  <img src={GuestRoom} className="image-of-hotels"></img>
                   <div className="wrapper mr-auto">
-                    <h4 className="text-center">
-                      <strong>
-                        The newly renovated pailace or the lush garden views
-                        rooms are simply luxurous.
-                      </strong>
-                    </h4>
+                    <h4 className="text-center">Guest Room</h4>
                   </div>
-                  <h6>
-                    The newly renovated palace or the lush garden views rooms
-                    are simply luxurious 45 sqm in size, they feature walk-in
-                    closets and perfectly appointed bathrooms with windows
-                    overlooking panoramic views of the Golf course and the
-                    Palace, with life sizemirrors and a luxurious bathtub with
-                    an LCD TV. Each room opens onto large porches or balconies
-                    with picture-perfect views, ideal for a private meal. All
-                    rooms are equipped with a comfortable Settee with a footrest
-                    facing the balcony, a 42’ LCD TV, elegant writing and
-                    bedside tables, tea coffee maker, well stocked mini bar,
-                    electronic safe and complimentary Wi-Fi High speed internet
-                    access.
-                  </h6>
+                  <GuestRooms />
                 </div>
               }
               tab2Content={
                 <div>
-                  <img src={hotel2} className="image-of-hotels"></img>
+                  <img src={GardenSuite} className="image-of-hotels"></img>
                   <div className="wrapper mr-auto">
-                    <h4 className="text-center">
-                      <strong>One of the most exclusive rooms of SHA</strong>
-                    </h4>
+                    <h4 className="text-center">GARDEN SUITE</h4>
                   </div>
-                  <h6>
-                    Each room is equipped with a luxurious King size bed, a
-                    comfortable Settee with a footrest facing the balcony, a 42’
-                    LCD TV, elegant writing and bedside tables. The large
-                    private balcony has a chaise-lounge for complete relaxation
-                    and a tea table. Each room features spacious walk-in closets
-                    and perfectly appointed bathrooms with life size mirrors and
-                    a luxurious bathtub with an LCD TV and windows overlooking
-                    views of the valley. All rooms are equipped with DVD player,
-                    tea coffee maker, well stocked mini bar with healthy
-                    options, electronic safe and complimentary high speed Wi-Fi
-                    internet access.
-                  </h6>
+                  <span
+                    className="details text-left"
+                    style={{ fontSize: 13, textAlign: "left" }}
+                  >
+                    The 3 Garden Suites face either the Valley or the Maharaja’s
+                    palace. These 2-bay suites feature tastefully appointed
+                    bedrooms with attached sitting rooms and large bathrooms
+                    with tranquil garden views. Secluded private gardens
+                    situated to overlook the valley, add to the charm and
+                    privacy of these suites.
+                  </span>
                 </div>
               }
-            />
-          }
-
-         
-        >
-          <div className="wpb_column vc_column_container vc_col-sm-6">
-            <div className="vc_column-inner ">
-              <div className="wpb_wrapper">
-                <div className="wpb_text_column wpb_content_element ">
-                  <div className="wpb_wrapper">
+              tab3Content={
+                <div className="col-12">
+                <div className="col-12">
+                  <img src={AnandaSuit} className="col-12" alt="" />
+                  <div className="container mt-5" style={{fontSize:12}}>
                     <p>
-                      Ananda is an award-winning luxury destination spa resort
-                      in India situated at the Himalayan foothills in Northern
-                      India. Located on a 100 acre Maharaja’s Palace Estate,
-                      Ananda is surrounded by graceful Sal forests and overlooks
-                      the spiritual town of Rishikesh and the Ganges river
-                      valley. Ananda, one of the best luxury wellness retreats
-                      in India, integrates traditional Ayurveda, Yoga and
-                      Vedanta with international wellness experiences, fitness
-                      and healthy organic cuisine to restore balance and
-                      harmonize energy.
+                      Ananda is an award-winning luxury destination spa resort in
+                      India situated at the <strong>Himalayan foothills</strong> in Northern India.
+                      Located on a 100 acre Maharaja’s Palace Estate, Ananda is
+                      surrounded by graceful Sal forests and overlooks the spiritual
+                      town of Rishikesh and the Ganges river valley. Ananda, one of
+                      the best luxury wellness retreats in India, integrates
+                      traditional Ayurveda, Yoga and Vedanta with international
+                      wellness experiences, fitness and healthy organic cuisine to
+                      restore balance and harmonize energy.
                     </p>
                     <p>
                       Located in the tranquil Himalayan foothills, close to the
-                      mythological cities of Haridwar and Rishikesh, surrounded
-                      by graceful Sal forests, overlooking the peaceful Ganga as
-                      it meanders into the distance. Ananda is the spiritual
-                      pathway to the ultimate, discovered through the union of
-                      body, mind and soul.
+                      mythological cities of Haridwar and Rishikesh, surrounded by
+                      graceful Sal forests, overlooking the peaceful Ganga as it
+                      meanders into the distance. Ananda is the spiritual pathway to
+                      the ultimate, discovered through the union of body, mind and
+                      soul.
                     </p>
                     <p>
-                      It is not just a retreat that will leave you breathless
-                      with the enchantment of its surroundings, but assists in
-                      redefining lifestyles to include the well-known
-                      traditional Indian wellness regimes of Ayurveda, Yoga and
-                      Vedanta combined with best of International Wellness
-                      Experiences.
+                      It is not just a retreat that will leave you breathless with
+                      the enchantment of its surroundings, but assists in redefining
+                      lifestyles to include the well-known traditional Indian
+                      wellness regimes of Ayurveda, Yoga and Vedanta combined with
+                      best of International Wellness Experiences.
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+              }
+            />
+          }
+        >
+         
         </View>
       </div>
     );

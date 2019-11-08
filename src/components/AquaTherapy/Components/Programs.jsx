@@ -35,7 +35,7 @@ export default class Programs extends React.Component {
   }
   render() {
     return (
-      <div className="mt-5">
+      <div className="mt-5 col-sm-12">
         <h1> The Watsu Classes</h1>
         <Nav tabs className="mt-5">
           <NavItem>

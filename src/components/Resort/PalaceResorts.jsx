@@ -4,6 +4,7 @@ import ProgramContentLeft from "../Medicalspa/Components/ProgramContentsLeft";
 import PalaceExterior from "../../images/palace/PalaceExeterior.jpg";
 import palace from "../../images/palace/palace.jpg";
 import KovalamPalace from "../../images/palace/kovalamPalace.jpg";
+import BacgroundImage from "../../images/sha-wellness.jpg";
 
 import Programs from "../Medicalspa/Components/Programs";
 
@@ -15,6 +16,7 @@ export default class PalaceResorts extends Component {
       <div>
         <View
           heading="Palace Resorts"
+          BacgroundImage={BacgroundImage}
           programs={
             
             <Programs

@@ -118,9 +118,9 @@ style={{
 
 <br />
 <p style={{lineHeight:'2.5'}}>CEO of LUXURY VOYAGE WELLNESS,
-Based in France and Kerala, India. Sreejith start his career as a yoga Instructor 
-He has permanent resident permits in France 
-worked at Privet luxury Yacht  and different Five star hotels he has visited more than 
+Based in France and Kerala, India. Sreejith started his career as a Yoga Therapist and he is one of the Watsu Practitioner. 
+He has permanent resident permit in France 
+worked at Private luxury Yacht and different Five star hotels he has visited more than 
 80 countries as a traveller from that he got inspired to start travel and tourism and he wish to 
 share his experiences and informations on Detox , Weight loose , Anti age, Adventure, 
 Relax and other activities to guest</p>

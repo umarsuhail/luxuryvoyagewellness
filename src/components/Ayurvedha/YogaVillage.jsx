@@ -18,23 +18,14 @@ export default class YogaVillage extends Component {
             <div>
                 <View
                     heading="AYURVEDA"
-
-                    image1={image1}
-
-
-
-
-
-
-
-                >
+                    image1={image1} >
                     <div className="wpb_column vc_column_container vc_col-sm-6">
                         <div className="vc_column-inner ">
                             <div className="wpb_wrapper">
                                 <div className="wpb_text_column wpb_content_element ">
                                     <div className="wpb_wrapper">
                                         <p>
-                                            Ayurveda considered by many scholars to be the oldest healing science, Ayurveda is a holistic approach to health that is designed to help people live long, healthy, and well-balanced lives. The term Ayurveda is taken from the Sanskrit words ayus, meaning life or lifespan, and veda, meaning knowledge. It has been practiced in India for at least 5,000 years and has recently become popular in Western cultures. The basic principle of Ayurveda is to prevent and treat illness by maintaining balance in the body, mind, and consciousness through proper drinking, diet, and lifestyle, as well as herbal remedies.
+                                           <strong> Ayurveda</strong> considered by many scholars to be the oldest healing science, Ayurveda is a holistic approach to health that is designed to help people live long, healthy, and well-balanced lives. The term Ayurveda is taken from the Sanskrit words ayus, meaning life or lifespan, and veda, meaning knowledge. It has been practiced in India for at least 5,000 years and has recently become popular in Western cultures. The basic principle of Ayurveda is to prevent and treat illness by maintaining balance in the body, mind, and consciousness through proper drinking, diet, and lifestyle, as well as herbal remedies.
                                             </p>
                                         <p>
                                             Welcome to Ayurveda Yoga Village, a sister resort to the Internationally acclaimed Ayurveda Yoga Villa
