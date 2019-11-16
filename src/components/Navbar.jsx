@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import logo from "../images/voyage.logo-2.png";
 import Modal from "./Modal";
 import logo1 from "../images/voyage.logo-2.png"
-import { Link } from "react-router-dom";
 import '../css/navbar.scss'
 export default class Navbar extends Component {
   constructor(props) {
@@ -117,15 +116,15 @@ export default class Navbar extends Component {
                   <a className="dropdown-item" href="#">SKI RESORTS</a>
                   <a className="dropdown-item" href="#">ISLAND RESORTS</a> */}
                   <a className="dropdown-item" href="/jungle-resorts">LUXURY JUNGLE RESORTS</a>
-                  <a className="dropdown-item" href="#">HILL RESORTS</a>
+                  <a className="dropdown-item" href="/Hill-Resorts">HILL RESORTS</a>
                   <a className="dropdown-item" href="/Rain-Forest-resorts">RAIN FOREST RESORTS</a>
-                  <a className="dropdown-item" href="/Econatural-resorts">ECO-NATURAL RESORTS</a>
+                  {/* <a className="dropdown-item" href="/Econatural-resorts">ECO-NATURAL RESORTS</a> */}
                   <a className="dropdown-item" href="/Honeymoon-resorts">HONEYMOON RESORTS</a>
 
                 </div></li><li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AYURVEDA</a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a className="dropdown-item" href="/Rajah"> AYURVEDA TREATMENTS</a>
+                  <a className="dropdown-item" href="/Ayurveda"> AYURVEDA TREATMENTS</a>
 
                   <a className="dropdown-item" href="/Rajah"> AYURVEDA RAJAH HOSPITAL</a>
                   <a className="dropdown-item" href="/YogaVillage"> AYURVEDA YOGA VILLAGE</a>
@@ -137,7 +136,7 @@ export default class Navbar extends Component {
                   <a className="dropdown-item" href="/Kalarippayattu"> KALARIPPAYATTU</a>
                 </div></li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/TherpyAqua"> KTDC </a>
+                <a className="nav-link text-white" href="/KTDC"> KTDC </a>
               </li>
             </ul>
 

@@ -102,3 +102,12 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.featured-text {
+  padding: 0 0 0 2rem;
+  border-left: .5rem solid #64a19d;
+}
+ hr{
+  border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+}

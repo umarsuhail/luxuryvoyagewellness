@@ -1,22 +1,15 @@
 import React, { Component } from "react";
 import View from "./Components/View";
-import image1 from "../../images/ananda/ananda1.jpg";
-import image2 from "../../images/ananda/ananda2.jpg";
-import image3 from "../../images/ananda/ananda3.jpg";
-import image4 from "../../images/ananda/ananda4.jpg";
-import Programs from "./Components/Programs";
-import rajah1 from "../../images/rajah/rajah1.jpg";
-
-
-
-
-
-
+import ayurvedha1 from "../../images/kerala-ayurved.jpg";
+import ayurvedha2 from "../../images/whatisayurveda.jpg";
+import ayurvedha3 from "../../images/ayurveda.jpg";
+import CommonLayout from "../CommonLayout";
+import background from "../../images/forest.jpg";
 export default class YogaVillage extends Component {
-    render() {
-        return (
-            <div>
-                <View
+  render() {
+    return (
+      <div>
+        {/* <View
                     heading="AYURVEDA"
                     image1={image1} >
                     <div className="wpb_column vc_column_container vc_col-sm-6">
@@ -95,8 +88,76 @@ export default class YogaVillage extends Component {
                             </div>
                         </div>
                     </div>
-                </View >
-            </div >
-        );
-    }
+                </View > */}
+        <CommonLayout
+          title="Welcome to ayurveda yoga village"
+          headerImage={background}
+          heading="Ayurveda"
+          image1={ayurvedha1}
+          image2={ayurvedha2}
+          image3={ayurvedha3}
+          content={
+            <div>
+              <strong> Ayurveda</strong> considered by many scholars to be the
+              oldest healing science, Ayurveda is a holistic approach to health
+              that is designed to help people live long, healthy, and
+              well-balanced lives. The term Ayurveda is taken from the Sanskrit
+              words ayus, meaning life or lifespan, and veda, meaning knowledge.
+              It has been practiced in India for at least 5,000 years and has
+              recently become popular in Western cultures. The basic principle
+              of Ayurveda is to prevent and treat illness by maintaining balance
+              in the body, mind, and consciousness through proper drinking,
+              diet, and lifestyle, as well as herbal remedies.
+            </div>
+          }
+          contentTitle="Ayurvedha"
+          contentTitle2="Tariff Details"
+          content2={
+            <div className="row">
+              <h6>Tariff 2019 Ayurveda Yoga Village</h6>
+              <div className="col-4">
+                <p>
+                  <b>Occupancy</b>
+                  <li>7 Days</li>
+                  <li>14 Days</li>
+                  <li>21 Days</li>
+                  <li>28 Days</li>
+                </p>
+              </div>
+              <div className="col-4">
+                <p>
+                 <b>Single</b> 
+                  <li>€ 980</li>
+                  <li>€ 1778</li>
+                  <li>€ 2457</li>
+                  <li>€ 3024</li>
+                </p>
+              </div>
+              <div className="col-4">
+                <p>
+                  <b>Double</b>
+                  <li> € 1589</li>
+                  <li> € 2954</li>
+                  <li> € 4137</li>
+                  <li>€ 4984</li>
+                </p>
+              </div>
+            </div>
+          }
+          contentTitle3="Stay Healthy"
+          content3={
+            <div>
+              <p>
+                Accommodation in single bedroom with attached bathroom Yoga,
+                pranayama & Meditation sessions All food & drinks (No meat,
+                fish, eggs, alcohol) All Ayurvedic treatments & Oral Medication
+                prescribed by our ajarya Daily Consultations & Check-up with
+                Resident Ajarya Health Profile & Body Constitution consultation
+              </p>
+            </div>
+          }
+        />
+      </div>
+    );
+  }
 }

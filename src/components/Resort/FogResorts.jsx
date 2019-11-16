@@ -15,7 +15,6 @@ import honeymoon1 from '../../images/resorts/honeymoon/1.jpg'
 import honeymoon2 from '../../images/resorts/honeymoon/2.jpg'
 import honeymoon3 from '../../images/resorts/honeymoon/4.jpg'
 import honeymoon4 from '../../images/resorts/honeymoon/7.jpg'
-
 import Carousal from '../Learning Program/Components/Carousal'
 
 const NavItem = [

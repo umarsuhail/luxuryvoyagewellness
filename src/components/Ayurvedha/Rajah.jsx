@@ -6,20 +6,11 @@ import image3 from "../../images/ananda/ananda3.jpg";
 import image4 from "../../images/ananda/ananda4.jpg";
 import Programs from "./Components/Programs";
 import rajah1 from "../../images/rajah/rajah1.jpg";
-
 import rajahealth from "../../images/rajah/rajahealth.jpg";
 import rajahisland from "../../images/rajah/rajahisland.jpg";
 import rajahbeach from "../../images/rajah/rajahbeach.jpg";
 import rajahecobeach from "../../images/rajah/rajahecobeach.jpg";
-
-
-
-
 import HotelDetails from "./Components/HotelDetails";
-
-
-
-
 export default class Rajah extends Component {
     render() {
         return (
@@ -56,32 +47,21 @@ export default class Rajah extends Component {
                                             <p>Ayurveda can be defined as a system which uses the inherent principles of nature to maintain health in a person by keeping the individual’s body,
                                      mind and soul in perfect equilibrium with nature.</p>
                                         </div>
-
                                     </div>
-
                                     <img
                       className="col-lg-6 col-md-6 col-sm-12 float-right"
                       src={rajah1}
                     ></img>
-
-
-
                                 </div>
                             }
-
-
                         ></Programs >
                     }
-
                     Hotels={
                         <HotelDetails
                             Tab1="Rajah Healthy Acres"
                             Tab2="Rajah Island"
                             Tab3="Rajah Beach"
                             Tab4="Rajah Eco Beach"
-
-
-
                             tab1Content={
                                 <div>
                                     <img src={rajahealth} className="image-of-hotels"></img>

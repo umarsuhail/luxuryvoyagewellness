@@ -17,6 +17,9 @@ import VaithryResorts from "../components/Resort/VaithryResorts";
 import Econatural from "../components/Resort/Econatural";
 import HoneyMoonResort from "../components/Resort/HoneyMoonResort";
 import LuxuryJungleResort from "../components/Resort/LuxuryJungleResort";
+import HillResorts from "../components/Resort/HillResorts";
+import KTDC from "../components/KTDC";
+import AyurvedhaTreatments from "../components/Ayurvedha/AyurvedhaTreatments";
 
 const IndexRoutes = [
   {
@@ -109,6 +112,22 @@ const IndexRoutes = [
     name: "/LuxuryJungleResort",
     component: LuxuryJungleResort,
   },
+  {
+    path: "/Hill-Resorts",
+    name: "/HillResorts",
+    component: HillResorts,
+  },
+  {
+    path: "/KTDC",
+    name: "/KTDC",
+    component: KTDC,
+  },
+  {
+    path: "/Ayurveda",
+    name: "Ayurveda",
+    component: AyurvedhaTreatments,
+  },
+
 
 
 
