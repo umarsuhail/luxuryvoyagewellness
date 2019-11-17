@@ -24,7 +24,7 @@ export default class Programs extends React.Component {
     };
   }
   settings = props => {
-    props.NoOfTabs = 4;
+    props.NoOfTabs = 5;
   };
   toggle(tab) {
     if (this.state.activeTab !== tab) {
@@ -86,6 +86,17 @@ export default class Programs extends React.Component {
             </NavLink>
           </NavItem>
 
+          <NavItem>
+            <NavLink
+              className={classnames({ active: this.state.activeTab === "5" })}
+              onClick={() => {
+                this.toggle("5");
+              }}
+            >
+              {this.props.tab5}
+            </NavLink>
+          </NavItem>
+
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
@@ -106,6 +117,11 @@ export default class Programs extends React.Component {
           <TabPane tabId="4">
             <Row>
               <Col sm="12">{this.props.tab4Content}</Col>
+            </Row>
+          </TabPane>
+          <TabPane tabId="5">
+            <Row>
+              <Col sm="12">{this.props.tab5Content}</Col>
             </Row>
           </TabPane>
         </TabContent>

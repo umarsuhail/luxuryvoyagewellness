@@ -62,12 +62,12 @@ export default class View extends Component {
               {this.props.children}
             </div>
           </div>
-          <div className=" col-lg-12 col-md-12 float-left programs">
+          {/* <div className=" col-lg-12 col-md-12 float-left programs">
             {this.props.programs}
-          </div>
-          <div className=" col-lg-12 col-md-12 float-left programs">
+          </div> */}
+          {/* <div className=" col-lg-12 col-md-12 float-left programs">
             {this.props.Hotels}
-          </div>
+          </div> */}
           {/* <div className="right-container">{this.props.children}</div> */}
         </div>
       </div>

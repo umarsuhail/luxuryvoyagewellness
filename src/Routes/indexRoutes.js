@@ -20,6 +20,7 @@ import LuxuryJungleResort from "../components/Resort/LuxuryJungleResort";
 import HillResorts from "../components/Resort/HillResorts";
 import KTDC from "../components/KTDC";
 import AyurvedhaTreatments from "../components/Ayurvedha/AyurvedhaTreatments";
+import watsu from "../components/Learning Program/Watsu";
 
 const IndexRoutes = [
   {
@@ -126,6 +127,11 @@ const IndexRoutes = [
     path: "/Ayurveda",
     name: "Ayurveda",
     component: AyurvedhaTreatments,
+  },
+  {
+    path: "/watsu",
+    name: "watsu",
+    component: watsu,
   },
 
 

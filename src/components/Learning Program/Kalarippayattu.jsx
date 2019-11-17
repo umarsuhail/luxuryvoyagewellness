@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import View from "./Components/View";
-import image1 from "../../images/LearningProgram/gna1.jpg";
+import KalaripayattuView from "./Components/KalaripayattuView";
+import image1 from "../../images/LearningProgram/kalaripayatu_perform.jpg";
 
 export default class Kalarippayattu extends Component {
   render() {
     return (
       <div>
-        <View
+        <KalaripayattuView
           heading="KALARIPPAYATTU"
-   
+          image1={image1}
          
           
         >
@@ -29,7 +29,7 @@ export default class Kalarippayattu extends Component {
                     style and the central style. Northern kalari payat is based on the principle 
                     of hard technique, while the southern style primarily follows the soft techniques, 
                     even though both systems make use of internal and external concepts.                  </p>
-                    <p>Training.</p>
+                    <h6>Training</h6>
                     <p>The training is imparted at our school is direct supervision of our first-born gurus, 
                         in a time-honored, disciplined temple environment. Our traditionally constructed Kalari 
                         temple is one among few traditional institutions existed in the world. The Kalari ambience 
@@ -42,13 +42,13 @@ export default class Kalarippayattu extends Component {
                         our disciples. the certificate of merit will be awarded to each of the students successfully 
                         completing out training programs.
                         </p>
-                        <p>Manner of Training</p>
+                        <h6>Manner of Training</h6>
                         <p>The training will be initiated at our school in a traditional ritualistic manner. 
                             The training will be initiated by performing the Salutation to the Kalari goddesses, 
                             which includes complex leaps and turns, itself is a serious phase of learning. 
                             Initially you will be trained individually and then situate together with our 
                             disciples to make a combined effort, which make the phases easier for you to understand.</p>
-                            <p>Benefits of Kalarippayattu education</p>
+                            <h6>Benefits of Kalarippayattu education</h6>
                             <p>Some of the benefits of working with Kalarippayattu training are self evident such as 
                                 enhancing physical fitness and motor coordination while giving the learner a sense of rhythm. 
                                 In addition, kalarippayattu helps to develop extra-verbal communication skills and enables 
@@ -61,7 +61,7 @@ export default class Kalarippayattu extends Component {
               </div>
             </div>
           </div>
-        </View >
+        </KalaripayattuView >
       </div >
     )
   }

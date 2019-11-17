@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import View from "./Components/View";
 import image1 from "../../images/LearningProgram/gna1.jpg";
+import KalaripayattuView from "./Components/KalaripayattuView";
+
 
 export default class Yoga extends Component {
   render() {
     return (
       <div>
-        <View
+        <KalaripayattuView
           heading="YOGA"
    
           image1={image1}
@@ -40,7 +42,7 @@ export default class Yoga extends Component {
               </div>
             </div>
           </div>
-        </View >
+        </KalaripayattuView >
       </div >
     )
   }
