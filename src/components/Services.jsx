@@ -62,7 +62,7 @@ navigation
         
           <div className="row" style={{ padding: 20 }}>
         <div
-          className="float-left  col-sm-12 col-md-6 col-lg-6 float-left"
+          className="float-left  col-sm-12 col-md-6 col-lg-6 float-left "
           style={{
             alignSelf: "center"
           }}
@@ -72,6 +72,7 @@ navigation
             alt="hotel-image"
             alt=""
             style={{ width: "100%",maxWidth:'500px',borderRadius:'50px' }}
+            className="hover-zoomin"
           />
         </div>
         <div

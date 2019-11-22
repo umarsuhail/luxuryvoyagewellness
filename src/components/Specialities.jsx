@@ -101,6 +101,7 @@ style={{
    borderRadius: '50%',
    
    border:'2px solid #e3e3e3' }}
+   className="hover-zoomin"
 />
 </div>
 </div>
