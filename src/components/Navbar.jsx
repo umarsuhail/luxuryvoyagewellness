@@ -55,8 +55,68 @@ export default class Navbar extends Component {
     return (
       <div>
 
+{/* 
+<header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">luxuryvoyagewellness</a></h1> */}
+       {/* <a href="#intro"><img src={logo1} alt="" title="" /></a> */}
+      {/* </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="/">Home</a></li>
+          <li class="menu-has-children"><a href="">MEDICAL SPA</a>
+            <ul>
+              <li><a href="/sha-wellness">SHA WELLNESS</a></li>
+              <li><a href="/ananda-himalaya">ANANDA HIMALAYA</a></li>
+              <li><a href="/BRENNERS-PARK-HOTEL-AND-SPA">BRENNERS PARK-HOTEL AND SPA</a></li>
+              <li><a href="/LEELA-RAVIZ">LEELA RAVIZ</a></li>
+            </ul>
+          </li>
+          <li><a href="/PalaceResorts">PALACE RESORTS</a></li>
+
+          <li class="menu-has-children"><a href="">RESORTS</a>
+            <ul>
+              <li><a href="/jungle-resorts">LUXURY JUNGLE RESORTS</a></li>
+              <li><a href="/Hill-Resorts">HILL RESORTS</a></li>
+              <li><a href="/Rain-Forest-resorts">RAIN FOREST RESORTS</a></li>
+              <li><a href="/Honeymoon-resorts">HONEYMOON RESORTS</a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children"><a href="">AYURVEDA</a>
+            <ul>
+              <li><a href="/Ayurveda">AYURVEDA TREATMENTS</a></li>
+              <li><a href="/Rajah"> AYURVEDA RAJAH HOSPITAL</a></li>
+              <li><a href="/YogaVillage"> AYURVEDA YOGA VILLAGE</a></li>
+            
+            </ul>
+          </li>
+          <li class="menu-has-children"><a href="">LEARNING PROGRAM</a>
+            <ul>
+              <li><a href="/AyurvedaLearning"> AYURVEDA LEARNING PROGRAM</a></li>
+              <li><a href="/yoga"> YOGA</a></li>
+              <li><a href="/Watsu"> WATSU</a></li>
+              <li><a  href="/Kalarippayattu"> KALARIPPAYATTU</a></li>
+             
+            </ul>
+          </li>
+          <li><a href="/KTDC"> KTDC</a></li>
+         
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> */}
+
+
+
+
+
+
         <nav className="navbar navbar-expand-lg navbar-light bg-light stroke">
-          {/* <a className="navbar-brand" href="#">Navbar</a> */}
+         
           <img className="navbar-brand logo" src={logo1} alt="Logo"></img>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -81,16 +141,10 @@ export default class Navbar extends Component {
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"  aria-haspopup="true" aria-expanded="false">RESORTS</a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                  {/* <a className="dropdown-item" href="#">LUXURY JUNGLE RESORTS</a>
-                  <a className="dropdown-item" href="#">HILL RESORTS</a>
-                  <a className="dropdown-item" href="#">ECO-NATURAL RESORTS</a>
-                  <a className="dropdown-item" href="#">RAIN FOREST RESORTS</a>
-                  <a className="dropdown-item" href="#">SKI RESORTS</a>
-                  <a className="dropdown-item" href="#">ISLAND RESORTS</a> */}
                   <a className="dropdown-item" href="/jungle-resorts">LUXURY JUNGLE RESORTS</a>
                   <a className="dropdown-item" href="/Hill-Resorts">HILL RESORTS</a>
                   <a className="dropdown-item" href="/Rain-Forest-resorts">RAIN FOREST RESORTS</a>
-                  {/* <a className="dropdown-item" href="/Econatural-resorts">ECO-NATURAL RESORTS</a> */}
+                  <a className="dropdown-item" href="/Econatural-resorts">ECO-NATURAL RESORTS</a>
                   <a className="dropdown-item" href="/Honeymoon-resorts">HONEYMOON RESORTS</a>
 
                 </div></li><li className="nav-item dropdown">
