@@ -100,7 +100,7 @@ var cors = require("cors");
 app.use(cors());
 const translatorRoute = require("./api/routes/translatorRoute");
 // app.use(express.static(path.join(__dirname, "client", "build")));
-
+app.use(express.static(__dirname + '/static', { dotfiles: 'allow' }))
 app.use(express.static(path.join(__dirname, "build")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -108,7 +108,7 @@ app.use(cookieParser());
 
 // Catch all other routes and return the index file
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build/index.html"));
+    res.sendFile(path.join(__dirname, "build/index.html"));
 });
 
 app.use("/api/translator", translatorRoute);
