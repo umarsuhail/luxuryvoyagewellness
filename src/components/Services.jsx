@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Modal from '../components/Modal'
 import Guide from "../images/travel.jpg";
-import Flight from "../images/Flight.jpg";
+import Flight from "../images/Flight1.jpg";
 import ayurveda from '../images/ayurveda.jpg'
 export default class Services extends Component {
     constructor(props){
