@@ -11,7 +11,7 @@ export default class Specialities extends Component {
       contactUs:false
     }
   }
-  openModal = () =>{
+  openModal = (data) =>{
     this.setState({
       contactUs:!this.state.cntactUs
     })

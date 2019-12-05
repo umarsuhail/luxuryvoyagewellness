@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
+        {" "}
         {IndexRoutes.map((prop, key) => {
           return (
             <Route
@@ -22,19 +23,17 @@ function App() {
               key={key}
             ></Route>
           );
-        })}
+        })}{" "}
       </Switch>
-
-
       <MetaTags>
-        <title>Page 1</title>
+        <title> Page 1 </title>{" "}
         <meta
           name="description"
           content="Travel, Kerala Travel, Yoga in Kerala, Kerala Tourism, Yoga, Travel, Wellness, explore kerala, luxury hotels kerala"
         />
-        <meta property="og:title" content="Luxury Voyage Wellness" />
-        {/* <meta property="og:image" content="path/to/image.jpg" /> */}
-      </MetaTags>
+        <meta property="og:title" content="Luxury Voyage Wellness" />{" "}
+        {/* <meta property="og:image" content="path/to/image.jpg" /> */}{" "}
+      </MetaTags>{" "}
       <Helmet title="luxury voyage wellness">
         <meta charSet="utf-8" />
         <meta
@@ -45,28 +44,27 @@ function App() {
         <meta
           property="og:description"
           content="The best Travel parter for premium hotels and to explore kerala"
-        />
+        />{" "}
         {/* <meta
-          property="og:image"
-          content={}
-        /> */}
-        <link rel="canonical" href="https://www.luxuryvoyagewellness.com" />
-
+                      property="og:image"
+                      content={}
+                    /> */}{" "}
+        <link rel="canonical" href="https://luxuryvoyagewellness.com" />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+            Edit <code> src / App.js </code> and save to reload.{" "}
+          </p>{" "}
           <a
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
-          </a>
-        </header>
-      </Helmet>
+            Learn React{" "}
+          </a>{" "}
+        </header>{" "}
+      </Helmet>{" "}
     </div>
   );
 }
