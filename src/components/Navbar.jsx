@@ -21,17 +21,27 @@ export default class Navbar extends Component {
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   }
-  handleScroll = () => {
-    const { prevScrollpos } = this.state;
+  // handleScroll = () => {
+  //   const { prevScrollpos } = this.state;
 
-    const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos;
+  //   const currentScrollPos = window.pageYOffset;
+  //   const visible = prevScrollpos > currentScrollPos;
 
-    this.setState({
-      prevScrollpos: currentScrollPos,
-      visible
-    });
-  };
+  //   this.setState({
+  //     prevScrollpos: currentScrollPos,
+  //     visible
+  //   });
+  // };
+
+
+  handleScroll=(event)=> {
+    if (window.scrollY === 0 && this.state.scrolling === true) {
+        this.setState({scrolling: false});
+    }
+    else if (window.scrollY !== 0 && this.state.scrolling !== true) {
+        this.setState({scrolling: true});
+    }
+}
 
   mouseOver = (e) => {
     console.log('mouse over');
@@ -51,18 +61,19 @@ export default class Navbar extends Component {
       showNavbar: true
     });
   };
+  
   render() {
     return (
       <div>
 
-{/* 
-<header id="header">
+
+<header id="header" className={this.state.scrolling ?"header-scrolled":""}>
     <div class="container-fluid">
 
-      <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">luxuryvoyagewellness</a></h1> */}
-       {/* <a href="#intro"><img src={logo1} alt="" title="" /></a> */}
-      {/* </div>
+      <div id="logo" class="pull-left row">
+      <img style={{maxWidth:"60px"}} src={logo1} alt="" title="" />
+        <h1><a href="#intro" class="scrollto">luxuryvoyagewellness</a></h1>
+      </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -108,12 +119,12 @@ export default class Navbar extends Component {
         </ul>
       </nav>
     </div>
-  </header> */}
+  </header>
 
 
 
 
-
+{/* 
 
         <nav className="navbar navbar-expand-lg navbar-light bg-light stroke">
          
@@ -182,7 +193,7 @@ export default class Navbar extends Component {
 
         {this.state.modalVisible && (
           <Modal modalHandle={this.openModal}></Modal>
-        )}
+        )} */}
       </div>
     );
   }

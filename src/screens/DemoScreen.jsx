@@ -1,19 +1,39 @@
 import React, { Component } from 'react';
 import "../css/Demo.css";
-import slide1 from "../images/slider1.jpg";
-import slide2 from "../images/slider2.jpg";
-import slide3 from "../images/slider3.jpg";
-import slide4 from "../images/slider4.jpg";
-import slide5 from "../images/slider5.jpg";
+import "animate.css/animate.min.css";
+import logo from "../images/voyage.logo-2.png";
+import ScrollAnimation from 'react-animate-on-scroll';
+import slide1 from "../images/sliderimg1.jpg";
+import slide2 from "../images/sliderimg2.jpg";
+import slide3 from "../images/kerala-ayurved.jpg";
+import slide4 from "../images/sliderimg3.jpg";
+import slide5 from "../images/sliderimg4.jpg";
 import treatment1 from "../images/treatment1.png";
-import treatment2 from "../images/treatment5.jpg";
+import treatment5 from "../images/treatment5.jpg";
 import treatment3 from "../images/treatment3.jpg";
+import treatment4 from "../images/treatment4.jpg";
+import ceo from "../images/sreejith.jpg";
+import flight from "../images/Flight1.jpg";
+import taxi from "../images/TAXI.jpg";
+import travelguide from "../images/travelguide.jpg";
+import image1 from "../images/ananda/ananda1.jpg";
+import BRENNERS from "../images/BRENNERS/bren1.jpg";
+import leela from "../images/leela/leela1.jpg";
+import PalaceExterior from "../images/palace/PalaceExeterior.jpg";
+import sha1 from "../images/sha-wellness/sha1.jpg";
+import aqua from "../images/aqua/aqua.jpg";
+import treatment2 from "../images/treatment2.png";
+import ayurveda from "../images/ayurveda.jpg";
+import anandspa1 from "../images/ananda/anandspa1.png";
+import anandspa3 from "../images/ananda/anandspa3.jpg";
+import Modal from '../components/Modal';
+
 
 class DemoScreen extends Component {
     render() {
         return (
             <div>
-                <section id="">
+                <section id="" >
                     <div class="intro-container">
                         <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
@@ -101,20 +121,24 @@ class DemoScreen extends Component {
 
                                 <div class="col-lg-4 box">
                                     <i class="ion-ios-bookmarks-outline"></i>
-                                    <h4 class="title"><a href="">Medical spa</a></h4>
-                                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                                    <h4 class="title"><a href="">Ayurveda</a></h4>
+                                    <p class="description">Ayurveda has been carefully nurtured in Kerala for more than a thousand years. From specialised treatments 
+                                    to prescribed diets, it is an integral part of our culture. Ayurveda is a way of life to us and not simply a method to cure ailments. 
+                                    Our land is blessed with several herbal medicines and these have played a crucial role in ensuring the growth of Ayurveda on our shores.</p>
                                 </div>
 
                                 <div class="col-lg-4 box box-bg">
                                     <i class="ion-ios-stopwatch-outline"></i>
-                                    <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                                    <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                                    <h4 class="title"><a href="">Rejuvenation Therapy</a></h4>
+                                    <p class="description">Among Ayurveda's most significant achievements is making the body strong and preventing the contraction of diseases. This process is done via rejuvenation therapy. Here the body is flushed clean of toxins using special herbs. 
+                                    This has proven to strengthen the immune system immensely and drastically improve the overall condition of the patient.</p>
                                 </div>
 
                                 <div class="col-lg-4 box">
                                     <i class="ion-ios-heart-outline"></i>
-                                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                                    <h4 class="title"><a href="">Process of Treatment</a></h4>
+                                    <p class="description">Ayurveda prescribes a certain rest period at the end of the treatment. Your body needs a certain amount of time to get used to the changes it has gone through. Most practitioners will provide a certain fixed diet that is streamlined to help with the recovery process. 
+                                    There are many Ayurvedic hospitals in the State alongside hotels and resorts that offer Ayurvedic treatment throughout the year.</p>
                                 </div>
 
                             </div>
@@ -126,34 +150,43 @@ class DemoScreen extends Component {
                         <div class="container">
 
                             <header class="section-header">
-                                <h3>About Us</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <h3>SERVICES</h3>
+                 
                             </header>
-
+                            <ScrollAnimation animateIn='bounceInRight'
+                            duration={2}
+                           >
                             <div class="row about-cols">
+                           
+
 
                                 <div class="col-md-4 wow fadeInUp">
                                     <div class="about-col">
                                         <div class="img">
-                                            <img src="img/about-mission.jpg" alt="" class="img-fluid" />
+                                            <img src={sha1} alt="" class="img-fluid" />
                                             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
                                         </div>
-                                        <h2 class="title"><a href="#">Our Mission</a></h2>
+                                        <h2 class="title"><a href="/sha-wellness">SHA WELLNESS</a></h2>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
+                                        Our mission at SHA, is that you enjoy and have an unforgettable stay, 
+                                        as well as to produce a positive, substantial and lasting change in your 
+                                        health and wellness, so that you feel a state of complete balance. 
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="about-col">
                                         <div class="img">
-                                            <img src="img/about-plan.jpg" alt="" class="img-fluid" />
+                                            <img src={image1} alt="" class="img-fluid" />
                                             <div class="icon"><i class="ion-ios-list-outline"></i></div>
                                         </div>
-                                        <h2 class="title"><a href="#">Our Plan</a></h2>
+                                        <h2 class="title"><a href="/ananda-himalaya">ANANDA HIMALAYA</a></h2>
                                         <p>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                        Ananda is an award-winning luxury destination spa resort in
+                                        India situated at the Himalayan foothills in Northern India.
+                                       Ananda is surrounded by graceful Sal forests and overlooks the spiritual
+                                       town of Rishikesh and the Ganges river valley. 
                                        </p>
                                     </div>
                                 </div>
@@ -161,17 +194,78 @@ class DemoScreen extends Component {
                                 <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
                                     <div class="about-col">
                                         <div class="img">
-                                            <img src="img/about-vision.jpg" alt="" class="img-fluid" />
+                                            <img src={BRENNERS} alt="" class="img-fluid" />
                                             <div class="icon"><i class="ion-ios-eye-outline"></i></div>
                                         </div>
-                                        <h2 class="title"><a href="#">Our Vision</a></h2>
+                                        <h2 class="title"><a href="/BRENNERS-PARK-HOTEL-AND-SPA">BRENNERS PARK-HOTEL AND SPA</a></h2>
                                         <p>
-                                            Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                                        Brenners Park-Hotel & Spa has been a place of relaxation and diversion for 
+                                        the travelling elite since 1872. Here guests can enjoy all that Baden-Baden 
+                                        {/* is renowned for with one of the most advanced spas in Europe, offering luxurious 
+                                        therapy and cures while surrounded by refreshing natural parkland and high culture. */}
                                         </p>
                                     </div>
                                 </div>
 
                             </div>
+
+
+                            <div class="row about-cols">
+
+<div class="col-md-4 wow fadeInUp">
+    <div class="about-col">
+        <div class="img">
+            <img src={leela} alt="" class="img-fluid" />
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+        </div>
+        <h2 class="title"><a href="/LEELA-RAVIZ">LEELA RAVIZ</a></h2>
+        <p>
+        The Raviz Group has set out on a course to present the traditions, culture and hospitality of Kerala 
+        to the visiting traveler on a platter.
+        {/* Having set out on this endeavor, we aspire to bring alive our philosophy of Celebrating 
+        India that will reflect through all our products and services that defines the fabric 
+        of the Raviz across the board. */}
+        </p>
+    </div>
+</div>
+
+<div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="about-col">
+        <div class="img">
+            <img src={PalaceExterior} alt="" class="img-fluid" />
+            <div class="icon"><i class="ion-ios-list-outline"></i></div>
+        </div>
+        <h2 class="title"><a href="/PalaceResorts">  PALACE RESORTS</a></h2>
+        <p>
+        Our onsite amenities include indoor and outdoor whirlpools, a large oceanfront outdoor pool, 
+        exercise room, sauna, seasonal lounge, and much, much more. Our convenient location  gives you 
+        and your family quick and easy access to  all the fun and excitement
+         {/* Myrtle Beach and the Grand Strand have to offer, like water parks and 
+        amusement parks. Book your fun-filled Myrtle Beach oceanfront vacation today 
+        at the Palace Resort. */}
+       </p>
+    </div>
+</div>
+
+<div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+    <div class="about-col">
+        <div class="img">
+            <img src={treatment5} alt="" class="img-fluid" />
+            <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+        </div>
+        <h2 class="title"><a href="/Ayurveda"> AYURVEDA TREATMENTS</a></h2>
+        <p>
+        Ayurveda has been carefully nurtured in Kerala for more than a thousand years. From specialised 
+        treatments to prescribed diets, it is an integral part of our culture. Ayurveda is a way of life 
+        to us and not simply a method to cure ailments. 
+        {/* Our land is blessed with several herbal medicines 
+        and these have played a crucial role in ensuring the growth of Ayurveda on our shores. */}
+        </p>
+    </div>
+</div>
+
+</div>
+</ScrollAnimation>
 
                         </div>
                     </section>
@@ -182,43 +276,41 @@ class DemoScreen extends Component {
 
                             <header class="section-header wow fadeInUp">
                                 <h3>Services</h3>
-                                <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+                                <p>Through Luxury voyage wellness guest we try to give discount</p>
                             </header>
-
+                            <ScrollAnimation animateIn='bounceInUp'
+                           duration={2}
+                           >
                             <div class="row">
-
-                                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                           
+                                <div id="flight" class="col-lg-4 col-md-6 box wow bounceInUp " data-wow-duration="1.4s">
                                     <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                                    <h4 class="title"><a> Flight Booking</a></h4>
+                                   
+                                    <div class="flight-item"  >
+                                        <a href="https://api.whatsapp.com/send?phone=33660089702">
+                                        <img src={flight} class="flight-img" alt="" />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                                <div id="flight" class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
                                     <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-                                    <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                                    <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                                    <h4 class="title"><a > Taxi Services</a></h4>
+                                    <div class="flight-item">
+                                    <a href="https://api.whatsapp.com/send?phone=33660089702">
+                                    <img src={taxi} class="flight-img" alt="" /></a>
+                                    </div>
+                             
                                 </div>
-                                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                                <div id="flight" class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
                                     <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-                                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                                    <h4 class="title"><a >Travel Guide</a></h4>
+                                    <div class="flight-item">
+                                    <a href="https://api.whatsapp.com/send?phone=33660089702">
+                                    <img src={travelguide} class="flight-img" alt=""/></a></div> 
                                 </div>
-                                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                                    <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-                                    <h4 class="title"><a href="">Magni Dolores</a></h4>
-                                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                                </div>
-                                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                                    <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-                                    <h4 class="title"><a href="">Nemo Enim</a></h4>
-                                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                                </div>
-                                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                                    <div class="icon"><i class="ion-ios-people-outline"></i></div>
-                                    <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                                    <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                                </div>
-
                             </div>
+                            </ScrollAnimation>
 
                         </div>
                     </section>
@@ -226,45 +318,34 @@ class DemoScreen extends Component {
 
                     <section id="call-to-action" class="wow fadeIn">
                         <div class="container text-center">
-                            <h3>Call To Action</h3>
-                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <a class="cta-btn" href="#">Call To Action</a>
+                            <h3>FIND US TO GET MORE OFFERS</h3>
+                            {/* <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
+                            <a class="cta-btn" href="https://api.whatsapp.com/send?phone=33660089702">CONTACT</a>
                         </div>
                     </section>
 
-                    {/*       Portfolio Section */}
+                    {/*       GALLERY Section */}
 
                     <section id="portfolio" class="section-bg" >
                         <div class="container">
 
                             <header class="section-header">
-                                <h3 class="section-title">Our Portfolio</h3>
+                                <h3 class="section-title">GALLERY</h3>
                             </header>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <ul id="portfolio-flters">
-                                        <li data-filter="*" class="filter-active">All</li>
-                                        <li data-filter=".filter-app">App</li>
-                                        <li data-filter=".filter-card">Card</li>
-                                        <li data-filter=".filter-web">Web</li>
-                                    </ul>
-                                </div>
-                            </div>
 
                             <div class="row portfolio-container">
 
                                 <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                                     <div class="portfolio-wrap">
                                         <figure>
-                                            <img src={treatment1} class="img-fluid" alt="" />
+                                            <img src={aqua} class="img-fluid" alt="" />
                                             <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
                                             <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">App 1</a></h4>
-                                            <p>App</p>
+                                            {/* <h4><a href="#">App 1</a></h4>
+                                            <p>App</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -278,8 +359,8 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">Web 3</a></h4>
-                                            <p>Web</p>
+                                            {/* <h4><a href="#">Web 3</a></h4>
+                                            <p>Web</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -287,14 +368,14 @@ class DemoScreen extends Component {
                                 <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
                                     <div class="portfolio-wrap">
                                         <figure>
-                                            <img src={treatment2} class="img-fluid" alt="" />
+                                            <img src={treatment5} class="img-fluid" alt="" />
                                             <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
                                             <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">App 2</a></h4>
-                                            <p>App</p>
+                                            {/* <h4><a href="#">App 2</a></h4>
+                                            <p>App</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -308,8 +389,8 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">Card 2</a></h4>
-                                            <p>Card</p>
+                                            {/* <h4><a href="#">Card 2</a></h4>
+                                            <p>Card</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -317,14 +398,14 @@ class DemoScreen extends Component {
                                 <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="portfolio-wrap">
                                         <figure>
-                                            <img src={treatment1} class="img-fluid" alt="" />
+                                            <img src={treatment2} class="img-fluid" alt="" />
                                             <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
                                             <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">Web 2</a></h4>
-                                            <p>Web</p>
+                                            {/* <h4><a href="#">Web 2</a></h4>
+                                            <p>Web</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -332,14 +413,14 @@ class DemoScreen extends Component {
                                 <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
                                     <div class="portfolio-wrap">
                                         <figure>
-                                            <img src={treatment2} class="img-fluid" alt="" />
+                                            <img src={ayurveda} class="img-fluid" alt="" />
                                             <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
                                             <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">App 3</a></h4>
-                                            <p>App</p>
+                                            {/* <h4><a href="#">App 3</a></h4>
+                                            <p>App</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -347,14 +428,14 @@ class DemoScreen extends Component {
                                 <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
                                     <div class="portfolio-wrap">
                                         <figure>
-                                            <img src={treatment3} class="img-fluid" alt="" />
+                                            <img src={anandspa1} class="img-fluid" alt="" />
                                             <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
                                             <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">Card 1</a></h4>
-                                            <p>Card</p>
+                                            {/* <h4><a href="#">Card 1</a></h4>
+                                            <p>Card</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -362,14 +443,14 @@ class DemoScreen extends Component {
                                 <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="portfolio-wrap">
                                         <figure>
-                                            <img src={treatment3} class="img-fluid" alt="" />
+                                            <img src={treatment4} class="img-fluid" alt="" />
                                             <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
                                             <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">Card 3</a></h4>
-                                            <p>Card</p>
+                                            {/* <h4><a href="#">Card 3</a></h4>
+                                            <p>Card</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -377,14 +458,14 @@ class DemoScreen extends Component {
                                 <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
                                     <div class="portfolio-wrap">
                                         <figure>
-                                            <img src={treatment1} class="img-fluid" alt="" />
+                                            <img src={anandspa3} class="img-fluid" alt="" />
                                             <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
                                             <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            <h4><a href="#">Web 1</a></h4>
-                                            <p>Web</p>
+                                            {/* <h4><a href="#">Web 1</a></h4>
+                                            <p>Web</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -394,92 +475,26 @@ class DemoScreen extends Component {
                         </div>
                     </section>
 
-                    {/* team */}
-                    <section id="team">
-                        <div class="container">
-                            <div class="section-header wow fadeInUp">
-                                <h3>Team</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                            </div>
+      {/* Clients Section */}
+   
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+        <div class="owl-carousel testimonials-carousel">
+          <div class="testimonial-item">
+            <img src={ceo} class="testimonial-img" alt=""/>
+            <h3>Sreejith GOPI</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+            CEO of LUXURY VOYAGE WELLNESS, Based in France and Kerala, India. Sreejith started his career as a Yoga Therapist and he 
+            is one of the Watsu Practitioner. He has permanent resident permit in France worked at Private luxury Yacht and different 
+            Five star hotels he has visited more than 80 countries as a traveller from that he got inspired to start travel and tourism 
+            and he wish to share his experiences and informations on Detox , Weight loose , Anti age, Adventure, Relax and other activities 
+            to guest   </p>
+          </div>
+        </div>
 
-                            <div class="row">
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp">
-                                    <div class="member">
-                                        <img src="img/team-1.jpg" class="img-fluid" alt="" />
-                                        <div class="member-info">
-                                            <div class="member-info-content">
-                                                <h4>Walter White</h4>
-                                                <span>Chief Executive Officer</span>
-                                                <div class="social">
-                                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="member">
-                                        <img src="img/team-2.jpg" class="img-fluid" alt="" />
-                                        <div class="member-info">
-                                            <div class="member-info-content">
-                                                <h4>Sarah Jhonson</h4>
-                                                <span>Product Manager</span>
-                                                <div class="social">
-                                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                                    <div class="member">
-                                        <img src="img/team-3.jpg" class="img-fluid" alt="" />
-                                        <div class="member-info">
-                                            <div class="member-info-content">
-                                                <h4>William Anderson</h4>
-                                                <span>CTO</span>
-                                                <div class="social">
-                                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="member">
-                                        <img src="img/team-4.jpg" class="img-fluid" alt="" />
-                                        <div class="member-info">
-                                            <div class="member-info-content">
-                                                <h4>Amanda Jepson</h4>
-                                                <span>Accountant</span>
-                                                <div class="social">
-                                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </section>
+      </div>
+    </section>
 
                     {/* contact */}
 
@@ -488,7 +503,7 @@ class DemoScreen extends Component {
 
                             <div class="section-header">
                                 <h3>Contact Us</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                               
                             </div>
 
                             <div class="row contact-info">
@@ -496,8 +511,8 @@ class DemoScreen extends Component {
                                 <div class="col-md-4">
                                     <div class="contact-address">
                                         <i class="ion-ios-location-outline"></i>
-                                        <h3>Address</h3>
-                                        <address>A108 Adam Street, NY 535022, USA</address>
+                                        <h3>GSTIN</h3>
+                                        <address> 32CZHPS3490N1ZR</address>
                                     </div>
                                 </div>
 
@@ -505,7 +520,9 @@ class DemoScreen extends Component {
                                     <div class="contact-phone">
                                         <i class="ion-ios-telephone-outline"></i>
                                         <h3>Phone Number</h3>
-                                        <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                                        <p><a >+33 6 60 08 97 02</a></p>
+                                        <p><a >+91 80 86 08 04 40</a></p>
+
                                     </div>
                                 </div>
 
@@ -513,13 +530,13 @@ class DemoScreen extends Component {
                                     <div class="contact-email">
                                         <i class="ion-ios-email-outline"></i>
                                         <h3>Email</h3>
-                                        <p><a href="mailto:info@example.com">info@example.com</a></p>
+                                        <p><a href="mailto:info@example.com"> info@luxuryvoyagewellness.com</a></p>
                                     </div>
                                 </div>
 
                             </div>
-
-                            <div class="form">
+<Modal></Modal>
+                            {/* <div class="form">
                                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                                 <div id="errormessage"></div>
                                 <form action="" method="post" role="form" class="contactForm">
@@ -543,68 +560,43 @@ class DemoScreen extends Component {
                                     </div>
                                     <div class="text-center"><button type="submit">Send Message</button></div>
                                 </form>
-                            </div>
+                            </div> */}
 
                         </div>
                     </section>
 
                     {/* footer */}
 
-                    <footer id="footer">
-                        <div class="footer-top">
-                            <div class="container">
-                                <div class="row">
-
-                                    <div class="col-lg-3 col-md-6 footer-info">
-                                        <h3>BizPage</h3>
-                                        <p>Cras fermrmentum iaculis eu non diam pha leo. Amet volutpat consequat mauris nunc congue.</p>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 footer-links">
-                                        <h4>Useful Links</h4>
-                                        <ul>
-                                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-                                            <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-                                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
-                                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-                                            <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 footer-contact">
-                                        <h4>Contact Us</h4>
-                                        <p>
-                                            A108 Adam Street <br></br>
-                                            New York, NY 535022<br></br>
-                                            United States <br></br>
-                                            <strong>Phone:</strong> +1 5589 55488 55<br></br>
-                                            <strong>Email:</strong> info@example.com<br></br>
-                                        </p>
-
-                                        <div class="social-links">
-                                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                                        <h4>Our Newsletter</h4>
-                                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-                                        <form action="" method="post">
-                                            <input type="email" name="email" /><input type="submit" value="Subscribe" />
-                                        </form>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </footer>
-
+                    <div>
+          <div
+            className="row footer-text"
+            style={{
+              width: "996px",
+              padding: "15px",
+              width: "100%",
+              backgroundColor: "#212121"
+            }}
+          >
+            <div className="col-xs-12 col-sm-6 col-md-4 text-center ">
+              <h1 className="box ">
+                Copyright 2019 Luxury Voyage Wellness, All Right Reserved{" "}
+              </h1>
+            </div>
+            <div className="col-xs-12 col-sm-6 col-md-4 text-center">
+              <img
+                className="navbar-brand footer-logo "
+                src={logo}
+                alt="Logo"
+              />
+            </div>
+            <div className="col-xs-12 col-sm-6 col-md-4 box text-center">
+                <a href="/"><p  style={{ marginRight: "11px" }}>Home</p></a>
+              <p style={{ marginRight: "11px" }}>Privacy Policy</p>
+              <p style={{ marginRight: "11px" }}>Terms of Use</p>
+            </div>
+          </div>
+        </div>
+     
 
                 </main>
 
