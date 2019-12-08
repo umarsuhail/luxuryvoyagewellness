@@ -43,57 +43,22 @@ class DemoScreen extends Component {
 
                                 <div class="carousel-item active">
                                     <div class="carousel-background"><img src={slide1} alt="" /></div>
-                                    {/* <div class="carousel-container">
-                                        <div class="carousel-content">
-                                            <h2>Family Holiday</h2>
-                                             <p>Discover the best destinations in india</p>
-                                            <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
-                                        </div>
-                                    </div> */}
                                 </div>
 
                                 <div class="carousel-item">
                                     <div class="carousel-background"><img src={slide2} alt="" /></div>
-                                    {/* <div class="carousel-container">
-                                        <div class="carousel-content">
-                                            <h2>Learn Yoga</h2>
-                                            <p>Inhale the future, exhale the past</p>
-                                            <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
-                                        </div>
-                                    </div> */}
                                 </div>
 
                                 <div class="carousel-item">
                                     <div class="carousel-background"><img src={slide3} alt="" /></div>
-                                    {/* <div class="carousel-container">
-                                        <div class="carousel-content">
-                                            <h2>An Ayurvedic Life</h2>
-                                            <p>Life is not merely to be alive, but to be well</p>
-                                            <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
-                                        </div>
-                                    </div> */}
                                 </div>
 
                                 <div class="carousel-item">
                                     <div class="carousel-background"><img src={slide4} alt="" /></div>
-                                    {/* <div class="carousel-container">
-                                        <div class="carousel-content">
-                                            <h2>Comfort and Luxury</h2>
-                                            <p>Spend in The best resorts and hotels in india</p>
-                                            <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
-                                        </div>
-                                    </div> */}
                                 </div>
 
                                 <div class="carousel-item">
                                     <div class="carousel-background"><img src={slide5} alt="" /></div>
-                                    {/* <div class="carousel-container">
-                                        <div class="carousel-content">
-                                            <h2>Explore India</h2>
-                                            <p>Travel along with tradition</p>
-                                            <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
-                                        </div>
-                                    </div> */}
                                 </div>
 
                             </div>
@@ -239,8 +204,6 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            {/* <h4><a href="#">Web 3</a></h4>
-                                            <p>Web</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -254,8 +217,6 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            {/* <h4><a href="#">App 2</a></h4>
-                                            <p>App</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -269,8 +230,6 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            {/* <h4><a href="#">Card 2</a></h4>
-                                            <p>Card</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -284,8 +243,6 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            {/* <h4><a href="#">Web 2</a></h4>
-                                            <p>Web</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -299,8 +256,6 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            {/* <h4><a href="#">App 3</a></h4>
-                                            <p>App</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -314,8 +269,7 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            {/* <h4><a href="#">Card 1</a></h4>
-                                            <p>Card</p> */}
+
                                         </div>
                                     </div>
                                 </div>
@@ -329,8 +283,6 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            {/* <h4><a href="#">Card 3</a></h4>
-                                            <p>Card</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -344,8 +296,6 @@ class DemoScreen extends Component {
                                         </figure>
 
                                         <div class="portfolio-info">
-                                            {/* <h4><a href="#">Web 1</a></h4>
-                                            <p>Web</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -355,30 +305,8 @@ class DemoScreen extends Component {
                         </div>
                     </section>
 
-      {/* Clients Section */}
-   
-    {/* <section id="testimonials" class="section-bg wow fadeInUp">
-      <div class="container">
-        <div class="owl-carousel testimonials-carousel">
-          <div class="testimonial-item">
-            <img src={ceo} class="testimonial-img" alt=""/>
-            <h3>Sreejith GOPI</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-            CEO of LUXURY VOYAGE WELLNESS, Based in France and Kerala, India. Sreejith started his career as a Yoga Therapist and he 
-            is one of the Watsu Practitioner. He has permanent resident permit in France worked at Private luxury Yacht and different 
-            Five star hotels he has visited more than 80 countries as a traveller from that he got inspired to start travel and tourism 
-            and he wish to share his experiences and informations on Detox , Weight loose , Anti age, Adventure, Relax and other activities 
-            to guest   </p>
-          </div>
-        </div>
-
-      </div>
-    </section> */}
     <Specialities />
 
-
-                    {/* contact */}
 
                     <section id="contact" class="section-bg wow fadeInUp">
                         <div class="container">
@@ -418,37 +346,8 @@ class DemoScreen extends Component {
 
                             </div>
 <Modal></Modal>
-                            {/* <div class="form">
-                                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                                <div id="errormessage"></div>
-                                <form action="" method="post" role="form" class="contactForm">
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                            <div class="validation"></div>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                            <div class="validation"></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                        <div class="validation"></div>
-                                    </div>
-                                    <div class="text-center"><button type="submit">Send Message</button></div>
-                                </form>
-                            </div> */}
-
                         </div>
                     </section>
-
-                    {/* footer */}
-
                     <div>
           <div
             className="row footer-text"
