@@ -15,7 +15,7 @@ export default class PalaceResorts extends Component {
       <div>
         <View
           heading="Palace Resorts"
-          BacgroundImage={BacgroundImage}
+          BackgroundImage={BacgroundImage}
           programs={
             
             <Programs

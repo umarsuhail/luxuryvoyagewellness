@@ -141,7 +141,9 @@ body {
     height: 72px;
     transition: all 0.5s;
   }
-  
+  .navbar-header{
+    background: #00000026;
+  }
   #header #logo {
     float: left;
     position: absolute;
