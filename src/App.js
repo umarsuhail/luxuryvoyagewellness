@@ -2,7 +2,6 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Helmet } from "react-helmet";
-import ScreenOne from "./screens/screennew";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import IndexRoutes from "./Routes/indexRoutes";

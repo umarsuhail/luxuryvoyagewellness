@@ -18,23 +18,23 @@ export default class HomeCarousel extends Component {
                             <div className="carousel-inner" role="listbox">
 
                                 <div className="carousel-item active">
-                                    <div className="carousel-background"><img src={slide1} alt="" /></div>
+                                    <div className="carousel-background"><img style={{width:'100%'}} src={slide1} alt="" /></div>
                                 </div>
 
                                 <div className="carousel-item">
-                                    <div className="carousel-background"><img src={slide2} alt="" /></div>
+                                    <div className="carousel-background"><img style={{width:'100%'}} src={slide2} alt="" /></div>
                                 </div>
 
                                 <div className="carousel-item">
-                                    <div className="carousel-background"><img src={slide3} alt="" /></div>
+                                    <div className="carousel-background"><img style={{width:'100%'}} src={slide3} alt="" /></div>
                                 </div>
 
                                 <div className="carousel-item">
-                                    <div className="carousel-background"><img src={slide4} alt="" /></div>
+                                    <div className="carousel-background"><img style={{width:'100%'}} src={slide4} alt="" /></div>
                                 </div>
 
                                 <div className="carousel-item">
-                                    <div className="carousel-background"><img src={slide5} alt="" /></div>
+                                    <div className="carousel-background"><img style={{width:'100%'}} src={slide5} alt="" /></div>
                                 </div>
 
                             </div>

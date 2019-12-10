@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo1 from "../images/voyage.logo-2.png";
+import logo1 from "../images/voyage.png";
 import "../css/navbar.scss";
 export default class Navbar extends Component {
   constructor(props) {

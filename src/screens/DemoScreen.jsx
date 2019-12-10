@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../css/Demo.css";
 import "animate.css/animate.min.css";
-import logo from "../images/voyage.logo-2.png";
+import logo from "../images/voyage.png";
 import Specialities from "../components/Specialities";
 import Services from "../components/Services";
 import HomeCarousel from "../components/HomeCarousel";

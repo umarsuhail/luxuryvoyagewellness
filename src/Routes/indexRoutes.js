@@ -1,7 +1,4 @@
-// import Login from '../screens/login'
-// import Home from "../screens/screennew";
 import Home from "../screens/DemoScreen";
-
 import Shawellness from "../components/Medicalspa/Shawellness";
 import AnandaHimalaya from "../components/Medicalspa/AnandaHimalaya";
 import Brenners from "../components/Medicalspa/Brenners";
