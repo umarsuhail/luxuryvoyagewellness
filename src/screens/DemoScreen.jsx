@@ -16,10 +16,10 @@ class DemoScreen extends Component {
       <div>
         <HomeCarousel />
         <main id="main">
-          <LazyLoad height={200} offset={20} once>
+          {/* <LazyLoad height={200} offset={20} once> */}
             <Services />
             <ServicesAnimation />
-          </LazyLoad>
+          {/* </LazyLoad> */}
 
           <section id="call-to-action" className="wow fadeIn">
             <div className="container text-center">
@@ -33,9 +33,9 @@ class DemoScreen extends Component {
               </a>
             </div>
           </section>
-          <LazyLoad height={200} once>
+          {/* <LazyLoad height={200} once> */}
             <Portfolio />
-          </LazyLoad>
+          {/* </LazyLoad> */}
 
           <Specialities />
 
