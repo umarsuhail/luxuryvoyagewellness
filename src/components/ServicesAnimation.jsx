@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
-import ceo from "../images/sreejith.jpg";
 import flight from "../images/Flight1.jpg";
 import taxi from "../images/taxilambo.jpg";
 import travelguide from "../images/travelguide.jpg";
@@ -20,7 +19,7 @@ export default class ServicesAnimation extends Component {
                            >
                             <div className="row">
                            
-                                <div id="flight" className="col-lg-4 col-md-6 box wow bounceInUp " data-wow-duration="1.4s">
+                                <div id="flight" className="col-lg-4  box wow bounceInUp " data-wow-duration="1.4s">
                                     <div className="icon"><i className="ion-ios-analytics-outline"></i></div>
                                     <h4 className="title"><a> Flight Booking</a></h4>
                                    
@@ -30,7 +29,7 @@ export default class ServicesAnimation extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div id="flight" className="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                                <div id="flight" className="col-lg-4  box wow bounceInUp" data-wow-duration="1.4s">
                                     <div className="icon"><i className="ion-ios-bookmarks-outline"></i></div>
                                     <h4 className="title"><a > Taxi Services</a></h4>
                                     <div className="flight-item">
@@ -39,7 +38,7 @@ export default class ServicesAnimation extends Component {
                                     </div>
                              
                                 </div>
-                                <div id="flight" className="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                                <div id="flight" className="col-lg-4  box wow bounceInUp" data-wow-duration="1.4s">
                                     <div className="icon"><i className="ion-ios-paper-outline"></i></div>
                                     <h4 className="title"><a >Travel Guide</a></h4>
                                     <div className="flight-item">

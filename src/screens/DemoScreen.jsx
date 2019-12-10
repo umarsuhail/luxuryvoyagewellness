@@ -16,11 +16,11 @@ class DemoScreen extends Component {
         <main id="main">
           <Services />
           <ServicesAnimation />
-          <section id="call-to-action" class="wow fadeIn">
-            <div class="container text-center">
+          <section id="call-to-action" className="wow fadeIn">
+            <div className="container text-center">
               <h3>FIND US TO GET MORE OFFERS</h3>
               <a
-                class="cta-btn"
+                className="cta-btn"
                 href="https://api.whatsapp.com/send?phone=33660089702"
               >
                 CONTACT
@@ -42,19 +42,19 @@ class DemoScreen extends Component {
                 backgroundColor: "#212121"
               }}
             >
-              <div className="col-xs-12 col-sm-6 col-md-4 text-center ">
+              <div className="col-xs-12 col-sm-6 col-lg-4 text-center ">
                 <h1 className="box ">
                   Copyright 2019 Luxury Voyage Wellness, All Right Reserved{" "}
                 </h1>
               </div>
-              <div className="col-xs-12 col-sm-6 col-md-4 text-center">
+              <div className="col-xs-12 col-sm-6 col-lg-4 text-center">
                 <img
                   className="navbar-brand footer-logo "
                   src={logo}
                   alt="Logo"
                 />
               </div>
-              <div className="col-xs-12 col-sm-6 col-md-4 box text-center">
+              <div className="col-xs-12 col-sm-6 col-lg-4 box text-center">
                 <a href="/">
                   <p style={{ marginRight: "11px" }}>Home</p>
                 </a>
@@ -64,6 +64,9 @@ class DemoScreen extends Component {
             </div>
           </div>
         </main>
+        <div className="fixed-button">
+
+        </div>
       </div>
     );
   }

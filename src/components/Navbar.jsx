@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import logo from "../images/voyage.logo-2.png";
-import Modal from "./Modal";
 import logo1 from "../images/voyage.logo-2.png";
 import "../css/navbar.scss";
 export default class Navbar extends Component {
@@ -9,7 +7,7 @@ export default class Navbar extends Component {
     this.state = {
       visible: true,
       modalVisible: false,
-      className: ""
+      className: "",
       // showNavbar: false
     };
   }
@@ -64,7 +62,7 @@ export default class Navbar extends Component {
                 </a>
               </h1>
             </div>
-            <nav className="navbar navbar-expand-lg nav-menu-container navbar-dark">
+            <nav className="navbar  navbar-expand-lg nav-menu-container navbar-dark">
               <button
                 className="navbar-toggler light"
                 type="button"
@@ -77,8 +75,11 @@ export default class Navbar extends Component {
                 <span className="navbar-toggler-icon"></span>
               </button>
 
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="nav-menu">
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul className="nav-menu sidebar">
                   <li className="menu-active nav-item">
                     <a href="/">Home</a>
                   </li>

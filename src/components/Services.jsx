@@ -71,7 +71,7 @@ export default class Services extends Component {
             </header>
             <ScrollAnimation animateIn="fadeIn" duration={2}>
               <div className="row about-cols">
-                <div className="col-md-4 col-sm-12 wow fadeInUp">
+                <div className="col-lg-4 col-sm-12 wow fadeInUp">
                   <div className="about-col">
                     <div className="img">
                       <img src={sha1} alt="" className="img-fluid" />
@@ -95,7 +95,7 @@ export default class Services extends Component {
                   </div>
                 </div>
 
-                <div className="col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div className="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
                   <div className="about-col">
                     <div className="img">
                       <img src={image1} alt="" className="img-fluid" />
@@ -120,7 +120,7 @@ export default class Services extends Component {
                   </div>
                 </div>
 
-                <div className="col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
+                <div className="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
                   <div className="about-col">
                     <div className="img">
                       <img src={BRENNERS} alt="" className="img-fluid" />
@@ -147,7 +147,7 @@ export default class Services extends Component {
               </div>
 
               <div className="row about-cols">
-                <div className="col-md-4 col-sm-12 wow fadeInUp">
+                <div className="col-lg-4 col-sm-12 wow fadeInUp">
                   <div className="about-col">
                     <div className="img">
                       <img src={leela} alt="" className="img-fluid" />
@@ -170,7 +170,7 @@ export default class Services extends Component {
                   </div>
                 </div>
 
-                <div className="col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div className="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
                   <div className="about-col">
                     <div className="img">
                       <img src={PalaceExterior} alt="" className="img-fluid" />
@@ -196,7 +196,7 @@ export default class Services extends Component {
                   </div>
                 </div>
 
-                <div className="col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
+                <div className="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
                   <div className="about-col">
                     <div className="img">
                       <img src={treatment5} alt="" className="img-fluid" />
