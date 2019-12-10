@@ -31,7 +31,7 @@ export default class Shawellness extends Component {
   render() {
     console.log(this.props);
     return (
-      <div>
+      <div className="main-layout">
         <View
           heading="SHA WELLNESS"
           image1={image1}

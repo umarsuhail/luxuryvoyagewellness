@@ -3,7 +3,6 @@ import BacgroundImage from "../../../images/sha-wellness.jpg";
 import "../../../css/View.scss";
 import Carousal from "./Carousal";
 import YouTube from "react-youtube";
-import Programs from "./Programs";
 export default class View extends Component {
   endedVideo = e => {
     console.log();
@@ -38,9 +37,9 @@ export default class View extends Component {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container layout">
           <div className=" col-lg-12 col-md-12">
-            <div className=" col-lg-6 col-md-6 col-sm-12 float-left">
+            {/* <div className=" col-lg-6 col-md-6 col-sm-12 float-left"> */}
               {" "}
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <Carousal
@@ -60,8 +59,10 @@ export default class View extends Component {
                   onEnd={this.endedVideo}
                 />
               </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 content-text text-left float-right">
+            {/* </div> */}
+            <div className="col-12 text-white" style={{
+              lineHeight:'2'
+            }}>
               {this.props.children}
             </div>
           </div>

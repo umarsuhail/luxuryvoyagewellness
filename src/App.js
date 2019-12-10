@@ -6,11 +6,12 @@ import { Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import IndexRoutes from "./Routes/indexRoutes";
 import MetaTags from "react-meta-tags";
+import BookNow from "./components/BookNow";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar ></Navbar>
       <Switch>
         {" "}
         {IndexRoutes.map((prop, key) => {
@@ -24,6 +25,11 @@ function App() {
           );
         })}{" "}
       </Switch>
+      <footer>
+      <div className="fixed-button">
+          <BookNow/>
+        </div>
+      </footer>
       <MetaTags>
         <title> Page 1 </title>{" "}
         <meta

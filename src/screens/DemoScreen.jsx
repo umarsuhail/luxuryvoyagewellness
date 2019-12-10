@@ -8,30 +8,38 @@ import HomeCarousel from "../components/HomeCarousel";
 import ServicesAnimation from "../components/ServicesAnimation";
 import Portfolio from "../components/Portfolio";
 import HomeScreenFooter from "../components/HomeScreenFooter";
+import LazyLoad from "react-lazyload";
+import BookNow from "../components/BookNow";
 class DemoScreen extends Component {
   render() {
     return (
       <div>
         <HomeCarousel />
         <main id="main">
-          <Services />
-          <ServicesAnimation />
+          <LazyLoad height={200} offset={20} once>
+            <Services />
+            <ServicesAnimation />
+          </LazyLoad>
+
           <section id="call-to-action" className="wow fadeIn">
             <div className="container text-center">
               <h3>FIND US TO GET MORE OFFERS</h3>
               <a
                 className="cta-btn"
+                target="_blank"
                 href="https://api.whatsapp.com/send?phone=33660089702"
               >
                 CONTACT
               </a>
             </div>
           </section>
-          <Portfolio />
+          <LazyLoad height={200} once>
+            <Portfolio />
+          </LazyLoad>
 
           <Specialities />
 
-        <HomeScreenFooter/>
+          <HomeScreenFooter />
           <div>
             <div
               className="row footer-text"
@@ -43,9 +51,9 @@ class DemoScreen extends Component {
               }}
             >
               <div className="col-xs-12 col-sm-6 col-lg-4 text-center ">
-                <h1 className="box ">
+                <span className="box ">
                   Copyright 2019 Luxury Voyage Wellness, All Right Reserved{" "}
-                </h1>
+                </span>
               </div>
               <div className="col-xs-12 col-sm-6 col-lg-4 text-center">
                 <img
@@ -64,9 +72,7 @@ class DemoScreen extends Component {
             </div>
           </div>
         </main>
-        <div className="fixed-button">
-
-        </div>
+      
       </div>
     );
   }

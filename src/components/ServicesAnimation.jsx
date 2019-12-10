@@ -14,8 +14,8 @@ export default class ServicesAnimation extends Component {
                                 <h3>Services</h3>
                                 <p>Through Luxury voyage wellness guest we try to give discount</p>
                             </header>
-                            <ScrollAnimation animateIn='bounceInUp'
-                           duration={2}
+                            <ScrollAnimation animateIn='fadeInRight'
+                           duration={1}
                            >
                             <div className="row">
                            
