@@ -9,7 +9,6 @@ import ServicesAnimation from "../components/ServicesAnimation";
 import Portfolio from "../components/Portfolio";
 import HomeScreenFooter from "../components/HomeScreenFooter";
 import LazyLoad from "react-lazyload";
-import BookNow from "../components/BookNow";
 class DemoScreen extends Component {
   render() {
     return (

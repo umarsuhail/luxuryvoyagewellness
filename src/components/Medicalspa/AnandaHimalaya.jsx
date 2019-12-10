@@ -8,7 +8,7 @@ import Programs from "./Components/Programs";
 import tabimage1 from "../../images/ananda/ananda-tab-img1.jpg";
 import tabimage2 from "../../images/ananda/ananda-tab-img2.jpg";
 import tabimage3 from "../../images/ananda/ananda-tab-img3.jpg";
-import anandspa from "../../images/ananda/anandspa1.png";
+import anandspa from "../../images/ananda/anandspa1.jpg";
 import anandspa2 from "../../images/ananda/anandspa2.jpg";
 import anandspa3 from "../../images/ananda/anandspa3.jpg";
 import GuestRoom from "../../images/ananda/guest-room.jpg";

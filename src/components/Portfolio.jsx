@@ -6,7 +6,7 @@ import treatment4 from "../images/treatment4.jpg";
 import aqua from "../images/aqua/aqua.jpg";
 import treatment2 from "../images/treatment2.png";
 import ayurveda from "../images/ayurveda.jpg";
-import anandspa1 from "../images/ananda/anandspa1.png";
+import anandspa1 from "../images/ananda/anandspa1.jpg";
 import anandspa3 from "../images/ananda/anandspa3.jpg";
 export default class Portfolio extends Component {
     render() {
