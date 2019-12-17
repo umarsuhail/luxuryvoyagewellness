@@ -8,13 +8,21 @@
   right: 0;
   top: 28px;
 }
+.collapsing{
+  display: none;
+}
 .collapse.show {
   display: block;
   position: absolute;
   top: 61px;
-  width: 100%;
+  right: 0;
+  width: 320px;
+  height: 100vh;
   background: black;
-  transition: 0.3s transform ease-in-out;
+  transition: 3s transform ease-in-out;
+  .nav-menu > li{
+    padding: 30px 50px;
+  }
 }
 .nav-link:hover {
   .dropdown-menu {
@@ -106,4 +114,60 @@ nav.fill ul li a:hover:after {
 .nav-menu li:hover > ul {
   display: block;
   margin-top: -5px;
+}
+
+#header {
+  padding: 30px 0;
+  height: 92px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+.header-scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px 0;
+  height: 72px;
+  transition: all 0.5s;
+}
+.navbar-header{
+  background: #00000026;
+}
+#header #logo {
+  float: left;
+  position: absolute;
+  top: 15px;
+  align-items: center;
+}
+
+#header #logo span {
+  font-size: 29px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#header #logo span a,
+#header #logo span a:hover {
+  color: #fff;
+  padding-left: 10px;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 1300px) {
+  #header #logo span a,
+#header #logo span a:hover {
+ font-size: 16px !important;
+ padding-left: 0 !important;
+
+}
 }

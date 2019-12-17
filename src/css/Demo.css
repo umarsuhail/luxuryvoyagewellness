@@ -124,53 +124,6 @@ body {
   # Header
   --------------------------------------------------------------*/
   
-  #header {
-    padding: 30px 0;
-    height: 92px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    transition: all 0.5s;
-    z-index: 997;
-  }
-  
-  .header-scrolled {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 20px 0;
-    height: 72px;
-    transition: all 0.5s;
-  }
-  .navbar-header{
-    background: #00000026;
-  }
-  #header #logo {
-    float: left;
-    position: absolute;
-    top: 15px;
-    align-items: center;
-  }
-  
-  #header #logo h1 {
-    font-size: 29px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-  }
-  
-  #header #logo h1 a,
-  #header #logo h1 a:hover {
-    color: #fff;
-    padding-left: 10px;
-  }
-  
-  #header #logo img {
-    padding: 0;
-    margin: 0;
-  }
   
   /*--------------------------------------------------------------
   # Intro Section
@@ -388,7 +341,7 @@ body {
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: uppercase;
     outline: none;
   }
@@ -1544,9 +1497,14 @@ body {
     }
   }
   
-  @media (min-width: 992px) {
+  @media (max-width: 1140px) {
+    #header #logo span {
+      display: none !important;
+
+    }
+  
     #testimonials .testimonial-item p {
-      width: 80%;
+      /* width: 80%; */
     }
   }
   
@@ -1574,9 +1532,6 @@ body {
       bottom: 15px;
     }
   
-    #header #logo h1 {
-      font-size: 28px;
-    }
   
     #header #logo img {
       max-height: 40px;
@@ -1593,4 +1548,5 @@ body {
     #mobile-nav-toggle {
       display: inline;
     }
+    
   }

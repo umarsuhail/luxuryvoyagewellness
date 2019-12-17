@@ -56,11 +56,11 @@ export default class Navbar extends Component {
           <div className="container-fluid ">
             <div id="logo" className="pull-left row">
               <img style={{ maxWidth: "60px" }} src={logo1} alt="" title="" />
-              <h1>
+              <span>
                 <a href="#intro" className="scrollto">
                   luxuryvoyagewellness
                 </a>
-              </h1>
+              </span>
             </div>
             <nav className="navbar  navbar-expand-lg nav-menu-container navbar-dark">
               <button
