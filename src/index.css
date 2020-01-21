@@ -11,32 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.navbar-brand{
+
+.navbar-brand {
   padding-top: 0 !important;
   max-width: 50px;
 }
-.specialities{
+
+.specialities {
   display: flex;
   flex-direction: row !important;
   justify-content: center;
 }
-.speciality-icon{
-  color:orange
+
+.speciality-icon {
+  color: orange
 }
-.whatsapp{
-  width:100px;
+
+.whatsapp {
+  width: 8vh;
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
 @media only screen and (max-width: 900px) {
-  .card-border
-{
-  height:100vh;
-  width:100%;
-  overflow:hidden; /* or overflow:auto; if you want scrollbars */
-  background: #f9eadf;
-  border-top: 2px solid #c9c9c961;
+  .card-border {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    /* or overflow:auto; if you want scrollbars */
+    background: #f9eadf;
+    border-top: 2px solid #c9c9c961;
+  }
 }
-}
-.specialities-data{
+
+.specialities-data {
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
@@ -44,11 +56,13 @@ code {
   flex-direction: column;
   align-items: center;
 }
-.specialities-text{
+
+.specialities-text {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
-.services{
+
+.services {
   background: #19792f1f;
   padding: 25px;
 }

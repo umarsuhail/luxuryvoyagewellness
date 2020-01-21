@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import VerticalLinearStepper from "./Stepper";
 import whatsapp from "../images/whatsapp.png";
+import FaceBook from "../images/facebook.png";
+import instagram from "../images/instagram.png";
 
 export default class Modal extends Component {
   constructor(props) {
@@ -125,10 +127,23 @@ export default class Modal extends Component {
             </button>
           </div>
         </form>
-        <div className="">
-          <a href="https://api.whatsapp.com/send?phone=33660089702">
-            <img src={whatsapp} alt="Whatsapp" className="whatsapp"></img>
-          </a>
+        <div className="row">
+          <div className="column">
+            <a href="https://www.facebook.com/Luxury-Voyage-Wellness-101579791281788">
+              <img src={FaceBook} alt="FaceBook" className="whatsapp" ></img>
+            </a>
+          </div>
+          <div className="column">
+            <a href="https://api.whatsapp.com/send?phone=33660089702">
+              <img src={whatsapp} alt="Whatsapp" className="whatsapp"></img>
+            </a>
+          </div>
+          <div className="column">
+            <a href="https://instagram.com/luxuryvoyagewellness?igshid=1i5wf8619te47">
+              <img src={instagram} alt="instagram" className="whatsapp"></img>
+            </a>
+          </div>
+
         </div>
       </div>
     );
