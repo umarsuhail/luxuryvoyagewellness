@@ -107,10 +107,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Catch all other routes and return the index file
-app.get('*', function (req, res) {
-    const index = path.join(__dirname, 'build', 'index.html');
-    res.sendFile(index);
-  });
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "build/index.html"));
+});
 
 app.use("/api/translator", translatorRoute);
 
