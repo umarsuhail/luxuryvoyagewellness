@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import BackgroundImage from "../../images/forest.jpg";
 import View from "./Components/View";
-import vaithryImage from "../../images/vaithri-card.jpg";
+import wildplanet from "../../images/resorts/wildplanet.jpg";
 import ResortLayout from "./Components/ResortLayout";
 import { Link } from "react-router-dom";
 export default class LuxuryJungleResort extends Component {
@@ -14,15 +14,14 @@ export default class LuxuryJungleResort extends Component {
         />
 
         <ResortLayout
-          image1={vaithryImage}
-          contentTitle="Vaithri Resorts"
-          content="Located in the Western Ghats in Wayanad district, Vythiri Resort offers an Original 
-Rainforest Experience. The Resort is Surrounded by Natural Streams and located almost 3.5Kms 
-inside the 150 acres of plantation and adjoining the rain forests.Rustic Themed Accommodations,
-Tree Houses and Independent Cottages including Pool Villas are located amidst the jungle offers 
-great opportunity to experience nature at its best."
+          image1={wildplanet}
+          contentTitle="Wild Planet Resorts"
+          content="Welcome to Wild Planet-A fairy tale Luxury Jungle Resort, on the edge of the world. 
+          This unique tropical retreat is a hideaway inside the jungle, only accessible to it’s privileged guests. 
+          At Wild Planet uncompromising eco-adventure travel meets an unexpected oasis of urban comfort, with breathtaking 
+          views of the surrounding forested mountains of the western ghats."
         >
-          <Link to="/Vaithri-resorts">
+          <Link to="/WildPlanet">
             <button className="btn">View More</button>
           </Link>
         </ResortLayout>
