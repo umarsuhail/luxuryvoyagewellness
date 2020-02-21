@@ -14,9 +14,9 @@ export default class ServicesAnimation extends Component {
                                 <h3>Services</h3>
                                 <p>Through Luxury voyage wellness guest we try to give discount</p>
                             </header>
-                            <ScrollAnimation animateIn='fadeInRight'
+                            {/* <ScrollAnimation animateIn='fadeInRight'
                            duration={1}
-                           >
+                           > */}
                             <div className="row">
                            
                                 <div id="flight" className="col-lg-4  box wow bounceInUp " data-wow-duration="1.4s">
@@ -46,7 +46,7 @@ export default class ServicesAnimation extends Component {
                                     <img src={travelguide} className="flight-img" alt=""/></a></div> 
                                 </div>
                             </div>
-                            </ScrollAnimation>
+                            {/* </ScrollAnimation> */}
 
                         </div>
                     </section>
