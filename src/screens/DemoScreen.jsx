@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../css/Demo.css";
+import "../css/Demo.scss";
 import "animate.css/animate.min.css";
 import logo from "../images/voyage.png";
 import Specialities from "../components/Specialities";
