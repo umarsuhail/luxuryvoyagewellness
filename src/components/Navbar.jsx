@@ -54,7 +54,7 @@ export default class Navbar extends Component {
         >
           <div className="container-fluid ">
             <div id="logo" className="pull-left row">
-              <img style={{ maxWidth: "60px" }} src={logo1} alt="" title="" />
+              {/* <img style={{ maxWidth: "60px" }} src={logo1} alt="" title="" /> */}
               <span>
                 <a href="#intro" className="scrollto">
                   luxuryvoyagewellness
